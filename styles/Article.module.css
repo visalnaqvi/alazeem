@@ -1,0 +1,56 @@
+.article{
+    width: 80%;
+    height: 100%;
+    margin: 100px auto;
+    text-align: justify;
+  }
+
+  .article.full{
+      width:100%;
+  }
+  
+  .articletitle {
+    font-size: 45px;
+    margin-bottom: 20px;
+    width:100%;
+    font-weight:400;
+  }
+
+  .articletitlecenter {
+    font-size: 45px;
+    margin-bottom: 20px;
+    width:100%;
+    font-weight:400;
+    text-align: center;
+  }
+  
+  .articletext {
+    width: 100%;
+    /* margin: 20px; */
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-weight:400;
+  }
+
+  .articletextcenter {
+    text-align: center;
+    width: 100%;
+    /* margin: 20px; */
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-weight:400;
+  }
+
+  @media only screen and (max-width:500px){
+    .articletext {
+      text-align:left;
+    }
+
+
+    .article{
+      width:90%;
+    }
+    .articletitle , .articletitlecenter{
+      font-size: 40px;
+    }
+  }

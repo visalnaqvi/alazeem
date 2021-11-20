@@ -1,0 +1,67 @@
+.packagecard {
+    width:320px;
+      min-width: 280px;
+      max-width:330px;
+      height: 450px;
+      margin: 20px auto;
+      padding: 40px 20px;
+      padding-bottom: 15px;
+      transition: 0.5s ease;
+      background-color: #f8f8f8;
+      cursor: pointer;
+      border-left: 5px solid #34e7a6;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      text-align: start;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .packagecard:hover {
+        box-shadow: 2px 2px 2px 2px #10101020;
+      }
+
+    .check {
+        opacity: 0.7;
+        margin-right: 15px;
+        height: 100%;
+        width: 7%;
+      }
+
+      .left{
+          width:93%;
+          height: 100%;
+      }
+
+
+      .packagecardtitle {
+        color: #000;
+        font-size: 50px;
+      }
+
+      .username {
+        margin: 20px 0;
+    font-size: large;
+    font-weight: 600;
+      }
+
+      .start{
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 10px 0;
+        width:100%;
+      }
+
+      .button{
+        width: 140px;
+        height: 40px;
+        border: none;
+        color: #fff;
+        background-color: #34e7a6;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        border-radius: 3px;
+        cursor:pointer;
+      }

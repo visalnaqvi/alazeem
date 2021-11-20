@@ -1,0 +1,51 @@
+.infocardstretch{
+    width: 90%;
+    overflow: hidden;
+    margin: 100px auto;
+  }
+  
+.image{
+    width: 50%;
+    min-width: 340px;
+  }
+  
+.infocard{
+    width: 50%;
+    padding: 30px;
+  }
+
+  .infocardtitle{
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 13px;
+  }
+
+  .infocardtext{
+    color: #444444;
+  }
+
+  @media only screen and (max-width:730px){
+    .infocardstretch{
+      flex-direction:column-reverse;
+      width:100%;
+    }
+
+    .infocardstretch.down{
+      flex-direction:column;
+    }
+
+    .image{
+      width:100%
+    }
+
+    .infocard{
+      width: 100%;
+      padding:30px 20px;
+    }
+  }
+
+  @media only screen and (max-width:500px){
+    .infocardstretch .infocardtitle{
+      font-size: 30px;
+    }
+  }

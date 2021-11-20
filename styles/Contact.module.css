@@ -1,0 +1,22 @@
+.card{
+    width: 30%;
+    text-align: center;
+    min-width: 330px;
+  }
+
+  .contactcard{
+    width: '30%';
+    min-width: '330px';
+  }
+  
+  .card .heading{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #292929;
+    margin-bottom: 10px;
+  }
+  
+  .text{
+    line-height: 30px;
+  }

@@ -1,0 +1,129 @@
+.nav{
+    justify-content: space-between;
+    padding: 10px 30px;
+    box-shadow: 3px 3px 10px #00000010;
+}
+
+.navli{
+    margin: 0px 8px;
+    position: relative;
+}
+
+.navlia{
+    padding: 10px;
+    color:#26262690;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.1s background-color ease;
+}
+
+.navlia:hover{
+    background-color: #f8f6f3;
+}
+
+.active{
+    background-color: #40576d12;
+    font-weight: 700;
+    color:#000
+}
+
+.searchwrapper{
+    width: 340px;
+    height: 40px;
+    border: 1.8px solid #00000030;
+    border-radius: 5px;
+    justify-content: flex-start;
+}
+
+.input{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.input::placeholder{
+    color: #00000040;
+}
+
+.searchicon{
+    height: 100%;
+    margin: 8px;
+    margin-top: 14px;
+}
+
+.ham{
+    display: none;
+}
+
+.btn{
+    background-color: #3f87ed;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    letter-spacing: 1.3px;
+}
+
+.btn:hover{
+    background-color: #3f87ed90;
+    cursor: pointer;
+}
+
+.facebook{
+    transition: 0.5s easy;
+    padding:7px;
+    border-radius:8px;
+}
+
+.facebook:hover{
+    background-color:#3f87ed10;
+}
+
+.down{
+    display:none;
+  }
+
+
+  @media only screen and (max-width:1100px){
+    .search-wrapper{
+      width: 200px;
+    }
+  }
+
+  @media only screen and (max-width:930px){
+    .searchwrapper{
+     display:none
+    }
+  }
+
+  @media only screen and (max-width:735px){
+      .facebook{
+        display:none;
+      }
+  }
+
+
+  @media only screen and (max-width:680px){
+    .upul{
+      display:none;
+    }
+    .nav{
+      padding:20px;
+    }
+    .down{
+      display:block;
+      padding:20px 0;
+    }
+
+    .btn{
+      width:130px
+    }
+
+}
