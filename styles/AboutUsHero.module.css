@@ -5,6 +5,7 @@
     margin: auto;
     border-radius: 10px;
     overflow: hidden;
+    background-image: url(../public/images/aboutus/aboutus.webp);
   }
   
   .shade{
