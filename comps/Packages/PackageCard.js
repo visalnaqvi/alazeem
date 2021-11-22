@@ -30,7 +30,7 @@ const Card = ({packh}) => {
                     </div>
                 </div>
             </div>
-           <Link href={`${packh.link}`}><a><button className={style.button}>Contact Us</button></a></Link>
+           <Link href={`${packh.link}`}><a><button className={style.button}>Learn More</button></a></Link>
         </div>
      );
 }

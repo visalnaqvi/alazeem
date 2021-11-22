@@ -7,6 +7,9 @@
     overflow: hidden;
   }
 
+  .nainital{
+    background-image:url(../public/images/cities/nanital.jpg)
+  }
 
   .aboutus{
     background-image: url(../public/images/aboutus/aboutus.webp);
@@ -14,6 +17,10 @@
 
   .contactus{
     background-image: url(../public/images/contact/heroimg.jpg);
+  }
+
+  .agra{
+    background-image: url(../public/images/cities/agra.jpg);
   }
 
   .packages{
