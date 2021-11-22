@@ -2,10 +2,10 @@ import Article from "../Article";
 import ContactCard from "./ContactCard";
 import Map from "../map";
 import style from "../../styles/Contact.module.css"
-import styleh from "../../styles/ContactHero.module.css"
+import styleh from "../../styles/Hero.module.css"
 const ContactUs = () => {
     return ( <>
-        <div className={`${styleh.slide} bg-class flex-class`}>
+        <div className={`${styleh.slide} ${styleh.contactus} bg-class flex-class`}>
             
             <div className={styleh.content}>
                 <p className={styleh.heading}>LETS GET IN TOUCH</p>

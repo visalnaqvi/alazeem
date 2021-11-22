@@ -9,7 +9,7 @@ const Card = ({packh}) => {
             <div className="top">
                 <p className={style.packagecardtitle}>Rs. {packh.price} /-</p>
                 <div className="gray">Per head</div>
-                <h1 className={style.username}>{packh.title}</h1>
+                <h2 className={style.username}>{packh.title}</h2>
                 <div className="package-card-text">
                     <div className={`${style.start} flex-class`}>
                         <div className={style.check}><Image  src={Check} alt="check tick icon"/></div>

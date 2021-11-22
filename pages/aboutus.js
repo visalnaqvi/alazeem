@@ -2,7 +2,7 @@ import Head from "next/head";
 import Article from "../comps/Article"
 import Img1 from "../public/images/aboutus/aboutimg2.png";
 import InfoCardStretch from "../comps/InfoCardStretch/InfoCardStretch";
-import style from "../styles/AboutUsHero.module.css";
+import style from "../styles/Hero.module.css";
 const AboutUs = () => {
     const infoText = "We believe in open and honest communications - and no hidden agendas. We believe that everyone will do the right thing and act with integrity and fairness We respect each others time and effort We treat others the way we want to be treated We are always here to help each other experience the best in travel"
     const InfoHeading = "In order to promote and reward excellence in travel, our community is guided by the following core values:"
@@ -25,7 +25,7 @@ const AboutUs = () => {
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
       </Head>
-      <div className={`${style.slide} bg-class flex-class`}>
+      <div className={`${style.slide} ${style.aboutus} bg-class flex-class`}>
             
             <div className={style.content}>
                 <p className={style.heading}>PASSION LED US HERE</p>

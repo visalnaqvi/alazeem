@@ -1,10 +1,10 @@
 import PackageBody from "./PackageBody";
-import style from "../../styles/PackagesHero.module.css"
+import style from "../../styles/Hero.module.css"
 const Packages = () => {
 
    
     return ( <>
-    <div className={`${style.slide} bg-class flex-class`}>
+    <div className={`${style.slide} ${style.packages} bg-class flex-class`}>
             
             <div className={style.content}>
                 <p className={style.heading}>Handcrafted Economic Packages</p>

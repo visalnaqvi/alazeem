@@ -1,17 +1,10 @@
 import Head from "next/head";
-import Map from "../comps/map";
 import styles from "../styles/Home.module.css";
 import Slider from "../comps/Slider";
 import Article from "../comps/Article";
 import style from "../styles/Article.module.css";
 import PackageBody from "../comps/Packages/PackageBody";
-import InfoCardWrapper from "../comps/InfoCard/InfoCardWrapper";
-import InfoCardStretch from "../comps/InfoCardStretch/InfoCardStretch";
-import InfoCardStretchDown from "../comps/InfoCardStretch/InfoCardStretchDown";
-import knowledge from "../public/images/whyus/knowledge.webp";
-import responsebleteam from "../public/images/whyus/responsebleteam.webp";
-import teamwork from "../public/images/whyus/teamwork.webp";
-import FeedBack from "../comps/Feedback/feedback";
+import BoilerBody from "../comps/BoilerBody";
 export default function Home() {
   const headingMain = "Our foundation";
   const textMain = ["We present before you",<strong className={style.articletext} key="1">AL-AZEEM TOUR & TRAVELS as one stop platform for all your travel needs</strong>,
@@ -77,15 +70,7 @@ export default function Home() {
         style={{ textAlign: "justify" }}
       ></Article>
       <PackageBody></PackageBody>
-      <Article headingcenter="Our Services"></Article>
-      <InfoCardWrapper></InfoCardWrapper>
-      <Article headingcenter="Why to choose Us?" textcenter="Since established our primary aim was to provide quality travel services to business and leisure travelers. Supported by strong financial management, impressive customer satisfaction, and constant improvement, AL - AZEEM TOUR & TRAVELS has expanded to cover various facets of the industry. Our experience led to perfection in both our outbound and inbound units."></Article>
-      <InfoCardStretch alt="responseble people" img={responsebleteam} heading="Experienced management team" text="Our team is highly experienced and have excellence in handling on filed challenges.They communicate openly with each other, sharing their thoughts, opinions, and ideas with members of their team; as well as taking into consideration what others have to say."></InfoCardStretch>
-      <InfoCardStretchDown alt="people working on computer" img={knowledge} heading="In-depth knowledge of the region’s travel needs" text="Let it be choosing a hotle to stay or a mode of travel. We have a good knowledge of every aspect of travelling. Knowing the in and outs of every option we have and what will be the best for for you to make your travel comfortable and smooth." ></InfoCardStretchDown>
-      <InfoCardStretch alt="team work" img={teamwork} heading="Wide network with trade, corporate and diplomatic community" text="Our wide network helps us to get the best deal for you. We get the most economical and comfortable option for you."></InfoCardStretch>
-      <Map></Map>
-      <Article heading="Happy Coustumers"></Article>
-    <FeedBack></FeedBack>
+      <BoilerBody></BoilerBody>
     </div>
   );
 }
