@@ -1,11 +1,11 @@
-import style from "../styles/Hero.module.css"
+import style from "../../styles/Hero.module.css"
 import Head from "next/head"
-import Article from "../comps/Article";
-import PackageCard from "../comps/Packages/PackageCard"
+import Article from "../../comps/Article";
+import PackageCard from "../../comps/Packages/PackageCard"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import BoilerBody from "../comps/BoilerBody"
+import BoilerBody from "../../comps/BoilerBody"
 const Shimla = () => {
     const settings = {
         dots: true,
@@ -35,10 +35,10 @@ const Shimla = () => {
             },
         ]
       };
-    const pack1 = {price:"1200",title:"Shimla Package Tour One" , f1:"3 days , 2 nights stay in shimla" ,f2:"We will book the best hotel with best services and location" , f3:"The most comfortable and econimical options of travel will be available" , f4:"Breakfast , lunch , dinner)"};
-    const pack2 = {price:"2200",title:"Shimla Package Tour Two" , f1:"5 days , 4 nights stay in shimla" ,f2:"We will book the best hotel with best services and location" , f3:"The most comfortable and econimical options of travel will be available" , f4:"Breakfast , lunch , dinner)"};
-    const pack3 = {price:"3200",title:"Shimla Package Tour Three" , f1:"7 days , 6 nights stay in shimla" ,f2:"We will book the best hotel with best services and location" , f3:"The most comfortable and econimical options of travel will be available" , f4:"Breakfast , lunch , dinner)"};
-    const pack4 = {price:"4200",title:"Shimla Package Tour Three" , f1:"10 days , 9 nights stay in shimla" ,f2:"We will book the best hotel with best services and location" , f3:"The most comfortable and econimical options of travel will be available" , f4:"Breakfast , lunch , dinner)"};
+    const pack1 = {price:"1200",title:"Shimla Package Tour One" , f1:"3 days , 2 nights stay in shimla" ,f2:"We will book the best hotel with best services and location" , f3:"The most comfortable and econimical options of travel will be available" , f4:"Breakfast , lunch , dinner", link:"/contactus"};
+    const pack2 = {price:"2200",title:"Shimla Package Tour Two" , f1:"5 days , 4 nights stay in shimla" ,f2:"We will book the best hotel with best services and location" , f3:"The most comfortable and econimical options of travel will be available" , f4:"Breakfast , lunch , dinner", link:"/contactus"};
+    const pack3 = {price:"3200",title:"Shimla Package Tour Three" , f1:"7 days , 6 nights stay in shimla" ,f2:"We will book the best hotel with best services and location" , f3:"The most comfortable and econimical options of travel will be available" , f4:"Breakfast , lunch , dinner", link:"/contactus"};
+    const pack4 = {price:"4200",title:"Shimla Package Tour Three" , f1:"10 days , 9 nights stay in shimla" ,f2:"We will book the best hotel with best services and location" , f3:"The most comfortable and econimical options of travel will be available" , f4:"Breakfast , lunch , dinner", link:"/contactus"};
     return ( 
        
         <>

@@ -3,6 +3,7 @@ import Link from "next/link"
 import Image from "next/image";
 import style from "../../styles/Package.module.css"
 const Card = ({packh}) => {
+    console.log(packh.link)
     return ( 
       
         <div className={`${style.packagecard} flex-class`}>
@@ -29,7 +30,7 @@ const Card = ({packh}) => {
                     </div>
                 </div>
             </div>
-           <Link href="/contact"><a><button className={style.button}>Contact Us</button></a></Link>
+           <Link href={`${packh.link}`}><a><button className={style.button}>Contact Us</button></a></Link>
         </div>
      );
 }
