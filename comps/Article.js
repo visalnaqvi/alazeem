@@ -4,9 +4,9 @@ const Article = ({headingcenter ,headingnormal, heading , text  , textcenter}) =
         
  
             <div className={style.article}>
-                {headingcenter&&<h1 className={style.articletitlecenter}>{headingcenter}</h1>}
-                {headingnormal&&<h1 className={style.articletitlecenter}>{headingnormal}</h1>}
-                {heading&&<h1 className={style.articletitle}>{heading}</h1>}
+                {headingcenter&&<h2 className={style.articletitlecenter}>{headingcenter}</h2>}
+                {headingnormal&&<h2 className={style.articletitlecenter}>{headingnormal}</h2>}
+                {heading&&<h2 className={style.articletitle}>{heading}</h2>}
                 {text&&<div className={style.articletext}>{text}</div>}
                 {textcenter&&<div className={style.articletextcenter}>{textcenter}</div>}
             </div>

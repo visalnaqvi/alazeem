@@ -4,7 +4,7 @@ const InfoCardStretch = ({img , heading , text , alt}) => {
     return ( 
         <div className={`${style.infocardstretch} flex-class`}>
            <div className={style.infocard}>
-                <h1 className={style.infocardtitle}>{heading}</h1>
+                <h3 className={style.infocardtitle}>{heading}</h3>
                 <p className={style.infocardtext}>
                     {text}
                 </p>
