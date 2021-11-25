@@ -48,7 +48,7 @@ const Agra = () => {
       <meta charset="UTF-8" />
         <meta
       name="description"
-      content="We provide the most economical and luxurious Agra tour package with travelling , hotel booking and meals (breakfast, lunch, dinner). Our Agra tour package is fully customizable."
+      content="We provide the most economical and luxurious Agra tour package with travelling, hotel booking and meals. Our Agra tour package is fully customizable."
     />
         <link rel="icon" href="/logo512.png" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
@@ -63,7 +63,7 @@ const Agra = () => {
             <div className={style.shade}></div>
         </div>
 
-        <Article heading="Exlopre Agra Tour Packages" text={["Where better to go for a romantic holiday than to the great testament of love, the Taj Mahal? Built by the grieving Mughal Emperor Shah Jahan in memory of his late wife Mumtaz Mahal, the Taj Mahal's unrivaled beauty explains why it’s regarded as one of the eight wonders of the world. A visit to India wouldn’t be complete without visit the city of ", <b key="6">agra</b>," Other must-experience destinations in " , <b key="7">Agra</b>," are two other UNESCO World Heritage Sites, the sandstone Red Fort and Fatehpur Sikri. And for you to visit ",<b key="8">agra</b>," in the best way we have ",<b key="4">Agra tour package</b>," more affordable , economic and luxurious than anywhere else." ]}></Article>
+        <Article heading="Exlopre Agra Tour Packages" text={["Where better to go for a romantic holiday than to the great testament of love, the ",<b key="1">Taj Mahal</b>,"? Built by the grieving Mughal Emperor Shah Jahan in memory of his late wife Mumtaz Mahal, the Taj Mahal's unrivaled beauty explains why it’s regarded as one of the eight wonders of the world. A visit to India wouldn’t be complete without visit the city of ", <b key="6">agra</b>," Other must-experience destinations in " , <b key="7">Agra</b>," are two other UNESCO World Heritage Sites, the sandstone Red Fort and Fatehpur Sikri. And for you to visit in the best way we have ",<b key="4">Agra tour package</b>," more affordable , economic and luxurious than anywhere else." ]}></Article>
         <Slider style={{width:"90vw",marginBottom:"50px", margin:"0 auto"}} {...settings}>
             <PackageCard packh={pack1}></PackageCard>
             <PackageCard packh={pack2}></PackageCard>
