@@ -9,7 +9,6 @@ import BoilerBody from "../../comps/BoilerBody"
 const Agra = () => {
     const settings = {
         dots: true,
-        infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -35,10 +34,10 @@ const Agra = () => {
             },
         ]
       };
-    const pack1 = {price:"1200",title:"Agra Package Tour One" , f1:"3 days , 2 nights stay in Agra" ,f2:"We will book the best hotel with best services and location" , f3:"The most comfortable and econimical options of travel will be available" , f4:"Breakfast , lunch , dinner", link:"/contactus"};
-    const pack2 = {price:"2200",title:"Agra Package Tour Two" , f1:"5 days , 4 nights stay in Agra" ,f2:"We will book the best hotel with best services and location" , f3:"The most comfortable and econimical options of travel will be available" , f4:"Breakfast , lunch , dinner", link:"/contactus"};
-    const pack3 = {price:"3200",title:"Agra Package Tour Three" , f1:"7 days , 6 nights stay in Agra" ,f2:"We will book the best hotel with best services and location" , f3:"The most comfortable and econimical options of travel will be available" , f4:"Breakfast , lunch , dinner", link:"/contactus"};
-    const pack4 = {price:"4200",title:"Agra Package Tour Three" , f1:"10 days , 9 nights stay in Agra" ,f2:"We will book the best hotel with best services and location" , f3:"The most comfortable and econimical options of travel will be available" , f4:"Breakfast , lunch , dinner", link:"/contactus"};
+    const pack1 = {price:"1200",title:"3 Day Package Tour One" , f1:"3 days , 2 nights stay in Agra" ,f2:"We will book the best hotel with best services and location" , f3:"The most comfortable and econimical options of travel will be available" , f4:"Breakfast , lunch , dinner", link:"/contactus"};
+    const pack2 = {price:"2200",title:"5 Day Package Tour Two" , f1:"5 days , 4 nights stay in Agra" ,f2:"We will book the best hotel with best services and location" , f3:"The most comfortable and econimical options of travel will be available" , f4:"Breakfast , lunch , dinner", link:"/contactus"};
+    const pack3 = {price:"3200",title:"7 Day Package Tour Three" , f1:"7 days , 6 nights stay in Agra" ,f2:"We will book the best hotel with best services and location" , f3:"The most comfortable and econimical options of travel will be available" , f4:"Breakfast , lunch , dinner", link:"/contactus"};
+    const pack4 = {price:"4200",title:"10 Day Agra Package Tour" , f1:"10 days , 9 nights stay in Agra" ,f2:"We will book the best hotel with best services and location" , f3:"The most comfortable and econimical options of travel will be available" , f4:"Breakfast , lunch , dinner", link:"/contactus"};
     return ( 
        
         <>
@@ -47,7 +46,7 @@ const Agra = () => {
       <link rel="icon" href="%PUBLIC_URL%/logo192.png" />
         <meta
       name="description"
-      content="We provide the most economical and luxurious Agra tour package with all your needs from travelling to hotel booking and meals including breakfast , lunch , dinner all are covered. Our Agra tour package is fully customizable."
+      content="We provide the most economical and luxurious Agra tour package with travelling , hotel booking and meals (breakfast, lunch, dinner). Our Agra tour package is fully customizable."
     />
         <link rel="icon" href="/logo512.png" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
