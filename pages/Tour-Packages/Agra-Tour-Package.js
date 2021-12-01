@@ -43,7 +43,7 @@ const Agra = () => {
        
         <>
         <Head>
-      <title>Agra Tour / Trip Package - Al Azeem Tour and Travels</title>
+      <title>Agra Tour Package from Al Azeem Tour and Travels</title>
       <link rel="icon" href="%PUBLIC_URL%/logo192.png" />
       <html lang="en"/>
       <meta charset="UTF-8" />
@@ -58,7 +58,7 @@ const Agra = () => {
             <div className={`${style.slide} ${style.agra} bg-class flex-class`}>
             
             <div className={style.content}>
-                <h1 className={style.heading}>Agra Tour / Trip Package </h1>
+                <h1 className={style.heading}>The Best Agra Tour Packages</h1>
                 <p className={style.text}>A Better Way To Travel. We are the one stop provider for all your travel needs and requirements</p>
             </div>
             <div className={style.shade}></div>
