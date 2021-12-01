@@ -7,7 +7,7 @@ import PackageBody from "../comps/Packages/PackageBody";
 import BoilerBody from "../comps/BoilerBody";
 export default function Home() {
   const headingMain = "Our foundation";
-  const textMain = ["We present before you",<strong className={style.articletext} key="1">AL-AZEEM TOUR & TRAVELS as one stop platform for all your travel needs</strong>,
+  const textMain = ["We present before you ",<strong className={style.articletext} key="1">AL-AZEEM TOUR & TRAVELS as one stop platform for all your travel needs</strong>,
     ".With a focus on customer service, at ",
     <b className={style.articletext} key="2">
       Al-Azeem Tour{" "}
