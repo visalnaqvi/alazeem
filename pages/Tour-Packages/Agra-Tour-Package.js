@@ -73,6 +73,7 @@ const Agra = () => {
         </Slider>
         <BoilerBody></BoilerBody>
         </>
+        
      );
 }
  
