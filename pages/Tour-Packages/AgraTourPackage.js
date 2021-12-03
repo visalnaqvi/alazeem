@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import BoilerBody from "../../comps/BoilerBody"
 const Agra = () => {
-    document.documentElement.lang = 'en-us';
+
     const settings = {
         dots: true,
         speed: 500,
