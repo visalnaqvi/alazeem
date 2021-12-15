@@ -5,7 +5,8 @@ import { useEffect, useState } from "react";
 import firebase from 'firebase/app';
 import style from "../../styles/Article.module.css"
 import "firebase/firestore"
-const PackageBody = ({packages}) => {
+import Grid from "../Grid";
+const PackageBody = ({grid}) => {
 
       const [pckages, setPack] = useState();
 
@@ -42,6 +43,7 @@ useEffect(()=>{
     return ( 
         <>
                     <Article heading={headingTour} text={ textTours } style={{textAlign : "justify"}}></Article>
+                 {   grid&&<Grid></Grid>}
         <GreyBox></GreyBox>
         <br /><br />
             <div className="sub-packages flex-class wrap" style={{width:"100%"}}>

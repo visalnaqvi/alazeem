@@ -37,6 +37,7 @@ ul{
 
 a{
   text-decoration: none;
+  color: inherit;
 }
 
 
@@ -53,3 +54,17 @@ b , h1, h2, h3,h4,h5{
   font-size: inherit;
 }
 
+
+button.slick-prev:before{
+  color: #000;
+  content: "<";
+  font-weight: 700;
+  font-size: 30px;
+}
+
+button.slick-next:before{
+  color: #000;
+  content: ">";
+  font-weight: 700;
+  font-size: 30px;
+}

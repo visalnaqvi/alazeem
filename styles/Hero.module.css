@@ -30,6 +30,26 @@
   .shimla{
       background-image: url(../public/images/cities/shimla.jpg);
   }
+
+  .goa{
+    background-image: url(../public/blog-images/must-visit-place-in-india-and-how-much-they-cost/goa.jpg);
+  }
+
+  .Mcleodganj{
+    background-image: url(../public/blog-images/must-visit-place-in-india-and-how-much-they-cost/Mcleodganj.jpg);
+  }
+
+  .Srinagar{
+    background-image: url(../public/blog-images/must-visit-place-in-india-and-how-much-they-cost/Srinagar.jpg);
+  }
+
+  .Andaman{
+    background-image: url(../public/blog-images/must-visit-place-in-india-and-how-much-they-cost/Andaman.jpg);
+  }
+
+  .Ladakh{
+    background-image: url(../public/blog-images/must-visit-place-in-india-and-how-much-they-cost/Ladakh.jpg);
+  }
   
   .shade{
     position: absolute;

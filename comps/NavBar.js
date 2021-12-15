@@ -38,7 +38,34 @@ const Nav = () => {
               <ul className={`${style.upul} flex-class`}>
                 <li className={style.navli}><Link href="/"><a className={`${style.navlia} ${style.active}`}>Home</a></Link></li>
                 <li className={style.navli}><Link href="/aboutus"><a className={style.navlia}>About Us</a></Link></li>
-                <li className={style.navli}><Link href="/packages"><a className={style.navlia}>Packages</a></Link></li>
+                <li className={`${style.navli} ${style.pack}`}><Link href="/Tour-Packages"><a className={style.navlia}>Packages</a></Link>
+                  <div className={`flex-class`}>
+                  <div className={`${style.packwrap} flex-class`}>
+                    <ul className={`${style.ul} ${style.left}`}>
+                      <li className={style.li}><Link href="/Tour-Packages/Nainital-Tour-Package"><a className={style.a}>Nainital Tour Package</a></Link></li>
+                      <li className={style.li}><Link href="/Tour-Packages/Agra-Tour-Package"><a className={style.a}>Agra Tour Package</a></Link></li>
+                      <li className={style.li}><Link href="/Tour-Packages/Shimla-Tour-Package"><a className={style.a}>Shimla Tour Package</a></Link></li>
+                      
+                    </ul>
+                    <ul className={style.ul}>
+                      <li className={style.li}><Link href="/Tour-Packages/Andaman-Tour-Package"><a className={style.a}>Andaman Tour Package</a></Link></li>
+                      <li className={style.li}><Link href="/Tour-Packages/Ladakh-Tour-Package"><a className={style.a}>Ladakh Tour Package</a></Link></li>
+                      <li className={style.li}><Link href="/Tour-Packages/Goa-Tour-Package"><a className={style.a}>Goa Tour Package</a></Link></li>
+                      </ul>
+                      <ul className={style.ul}>
+                      <li className={style.li}><Link href="/Tour-Packages/Srinagar-Tour-Package"><a className={style.a}>Srinagar Tour Package</a></Link></li>
+                      <li className={style.li}><Link href=""><a className={style.a}>Jammu & Kashmir Tour Package</a></Link></li>
+                      <li className={style.li}><Link href=""><a className={style.a}>Rishikesh Tour Package</a></Link></li>
+                    </ul>
+                    <ul className={`${style.ul} ${style.right}`}>
+                      <li className={style.li}><Link href="/Tour-Packages/Mcleodganj-Tour-Package"><a className={style.a}>Mcleodganj Tour Package</a></Link></li>
+                      <li className={style.li}><Link href=""><a className={style.a}>Saudi Arabia Tour Package</a></Link></li>
+                      <li className={style.li}><Link href=""><a className={style.a}>Umrah Tour Package</a></Link></li>
+                    </ul>
+                    </div>
+                    </div>
+                </li>
+                <li className={style.navli}><Link href="/Blogs/Best-places-to-visit-in-India-and-how-much-they-cost"><a className={style.navlia}>Blogs</a></Link></li> 
               </ul>
               <div className={`${style.searchwrapper} flex-class`}>
                 <label htmlFor="search"><div className={style.searchicon}><Image height={30} width={30} className={style.searchicon} src={ search } alt="" /></div></label>
@@ -50,6 +77,7 @@ const Nav = () => {
               <Link href="/contactus"><a><button className={`${style.btn} btn`}>Contact Us</button></a></Link>
 </nav>
 
+
 <nav className={`${style.nav} ${style.down} flex-class`}>
               <ul className="down-ul flex-class">
                 <li className={style.navli}><Link className="active" href="/"><a className={`${style.navlia} ${style.active}`}>Home</a></Link></li>
@@ -57,10 +85,12 @@ const Nav = () => {
                     <a className={style.navlia}>About Us</a>
                   </Link>
                 </li>
-                <li className={style.navli}><Link className="flex-class" href="/packages">
+                <li className={style.navli}><Link className="flex-class" href="/Tour-Packages">
                     <a className={style.navlia}>Packages</a>
                   </Link>
                 </li>
+                <li className={style.navli}><Link href="/Blogs/Best-places-to-visit-in-India-and-how-much-they-cost"><a className={style.navlia}>Blogs</a></Link></li> 
+
               </ul>
 </nav>
 

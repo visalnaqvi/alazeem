@@ -1,6 +1,6 @@
 import PackageBody from "./PackageBody";
 import style from "../../styles/Hero.module.css"
-const Packages = () => {
+const Packages = ({grid}) => {
 
    
     return ( <>
@@ -12,7 +12,7 @@ const Packages = () => {
             </div>
             <div className={style.shade}></div>
         </div>
-        <PackageBody></PackageBody>
+        <PackageBody grid={grid}></PackageBody>
     </> );
 }
  
