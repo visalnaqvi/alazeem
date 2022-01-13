@@ -90,7 +90,6 @@ const Nav = () => {
                     <a className={style.navlia}>Packages</a>
                   </Link>
                 </li>
-                <li className={style.navli}><Link href="/Blogs/Best-places-to-visit-in-India-and-how-much-they-cost"><a className={style.navlia}>Blogs</a></Link></li> 
                 <li className={style.navli}><Link href="/flights"><a className={style.navlia}>Flights</a></Link></li> 
 
               </ul>
