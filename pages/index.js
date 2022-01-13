@@ -7,6 +7,7 @@ import PackageBody from "../comps/Packages/PackageBody";
 import BoilerBody from "../comps/BoilerBody";
 import Image from "next/dist/client/image";
 import { useEffect } from "react";
+import Link from "next/dist/client/link";
 import popImg from "../public/images/close_small_figma.svg"
 export default function Home() {
   const headingMain = "Our foundation";
@@ -80,8 +81,8 @@ export default function Home() {
 
       </Head>
       <div className={`${styles.popup} popup`}>
-            <div className={styles.popupimg}>
-            </div>
+      <Link href="/flights"><div className={styles.popupimg}>
+            </div></Link>
             <div className={`${styles.close} close`}>
               <Image width={100} height={100} src={popImg} alt=""></Image>
             </div>
