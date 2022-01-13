@@ -157,8 +157,8 @@
     flex-direction: column;
   }
 
-  /* .popupimg{
+  .popupimg{
     background-image: url(../public//images/popupflights-mobile.jpg);
-  } */
+  }
 
 }
