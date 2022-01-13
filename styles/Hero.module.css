@@ -51,6 +51,20 @@
     background-image: url(../public/blog-images/must-visit-place-in-india-and-how-much-they-cost/Ladakh.jpg);
   }
   
+  .flight{
+    background-image: url(../public/images/flight.jpg);
+  }
+
+  .body{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .shade{
     position: absolute;
     top: 0;

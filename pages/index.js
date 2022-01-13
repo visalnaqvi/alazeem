@@ -5,6 +5,9 @@ import Article from "../comps/Article";
 import style from "../styles/Article.module.css";
 import PackageBody from "../comps/Packages/PackageBody";
 import BoilerBody from "../comps/BoilerBody";
+import Image from "next/dist/client/image";
+import { useEffect } from "react";
+import popImg from "../public/images/close_small_figma.svg"
 export default function Home() {
   const headingMain = "Our foundation";
   const textMain = ["We present before you ",<strong className={style.articletext} key="1">AL-AZEEM TOUR & TRAVELS as one stop platform for all your travel needs</strong>,
@@ -50,6 +53,19 @@ export default function Home() {
     </b>,
   ];
 
+
+  useEffect(() => {
+    const popup = document.querySelector(".popup");
+    const close = document.querySelector(".close");
+    setTimeout(()=>{
+      popup.style.top = 0
+    },3000)
+
+    close.addEventListener("click",()=>{
+      popup.style.top = "-110vh"
+    })
+
+  },[]);
   return (
     <div className={styles.container}>
       <Head>
@@ -63,6 +79,13 @@ export default function Home() {
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
       </Head>
+      <div className={`${styles.popup} popup`}>
+            <div className={styles.popupimg}>
+            </div>
+            <div className={`${styles.close} close`}>
+              <Image width={100} height={100} src={popImg} alt=""></Image>
+            </div>
+      </div>
       <Slider></Slider>
       <Article
         heading={headingMain}

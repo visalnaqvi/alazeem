@@ -66,6 +66,7 @@ const Nav = () => {
                     </div>
                 </li>
                 <li className={style.navli}><Link href="/Blogs/Best-places-to-visit-in-India-and-how-much-they-cost"><a className={style.navlia}>Blogs</a></Link></li> 
+                <li className={style.navli}><Link href="/flights"><a className={style.navlia}>Flights</a></Link></li> 
               </ul>
               <div className={`${style.searchwrapper} flex-class`}>
                 <label htmlFor="search"><div className={style.searchicon}><Image height={30} width={30} className={style.searchicon} src={ search } alt="" /></div></label>
@@ -82,7 +83,7 @@ const Nav = () => {
               <ul className="down-ul flex-class">
                 <li className={style.navli}><Link className="active" href="/"><a className={`${style.navlia} ${style.active}`}>Home</a></Link></li>
                 <li className={style.navli}><Link className="flex-class" href="/aboutus">
-                    <a className={style.navlia}>About Us</a>
+                    <a className={style.navlia}>About</a>
                   </Link>
                 </li>
                 <li className={style.navli}><Link className="flex-class" href="/Tour-Packages">
@@ -90,6 +91,7 @@ const Nav = () => {
                   </Link>
                 </li>
                 <li className={style.navli}><Link href="/Blogs/Best-places-to-visit-in-India-and-how-much-they-cost"><a className={style.navlia}>Blogs</a></Link></li> 
+                <li className={style.navli}><Link href="/flights"><a className={style.navlia}>Flights</a></Link></li> 
 
               </ul>
 </nav>
