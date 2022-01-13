@@ -99,9 +99,10 @@ const AboutUs = () => {
 <br></br>
 <br></br>
 <br></br>
-        <div className={style.tablewrap}>
+        
 
         <Headings h1="New Delhi to Dammam"></Headings>
+        <div className={style.tablewrap}>
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
               <th className={style.th}>Airlines</th>
@@ -138,9 +139,9 @@ const AboutUs = () => {
 <br></br>
 <br></br>
 <br></br>
-        <div className={style.tablewrap}>
 
         <Headings h1="Lucknow to Riyadh"></Headings>
+        <div className={style.tablewrap}>
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
               <th className={style.th}>Airlines</th>
@@ -177,9 +178,9 @@ const AboutUs = () => {
 <br></br>
 <br></br>
 
-        <div className={style.tablewrap}>
 
         <Headings h1="New Delhi to Dammam (via Dubai)"></Headings>
+        <div className={style.tablewrap}>
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
               <th className={style.th}>Airlines</th>
@@ -215,9 +216,9 @@ const AboutUs = () => {
 <br></br>
 <br></br>
 <br></br>
-        <div className={style.tablewrap}>
 
         <Headings h1="New Delhi to Jeddah (via Dubai)"></Headings>
+        <div className={style.tablewrap}>
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
               <th className={style.th}>Airlines</th>
@@ -253,9 +254,10 @@ const AboutUs = () => {
 <br></br>
 <br></br>
 <br></br>
-<br></br>        <div className={style.tablewrap}>
+<br></br>     
 
         <Headings h1="New Delhi to Jeddah (via Dubai)"></Headings>
+        <div className={style.tablewrap}>
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
               <th className={style.th}>Airlines</th>
