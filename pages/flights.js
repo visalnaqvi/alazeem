@@ -18,35 +18,35 @@ const AboutUs = () => {
     const firstParaText = "We are very excited to introduce AL - AZEEM TOUR & TRAVELS. as the one stop provider for all your travel needs and requirements. We label ourselves as leading, innovative, and highly efficient and look forward to demonstrate these qualities at the earliest possible chance. Since established our primary aim was to provide quality travel services to business and leisure travelers. The agency continued to grow and branch out its interests to rise as one of the exponents in the travel industry. At Al Azeem, we excel at helping you get your vacation planned. Not just any vacation, but exceptional vacations filled with inspiring and life-enriching experiences.";
     const ourvaluesheading = "Our values and community";
     const ourvaluestext = "Our community is one in which discerning travelers seek the best in quality, authenticity and value, and travel companies strive to deliver the same. The best travel specialists receive the recognition they deserve and consequently get more business. Travelers and travel specialists come to Al Azeem to help each other experience the very best in travel - from both their perspectives.";
-    // const [pckages, setPack] = useState();
-    // const config={
-    //   apiKey: "AIzaSyBwGQoCe0wTlR61fueDKA0yA4n5xmMfPrg",
-    //   authDomain: "buttons-2dc4a.firebaseapp.com",
-    //   databaseURL: "https://buttons-2dc4a-default-rtdb.firebaseio.com",
-    //   projectId: "buttons-2dc4a",
-    //   storageBucket: "buttons-2dc4a.appspot.com",
-    //   messagingSenderId: "241629842019",
-    //   appId: "1:241629842019:web:6c248c713e6a27cd494656",
-    //   measurementId: "G-QK6TC8JTHZ"
-    // }
+    const [pckages, setPack] = useState();
+    const config={
+      apiKey: "AIzaSyBwGQoCe0wTlR61fueDKA0yA4n5xmMfPrg",
+      authDomain: "buttons-2dc4a.firebaseapp.com",
+      databaseURL: "https://buttons-2dc4a-default-rtdb.firebaseio.com",
+      projectId: "buttons-2dc4a",
+      storageBucket: "buttons-2dc4a.appspot.com",
+      messagingSenderId: "241629842019",
+      appId: "1:241629842019:web:6c248c713e6a27cd494656",
+      measurementId: "G-QK6TC8JTHZ"
+    }
     
-    // if(!firebase.apps.length){
-    //   firebase.initializeApp(config)
+    if(!firebase.apps.length){
+      firebase.initializeApp(config)
       
-    // }else{ firebase.app() };
-    // const db = firebase.firestore()
-    // useEffect(()=>{
+    }else{ firebase.app() };
+    const db = firebase.firestore()
+    useEffect(()=>{
     
-    // db.collection("packages")
-    // .onSnapshot((querySnapshot) => {
-    //       const inpack = []
-    //       querySnapshot.forEach((doc) => {
-    //           inpack.push(doc.data());
-    //           });
-    //           setPack(inpack)
-    // })
+    db.collection("packages")
+    .onSnapshot((querySnapshot) => {
+          const inpack = []
+          querySnapshot.forEach((doc) => {
+              inpack.push(doc.data());
+              });
+              setPack(inpack)
+    })
     
-    // }, [])
+    }, [])
     return ( <>
       <Head>
       <title>Al Azeem Tour & Travels - Affordable Flight Tickets</title>
@@ -59,8 +59,8 @@ const AboutUs = () => {
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
       </Head>
-      <div className={`${style.wrapperd} dflex-class`}>
-      <div className={style.leftd}>
+      <div className={`${style.wrapper} flex-class`}>
+      <div className={style.left}>
       <div className={`${styles.slide} ${styles.flight} bg-class flex-class`}>
             
             <div className={styles.content}>
@@ -77,7 +77,7 @@ const AboutUs = () => {
 <br></br>
 <br></br>
 <br></br>
-        <div className={styles.body}>
+        <div className={styles.bodys}>
         <Headings h1="International  tickets from Lucknow"></Headings>
         <div className={style.tablewrap}>
         <table className={`${style.p} ${style.table}`}>
@@ -370,11 +370,11 @@ const AboutUs = () => {
 </div>
         </div>
         </div>
-        {/* <div className={style.right}>
+        <div className={style.right}>
           <div className={style.heroWrapper}>
           {pckages && <SliderSingle packages = {pckages}></SliderSingle>}  
           </div>
-        </div> */}
+        </div>
 
         <br></br>
 <br></br>
