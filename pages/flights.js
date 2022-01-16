@@ -64,7 +64,7 @@ const AboutUs = () => {
       <div className={`${styles.slide} ${styles.flight} bg-class flex-class`}>
             
             <div className={styles.content}>
-                <p className={styles.heading}>100% Best Rates guaranteed</p>
+                <p className={styles.heading}>100% Best Rates Guaranteed</p>
                 <p className={styles.text}>A Better Way To Travel.We are the one stop provider for all your travel needs and requirements</p>
             </div>
             <div className={styles.shade}></div>
