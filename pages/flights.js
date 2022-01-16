@@ -64,7 +64,7 @@ const AboutUs = () => {
       <div className={`${styles.slide} ${styles.flight} bg-class flex-class`}>
             
             <div className={styles.content}>
-                <p className={styles.heading}>Affordable Flight Tickets</p>
+                <p className={styles.heading}>100% Best Rates guaranteed</p>
                 <p className={styles.text}>A Better Way To Travel.We are the one stop provider for all your travel needs and requirements</p>
             </div>
             <div className={styles.shade}></div>
@@ -83,30 +83,30 @@ const AboutUs = () => {
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
               <th className={style.th}>Airlines</th>
+              <th className={style.th}>Fare</th>
               <th className={style.th}>Sector</th>
               <th className={style.th}>Dates</th>
               <th className={style.th}>Dep. Time</th>
               <th className={style.th}>Arrival Time</th>
-              <th className={style.th}>Fair</th>
             </tr>
             
             <tr className={style.tr}>
             <td className={style.td}>VISTARA</td>
+            <td className={style.td}>Rs.15,500/-</td>
             <td className={style.td}>DEL DXB</td>
             <td className={style.td}>19/20 JAN</td>
             <td className={style.td}>21.45</td>
             <td className={style.td}>00.30</td>
-            <td className={style.td}>Rs.15,500/-</td>
 
             </tr>
 
             <tr className={style.tr}>
             <td className={style.td}>AIR INDIA EXPRESS </td>
+            <td className={style.td}>Rs.20,000/-</td>
             <td className={style.td}>VNS SHJ</td>
             <td className={style.td}>21/27 JAN</td>
             <td className={style.td}>16.15</td>
             <td className={style.td}>19.00</td>
-            <td className={style.td}>Rs.20,000/-</td>
 
             </tr>
 
@@ -124,7 +124,7 @@ const AboutUs = () => {
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
               <th className={style.th}>Airlines</th>
-              <th className={style.th}>Flight No.</th>
+              <th className={style.th}>Fare</th>
               <th className={style.th}>Dates</th>
               <th className={style.th}>Dep Time & Sector</th>
               <th className={style.th}>Arri Time & Sector</th>
@@ -133,7 +133,7 @@ const AboutUs = () => {
             
             <tr className={style.tr}>
             <td className={style.td}>GOAIR</td>
-            <td className={style.td}>G8-1521</td>
+            <td className={style.td}>-</td>
             <td className={style.td}>21 JAN</td>
             <td className={style.td}>DEL 22:50</td>
             <td className={style.td}>RUH 1:10</td>
@@ -143,7 +143,7 @@ const AboutUs = () => {
 
             <tr className={style.tr}>
               <td className={style.td}>GOAIR</td>
-              <td className={style.td}>G8-1521</td>
+              <td className={style.td}>-</td>
               <td className={style.td}>22 JAN</td>
               <td className={style.td}>DEL 22:50</td>
               <td className={style.td}>RUH 1:10</td>
@@ -152,7 +152,7 @@ const AboutUs = () => {
 
             <tr className={style.tr}>
               <td className={style.td}>GOAIR</td>
-              <td className={style.td}>G8-1521</td>
+              <td className={style.td}>-</td>
               <td className={style.td}>28 JAN</td>
               <td className={style.td}>DEL 22:50</td>
               <td className={style.td}>RUH 1:10</td>
@@ -161,7 +161,7 @@ const AboutUs = () => {
 
             <tr className={style.tr}>
               <td className={style.td}>GOAIR</td>
-              <td className={style.td}>G8-1521</td>
+              <td className={style.td}>-</td>
               <td className={style.td}>29 JAN</td>
               <td className={style.td}>DEL 22:50</td>
               <td className={style.td}>RUH 1:10</td>
@@ -184,7 +184,7 @@ const AboutUs = () => {
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
               <th className={style.th}>Airlines</th>
-              <th className={style.th}>Flight No.</th>
+              <th className={style.th}>Fare</th>
               <th className={style.th}>Dates</th>
               <th className={style.th}>Dep Time & Sector</th>
               <th className={style.th}>Arri Time & Sector</th>
@@ -193,7 +193,7 @@ const AboutUs = () => {
             
             <tr className={style.tr}>
             <td className={style.td}>GOAIR</td>
-            <td className={style.td}>G8-1521</td>
+            <td className={style.td}>-</td>
             <td className={style.td}>21 JAN</td>
             <td className={style.td}>DEL 22:50</td>
             <td className={style.td}>RUH 1:10</td>
@@ -203,7 +203,7 @@ const AboutUs = () => {
 
             <tr className={style.tr}>
               <td className={style.td}>GOAIR</td>
-              <td className={style.td}>G8-1533</td>
+              <td className={style.td}>-</td>
               <td className={style.td}>25 JAN</td>
               <td className={style.td}>DEL 21:30</td>
               <td className={style.td}>DMM 23:15</td>
@@ -223,7 +223,7 @@ const AboutUs = () => {
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
               <th className={style.th}>Airlines</th>
-              <th className={style.th}>Flight No.</th>
+              <th className={style.th}>Fare</th>
               <th className={style.th}>Dates</th>
               <th className={style.th}>Dep Time & Sector</th>
               <th className={style.th}>Arri Time & Sector</th>
@@ -232,7 +232,7 @@ const AboutUs = () => {
             
             <tr className={style.tr}>
             <td className={style.td}>GOAIR</td>
-            <td className={style.td}>G8-1522</td>
+            <td className={style.td}>-</td>
             <td className={style.td}>29 JAN</td>
             <td className={style.td}>LKO 9:25</td>
             <td className={style.td}>RUH 12:10</td>
@@ -242,7 +242,7 @@ const AboutUs = () => {
 
             <tr className={style.tr}>
               <td className={style.td}>GOAIR</td>
-              <td className={style.td}>G8-1522</td>
+              <td className={style.td}>-</td>
               <td className={style.td}>31 JAN</td>
               <td className={style.td}>LKO 9:25</td>
               <td className={style.td}>RUH 12:10</td>
@@ -262,7 +262,7 @@ const AboutUs = () => {
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
               <th className={style.th}>Airlines</th>
-              <th className={style.th}>Flight No.</th>
+              <th className={style.th}>Fare</th>
               <th className={style.th}>Dates</th>
               <th className={style.th}>Dep Time & Sector</th>
               <th className={style.th}>Arri Time & Sector</th>
@@ -271,7 +271,7 @@ const AboutUs = () => {
             
             <tr className={style.tr}>
             <td className={style.td}>FLYDUBAI</td>
-            <td className={style.td}>FZ-452</td>
+            <td className={style.td}>-</td>
             <td className={style.td}>21 JAN</td>
             <td className={style.td}>DEL 11:50</td>
             <td className={style.td}>DXB 14:15</td>
@@ -281,7 +281,7 @@ const AboutUs = () => {
 
             <tr className={style.tr}>
             <td className={style.td}>FLYDUBAI</td>
-            <td className={style.td}>FZ-8135</td>
+            <td className={style.td}>-</td>
             <td className={style.td}>21 JAN</td>
             <td className={style.td}>DXB 18:10</td>
             <td className={style.td}>DMM 18:30</td>
@@ -300,7 +300,7 @@ const AboutUs = () => {
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
               <th className={style.th}>Airlines</th>
-              <th className={style.th}>Flight No.</th>
+              <th className={style.th}>Fare</th>
               <th className={style.th}>Dates</th>
               <th className={style.th}>Dep Time & Sector</th>
               <th className={style.th}>Arri Time & Sector</th>
@@ -309,7 +309,7 @@ const AboutUs = () => {
             
             <tr className={style.tr}>
             <td className={style.td}>FLYDUBAI</td>
-            <td className={style.td}>FZ-452</td>
+            <td className={style.td}>-</td>
             <td className={style.td}>18 JAN</td>
             <td className={style.td}>DEL 11:50</td>
             <td className={style.td}>DXB 14:15</td>
@@ -319,7 +319,7 @@ const AboutUs = () => {
 
             <tr className={style.tr}>
             <td className={style.td}>FLYDUBAI</td>
-            <td className={style.td}>FZ-8261</td>
+            <td className={style.td}>-</td>
             <td className={style.td}>19 JAN</td>
             <td className={style.td}>DXB 8:05</td>
             <td className={style.td}>JED 10:15</td>
@@ -339,7 +339,7 @@ const AboutUs = () => {
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
               <th className={style.th}>Airlines</th>
-              <th className={style.th}>Flight No.</th>
+              <th className={style.th}>Fare</th>
               <th className={style.th}>Dates</th>
               <th className={style.th}>Dep Time & Sector</th>
               <th className={style.th}>Arri Time & Sector</th>
@@ -348,7 +348,7 @@ const AboutUs = () => {
             
             <tr className={style.tr}>
             <td className={style.td}>FLYDUBAI</td>
-            <td className={style.td}>FZ-452</td>
+            <td className={style.td}>-</td>
             <td className={style.td}>27 JAN</td>
             <td className={style.td}>DEL 11:50</td>
             <td className={style.td}>DXB 14:15</td>
@@ -358,7 +358,7 @@ const AboutUs = () => {
 
             <tr className={style.tr}>
             <td className={style.td}>FLYDUBAI</td>
-            <td className={style.td}>FZ-8261</td>
+            <td className={style.td}>-</td>
             <td className={style.td}>28 JAN</td>
             <td className={style.td}>DXB 8:05</td>
             <td className={style.td}>JED 10:15</td>
