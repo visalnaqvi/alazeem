@@ -66,7 +66,7 @@ const Nav = () => {
                     </div>
                 </li>
                 <li className={style.navli}><Link href="/Blogs/Best-places-to-visit-in-India-and-how-much-they-cost"><a className={style.navlia}>Blogs</a></Link></li> 
-                <li className={style.navli}><Link href="/flights"><a className={style.navlia}>Flights</a></Link></li> 
+                <li className={style.navli}><Link href="/flights"><a className={style.navlia}>Flight Fare</a></Link></li> 
               </ul>
               <div className={`${style.searchwrapper} flex-class`}>
                 <label htmlFor="search"><div className={style.searchicon}><Image height={30} width={30} className={style.searchicon} src={ search } alt="" /></div></label>
@@ -90,7 +90,7 @@ const Nav = () => {
                     <a className={style.navlia}>Packages</a>
                   </Link>
                 </li>
-                <li className={style.navli}><Link href="/flights"><a className={style.navlia}>Flights</a></Link></li> 
+                <li className={style.navli}><Link href="/flights"><a className={style.navlia}>Fare Fare</a></Link></li> 
 
               </ul>
 </nav>
