@@ -78,6 +78,84 @@ const AboutUs = () => {
 <br></br>
 <br></br>
         <div className={styles.body}>
+        <Headings h1="New Delhi to Dammam (via Dubai)"></Headings>
+        <div className={style.tablewrap}>
+        <table className={`${style.p} ${style.table}`}>
+            <tr className={style.tr}>
+              <th className={style.th}>Airlines</th>
+              <th className={style.th}>Flight No.(Rs)</th>
+              <th className={style.th}>Dates</th>
+              <th className={style.th}>Dep Time & Sector</th>
+              <th className={style.th}>Arri Time & Sector</th>
+              <th className={style.th}>Seats</th>
+            </tr>
+            
+            <tr className={style.tr}>
+            <td className={style.td}>FLYDUBAI</td>
+            <td className={style.td}>FZ-452</td>
+            <td className={style.td}>21 JAN</td>
+            <td className={style.td}>DEL 11:50</td>
+            <td className={style.td}>DXB 14:15</td>
+            <td className={style.td}>15</td>
+
+            </tr>
+
+            <tr className={style.tr}>
+            <td className={style.td}>FLYDUBAI</td>
+            <td className={style.td}>FZ-8135</td>
+            <td className={style.td}>21 JAN</td>
+            <td className={style.td}>DXB 18:10</td>
+            <td className={style.td}>DMM 18:30</td>
+            <td className={style.td}></td>
+            </tr>
+
+            <tr className={style.tr}>
+            <td className={style.td}>FLYDUBAI</td>
+            <td className={style.td}>FZ-452</td>
+            <td className={style.td}>28 JAN</td>
+            <td className={style.td}>DEL 11:50</td>
+            <td className={style.td}>DXB 14:15</td>
+            <td className={style.td}>15</td>
+
+            </tr>
+
+            <tr className={style.tr}>
+            <td className={style.td}>FLYDUBAI</td>
+            <td className={style.td}>FZ-8135</td>
+            <td className={style.td}>28 JAN</td>
+            <td className={style.td}>DXB 18:10</td>
+            <td className={style.td}>DMM 18:30</td>
+            <td className={style.td}></td>
+            </tr>
+
+           
+            
+            <tr className={style.tr}>
+            <td className={style.td}>FLYDUBAI</td>
+            <td className={style.td}>FZ-452</td>
+            <td className={style.td}>27 JAN</td>
+            <td className={style.td}>DEL 11:50</td>
+            <td className={style.td}>DXB 14:15</td>
+            <td className={style.td}>15</td>
+
+            </tr>
+
+            <tr className={style.tr}>
+            <td className={style.td}>FLYDUBAI</td>
+            <td className={style.td}>FZ-8135</td>
+            <td className={style.td}>27 JAN</td>
+            <td className={style.td}>DXB 18:10</td>
+            <td className={style.td}>DMM 18:30</td>
+            <td className={style.td}></td>
+            </tr>
+
+        </table></div>
+        <br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+        
         <Headings h1="International  tickets from Lucknow"></Headings>
         <div className={style.tablewrap}>
         <table className={`${style.p} ${style.table}`}>
@@ -257,7 +335,7 @@ const AboutUs = () => {
 <br></br>
 
 
-        <Headings h1="New Delhi to Dammam (via Dubai)"></Headings>
+        {/* <Headings h1="New Delhi to Dammam (via Dubai)"></Headings>
         <div className={style.tablewrap}>
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
@@ -293,7 +371,7 @@ const AboutUs = () => {
 <br></br>
 <br></br>
 <br></br>
-<br></br>
+<br></br> */}
 
         <Headings h1="New Delhi to Jeddah (via Dubai)"></Headings>
         <div className={style.tablewrap}>
