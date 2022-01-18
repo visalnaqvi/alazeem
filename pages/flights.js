@@ -94,7 +94,7 @@ const AboutUs = () => {
             <tr className={style.tr}>
             <td className={style.td}>FLYDUBAI</td>
             <td className={style.td}>FZ-452</td>
-            <td className={style.td}>25,000</td>
+            <td className={style.td}>25,500</td>
             <td className={style.td}>21 JAN</td>
             <td className={style.td}>DEL 11:50</td>
             <td className={style.td}>DXB 14:15</td>
@@ -119,7 +119,7 @@ const AboutUs = () => {
             <tr className={style.tr}>
             <td className={style.td}>FLYDUBAI</td>
             <td className={style.td}>FZ-452</td>
-            <td className={style.td}>25,000</td>
+            <td className={style.td}>25,500</td>
 
             <td className={style.td}>27 JAN</td>
             <td className={style.td}>DEL 11:50</td>
@@ -141,7 +141,7 @@ const AboutUs = () => {
             <tr className={style.tr}>
             <td className={style.td}>FLYDUBAI</td>
             <td className={style.td}>FZ-452</td>
-            <td className={style.td}>25,000</td>
+            <td className={style.td}>25,500</td>
 
             <td className={style.td}>28 JAN</td>
             <td className={style.td}>DEL 11:50</td>
