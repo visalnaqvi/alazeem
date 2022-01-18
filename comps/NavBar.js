@@ -90,7 +90,7 @@ const Nav = () => {
                     <a className={style.navlia}>Packages</a>
                   </Link>
                 </li>
-                <li className={style.navli}><Link href="/flights"><a className={style.navlia}>Fare Fare</a></Link></li> 
+                <li className={style.navli}><Link href="/flights"><a className={style.navlia}>Flight Fare</a></Link></li> 
 
               </ul>
 </nav>
