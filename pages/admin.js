@@ -112,7 +112,7 @@ const AboutUs = () => {
         <p className={admin.head}>New Table</p>
         <div className="flex-class">
         <input className={`${admin.input} input`} type="text" placeholder="Heading"></input>
-        <button className={`${admin.change} change`}>Submit</button>
+        <button className={`${admin.btn} change`}>Submit</button>
         </div>
         <div className={`${admin.thebox} thebox`}>
           <Headings h1="New Delhi to Jeddah (via Dubai)"></Headings>
@@ -150,6 +150,7 @@ const AboutUs = () => {
 
         <div className="flex-class">
           <button
+          className={admin.btn}
             onClick={() => {
               const table = document.querySelectorAll(".demo tbody")[0];
               const NoOfColumns = document.querySelectorAll(".demo tr")[0].childNodes;
@@ -168,6 +169,7 @@ const AboutUs = () => {
           </button>
 
           <button
+          className={admin.btn}
             onClick={() => {
               const FirstTR = document.querySelectorAll(".demo tr")[0];
               FirstTR.innerHTML += `<th class=${style.th}>Item</th>`;
@@ -185,7 +187,7 @@ const AboutUs = () => {
         <br></br>
         <br></br>
         <br></br>
-        <button onClick={addData}>Save</button>
+        <button className={admin.btn} onClick={addData}>Save</button>
       </div>
       <br></br>
       <br></br>
