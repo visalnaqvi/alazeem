@@ -8,45 +8,37 @@ import styles from "../styles/Hero.module.css";
 import SliderSingle from "../comps/Packages/SliderSingle";
 import firebase from 'firebase/app';
 import { useEffect, useState } from "react";
+import "firebase/firestore";
+
 
 const AboutUs = () => {
-    const infoText = "We believe in open and honest communications - and no hidden agendas. We believe that everyone will do the right thing and act with integrity and fairness We respect each others time and effort We treat others the way we want to be treated We are always here to help each other experience the best in travel"
-    const InfoHeading = "In order to promote and reward excellence in travel, our community is guided by the following core values:"
-    const headingMain = 'Our foundation';
-    const textMain ="We present before you AL-AZEEM TOUR & TRAVELS as one stop platform for all your travel needs..With a focus on customer service, at Al-Azeem Tour we offer a fantastic range of trips to meet your budget,ambitions and expectations. All of us here in the Al-Azeem team, work tirelessly to ensure that your trip is acarefree, successful and enjoyable experience from start to finish. That means attention to your travel plans,accommodation, specialist inclusions and leisure time as well as to health and safety, financial protection andtravel insurance.Specialist knowledge and experience is only half of the story. What distinguishes ous is our passion for thetrips we organise, for the destinations that we feature:"
-    const firstParaHeading = "What we do";
-    const firstParaText = "We are very excited to introduce AL - AZEEM TOUR & TRAVELS. as the one stop provider for all your travel needs and requirements. We label ourselves as leading, innovative, and highly efficient and look forward to demonstrate these qualities at the earliest possible chance. Since established our primary aim was to provide quality travel services to business and leisure travelers. The agency continued to grow and branch out its interests to rise as one of the exponents in the travel industry. At Al Azeem, we excel at helping you get your vacation planned. Not just any vacation, but exceptional vacations filled with inspiring and life-enriching experiences.";
-    const ourvaluesheading = "Our values and community";
-    const ourvaluestext = "Our community is one in which discerning travelers seek the best in quality, authenticity and value, and travel companies strive to deliver the same. The best travel specialists receive the recognition they deserve and consequently get more business. Travelers and travel specialists come to Al Azeem to help each other experience the very best in travel - from both their perspectives.";
-    // const [pckages, setPack] = useState();
-    // const config={
-    //   apiKey: "AIzaSyBwGQoCe0wTlR61fueDKA0yA4n5xmMfPrg",
-    //   authDomain: "buttons-2dc4a.firebaseapp.com",
-    //   databaseURL: "https://buttons-2dc4a-default-rtdb.firebaseio.com",
-    //   projectId: "buttons-2dc4a",
-    //   storageBucket: "buttons-2dc4a.appspot.com",
-    //   messagingSenderId: "241629842019",
-    //   appId: "1:241629842019:web:6c248c713e6a27cd494656",
-    //   measurementId: "G-QK6TC8JTHZ"
-    // }
+    const [pckages, setPack] = useState();
+    const config={
+      apiKey: "AIzaSyBwGQoCe0wTlR61fueDKA0yA4n5xmMfPrg",
+      authDomain: "buttons-2dc4a.firebaseapp.com",
+      databaseURL: "https://buttons-2dc4a-default-rtdb.firebaseio.com",
+      projectId: "buttons-2dc4a",
+      storageBucket: "buttons-2dc4a.appspot.com",
+      messagingSenderId: "241629842019",
+      appId: "1:241629842019:web:6c248c713e6a27cd494656",
+      measurementId: "G-QK6TC8JTHZ"
+    }
     
-    // if(!firebase.apps.length){
-    //   firebase.initializeApp(config)
+    if(!firebase.apps.length){
+      firebase.initializeApp(config)
       
-    // }else{ firebase.app() };
-    // const db = firebase.firestore()
-    // useEffect(()=>{
+    }else{ firebase.app() };
+    const db = firebase.firestore()
+    useEffect(()=>{
     
-    // db.collection("packages")
-    // .onSnapshot((querySnapshot) => {
-    //       const inpack = []
-    //       querySnapshot.forEach((doc) => {
-    //           inpack.push(doc.data());
-    //           });
-    //           setPack(inpack)
-    // })
-    
-    // }, [])
+      db.collection("fares").onSnapshot((querySnapshot) => {
+        const inpack = [];
+        querySnapshot.forEach((doc) => {
+          inpack.push(doc.data());
+        });
+        setPack(inpack);
+      });    
+    }, [db])
     return ( <>
       <Head>
       <title>Al Azeem Tour & Travels - Affordable Flight Tickets</title>
@@ -77,7 +69,12 @@ const AboutUs = () => {
 <br></br>
 <br></br>
 <br></br>
-        <div className={styles.body}>
+        <div className={`${styles.body} body`}>
+        {pckages && pckages.forEach((p)=>{
+          console.log(p);
+        document.querySelector('.body').innerHTML += p.html;
+        console.log("1");
+      })}
         <Headings h1="New Delhi to Dammam (via Dubai)"></Headings>
         <div className={style.tablewrap}>
         <table className={`${style.p} ${style.table}`}>
@@ -105,7 +102,7 @@ const AboutUs = () => {
             <tr className={style.tr}>
             <td className={style.td}>FLYDUBAI</td>
             <td className={style.td}>FZ-8135</td>
-                        <td className={style.td}></td>
+            <td className={style.td}></td>
             <td className={style.td}>21 JAN</td>
             <td className={style.td}>DXB 18:10</td>
             <td className={style.td}>DMM 18:30</td>
@@ -384,7 +381,7 @@ const AboutUs = () => {
 <br></br>
 <br></br> */}
 
-        <Headings h1="New Delhi to Jeddah (via Dubai)"></Headings>
+        {/* <Headings h1="New Delhi to Jeddah (via Dubai)"></Headings>
         <div className={style.tablewrap}>
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
@@ -421,9 +418,9 @@ const AboutUs = () => {
 <br></br>
 <br></br>
 <br></br>
-<br></br>     
+<br></br>      */}
 
-        <Headings h1="New Delhi to Jeddah (via Dubai)"></Headings>
+        {/* <Headings h1="New Delhi to Jeddah (via Dubai)"></Headings>
         <div className={style.tablewrap}>
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
@@ -455,8 +452,12 @@ const AboutUs = () => {
             </tr>
 
         </table>
-
-</div>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+</div> */}
         </div>
         </div>
         {/* <div className={style.right}>

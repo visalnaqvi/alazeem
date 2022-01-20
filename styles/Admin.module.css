@@ -1,0 +1,21 @@
+.input{
+    padding: 10px;
+    width: 400px;
+    font-size: large;
+}
+
+.change{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.thebox{
+    border: 4px dotted #d3d3d3;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.head{
+  font-size: xx-large;
+  margin-bottom: 30px;
+}
