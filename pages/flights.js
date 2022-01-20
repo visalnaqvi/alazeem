@@ -304,7 +304,7 @@ const AboutUs = () => {
 <br></br>
 <br></br>
 
-        <Headings h1="Lucknow to Riyadh"></Headings>
+        {/* <Headings h1="Lucknow to Riyadh"></Headings>
         <div className={style.tablewrap}>
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
@@ -340,7 +340,7 @@ const AboutUs = () => {
 <br></br>
 <br></br>
 <br></br>
-<br></br>
+<br></br> */}
 
 
         {/* <Headings h1="New Delhi to Dammam (via Dubai)"></Headings>
