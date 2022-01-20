@@ -48,16 +48,29 @@ const AboutUs = () => {
         elem = e.target;
       });
     });
+
+
+    
+    
   }, [db]);
   function addData() {
     // Add a new document in collection "cities"
+    const status = document.querySelector(".status");
     db.collection("fares")
       .doc()
       .set({
         html: document.querySelector('.thebox').innerHTML,
       })
       .then(() => {
-        console.log("Document successfully written!");
+        status.style.top = '0%';
+        console.log(status)
+        console.log(status.style.top)
+        setTimeout(()=>{
+          status.style.top = '-100%';
+          console.log(status)
+          console.log(status.style.top)
+  
+        },3000)
       })
       .catch((error) => {
         console.error("Error writing document: ", error);
@@ -76,6 +89,7 @@ const AboutUs = () => {
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
       </Head>
 
+
       <div className={`${styles.slide} ${styles.flight} bg-class flex-class`}>
         <div className={styles.content}>
           <p className={styles.heading}>100% Best Rates Guaranteed</p>
@@ -93,6 +107,8 @@ const AboutUs = () => {
       <br></br>
       <br></br>
       <div className={`${styles.body} body`}>
+      <div className={`${admin.status} status`}>Submitted Successfully</div>
+
         <p className={admin.head}>New Table</p>
         <div className="flex-class">
         <input className={`${admin.input} input`} type="text" placeholder="Heading"></input>
@@ -105,7 +121,7 @@ const AboutUs = () => {
               <thead>
                 <tr className={style.tr}>
                   <th className={style.th}>Airlines</th>
-                  <th className={style.th}>Flight No.(Rs)</th>
+                  <th className={style.th}>Flight No.</th>
                   <th className={style.th}>Dates</th>
                   <th className={style.th}>Dep Time & Sector</th>
                   <th className={style.th}>Arri Time & Sector</th>

@@ -75,7 +75,7 @@ const AboutUs = () => {
         document.querySelector('.body').innerHTML += p.html;
         console.log("1");
       })}
-        <Headings h1="New Delhi to Dammam (via Dubai)"></Headings>
+        {/* <Headings h1="New Delhi to Dammam (via Dubai)"></Headings>
         <div className={style.tablewrap}>
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
@@ -162,8 +162,8 @@ const AboutUs = () => {
 <br></br>
 <br></br>
 <br></br>
-<br></br>
-        
+<br></br> */}
+{/*         
         <Headings h1="International  tickets from Lucknow"></Headings>
         <div className={style.tablewrap}>
         <table className={`${style.p} ${style.table}`}>
@@ -204,8 +204,8 @@ const AboutUs = () => {
 <br></br>
 <br></br>
 <br></br>
-<br></br>
-        <Headings h1="New Delhi to Riyadh"></Headings>
+<br></br> */}
+        {/* <Headings h1="New Delhi to Riyadh"></Headings>
         <div className={style.tablewrap}>
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
@@ -262,10 +262,10 @@ const AboutUs = () => {
 <br></br>
 <br></br>
 <br></br>
-<br></br>
+<br></br> */}
         
 
-        <Headings h1="New Delhi to Dammam"></Headings>
+        {/* <Headings h1="New Delhi to Dammam"></Headings>
         <div className={style.tablewrap}>
         <table className={`${style.p} ${style.table}`}>
             <tr className={style.tr}>
@@ -302,7 +302,7 @@ const AboutUs = () => {
 <br></br>
 <br></br>
 <br></br>
-<br></br>
+<br></br> */}
 
         {/* <Headings h1="Lucknow to Riyadh"></Headings>
         <div className={style.tablewrap}>
