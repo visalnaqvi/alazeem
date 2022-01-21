@@ -99,7 +99,7 @@ const AboutUs = () => {
 
         <p className={admin.head}>New Table</p>
         <div className="flex-class">
-        <input className={`${admin.input} input`} type="text" placeholder="Heading"></input>
+        <input className={`${admin.input} input`} type="text" placeholder="Click on an item below to change its text"></input>
         <button className={`${admin.btn} change`}>Submit</button>
         </div>
         <div className={`${admin.thebox} thebox`}>

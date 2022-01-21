@@ -31,7 +31,7 @@ const AboutUs = () => {
     const db = firebase.firestore()
     useEffect(()=>{
     
-      db.collection("fares").onSnapshot((querySnapshot) => {
+      db.collection("fares").orderBy("id","desc").onSnapshot((querySnapshot) => {
         const inpack = [];
         querySnapshot.forEach((doc) => {
           inpack.push(doc.data());
