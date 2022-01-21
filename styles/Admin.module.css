@@ -7,6 +7,13 @@
 .btn{
     padding: 10px;
     margin-left: 10px;
+    width: 200px;
+    background-color:cornflowerblue;
+    border:none;
+    color: #fff;
+    font-weight: 600;
+    height: 45px;
+    border-radius: 5px;
 }
 
 .thebox{

@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 
 const AboutUs = () => {
   const [pckages, setPack] = useState();
+  var len=0;
   const config = {
     apiKey: "AIzaSyBwGQoCe0wTlR61fueDKA0yA4n5xmMfPrg",
     authDomain: "buttons-2dc4a.firebaseapp.com",
@@ -27,13 +28,19 @@ const AboutUs = () => {
   }
   const db = firebase.firestore();
   useEffect(() => {
-    db.collection("fares").onSnapshot((querySnapshot) => {
-      const inpack = [];
+    const inpack = [];
+    db.collection("fares").orderBy("id","desc").onSnapshot((querySnapshot) => {
+      len = querySnapshot.size;
+      console.log(len);
       querySnapshot.forEach((doc) => {
         inpack.push(doc.data());
       });
-      setPack(inpack);
-    });
+      setPack(inpack);       
+    })
+
+
+
+
 
     const box = document.querySelectorAll(".thebox");
     const input = document.querySelector(".input");
@@ -60,16 +67,14 @@ const AboutUs = () => {
       .doc()
       .set({
         html: document.querySelector('.thebox').innerHTML,
+        id : len+1,
       })
       .then(() => {
         status.style.top = '0%';
-        console.log(status)
-        console.log(status.style.top)
+       
         setTimeout(()=>{
           status.style.top = '-100%';
-          console.log(status)
-          console.log(status.style.top)
-  
+      
         },3000)
       })
       .catch((error) => {
@@ -89,24 +94,7 @@ const AboutUs = () => {
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
       </Head>
 
-
-      <div className={`${styles.slide} ${styles.flight} bg-class flex-class`}>
-        <div className={styles.content}>
-          <p className={styles.heading}>100% Best Rates Guaranteed</p>
-          <p className={styles.text}>
-            A Better Way To Travel.We are the one stop provider for all your
-            travel needs and requirements
-          </p>
-        </div>
-        <div className={styles.shade}></div>
-      </div>
-
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <div className={`${styles.body} body`}>
+      <div className={`${styles.body} bodym`}>
       <div className={`${admin.status} status`}>Submitted Successfully</div>
 
         <p className={admin.head}>New Table</p>
@@ -152,8 +140,8 @@ const AboutUs = () => {
           <button
           className={admin.btn}
             onClick={() => {
-              const table = document.querySelectorAll(".demo tbody")[0];
-              const NoOfColumns = document.querySelectorAll(".demo tr")[0].childNodes;
+              const table = document.querySelector(".bodym .demo tbody");
+              const NoOfColumns = document.querySelector(".bodym .demo tr").childNodes;
               console.log(NoOfColumns);
 
               var HTML = `<tr class=${style.tr}>`;
@@ -165,17 +153,17 @@ const AboutUs = () => {
               table.innerHTML += HTML + "</tr>";
             }}
           >
-            Add Row{" "}
+            Add Row
           </button>
 
           <button
           className={admin.btn}
             onClick={() => {
-              const FirstTR = document.querySelectorAll(".demo tr")[0];
+              const FirstTR = document.querySelector(".bodym .demo tr");
               FirstTR.innerHTML += `<th class=${style.th}>Item</th>`;
               console.log(FirstTR.innerHTML);
 
-              const RestTR = document.querySelectorAll(".demo tbody tr");
+              const RestTR = document.querySelectorAll(".bodym .demo tbody tr");
               RestTR.forEach((tr) => {
                 tr.innerHTML += `<td class=${style.td}>data</td>`;
               });
@@ -194,12 +182,16 @@ const AboutUs = () => {
       <br></br>
       <br></br>
       <br></br>
-
-
-      {pckages && pckages.forEach((p)=>{
-        // document.querySelector('.body').innerHTML += "<table>"+p.html+"</table>";
-        
+      <div className={`${styles.body} body`}>
+        {pckages && pckages.forEach((p)=>{
+     
+            
+        document.querySelector('.body').innerHTML += `<div class=${admin.thebox}>`+ p.html+ '</div>';
       })}
+        </div>
+
+
+     
     </>
   );
 };
