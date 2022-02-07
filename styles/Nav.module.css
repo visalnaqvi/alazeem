@@ -218,11 +218,24 @@
       padding:20px 0;
     }
 
+    .contactdown{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      padding-top: 15px;
+    }
+
+    .contactdown .icondiv{
+      justify-content: center;
+    }
+
     .btn{
       width:130px
     }
 
-    .contact{
+    .contactdown .contact{
       display: block;
     }
 

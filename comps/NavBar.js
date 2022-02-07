@@ -83,13 +83,28 @@ const Nav = () => {
                 <div className={`${style.numbox} flex-class`}>
                 <p className={style.num}>9205184001,</p>  
                 <p className={style.num}>9811042458,</p>  
-                <p className={style.num}>9205184001</p>  
+                <p className={style.num}>9811136987</p>  
                 </div>
               </div>
               <a target="blank" href="https://www.facebook.com/AlAzeemTravels/">
 
               <div className={style.facebook}><Image width={43} height={43} className="facebook" src={Facebook} alt="facebook icon" /></div></a>
               <Link href="/contactus"><a><button className={`${style.btn} btn`}>Contact Us</button></a></Link>
+</nav>
+
+<nav className={`${style.nav} ${style.down} ${style.contactdown} flex-class`}>
+<div className={style.contact}>
+                <div className={`${style.icondiv} flex-class`}>
+                <Image src={phone} width={15} height={15}></Image>
+
+                <p className={style.head}>CALL US NOW</p>
+                </div>
+                <div className={`${style.numbox} flex-class`}>
+                <p className={style.num}>9205184001,</p>  
+                <p className={style.num}>9811042458,</p>  
+                <p className={style.num}>9811136987</p>  
+                </div>
+              </div>
 </nav>
 
 
