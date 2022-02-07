@@ -142,6 +142,24 @@
     border-bottom-right-radius: 10px;
   }
   
+  .head{
+    font-size: small;
+    font-weight: 700;
+    color: #00000060;
+    margin-left: 3px;
+  }
+
+  .icondiv{
+    justify-content: flex-start;
+  }
+
+  .num{
+    font-weight: 600;
+    color: #00000090;
+    /* text-align: center; */
+    
+  }
+  
 
   @media only screen and (max-width:1144px){
     .searchwrapper{

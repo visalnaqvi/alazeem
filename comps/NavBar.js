@@ -6,6 +6,8 @@ import Facebook from "../public/icons/facebook.svg"
 import { useEffect } from 'react'; 
 import Image from "next/image"
 import style from "../styles/Nav.module.css"
+import phone from "../public/icons/phone.svg"
+import image from 'next/image';
 const Nav = () => {
 
   useEffect(()=>{
@@ -68,9 +70,18 @@ const Nav = () => {
                 <li className={style.navli}><Link href="/Blogs/Best-places-to-visit-in-India-and-how-much-they-cost"><a className={style.navlia}>Blogs</a></Link></li> 
                 <li className={style.navli}><Link href="/flights"><a className={style.navlia}>Flight Fare</a></Link></li> 
               </ul>
-              <div className={`${style.searchwrapper} flex-class`}>
+              {/* <div className={`${style.searchwrapper} flex-class`}>
                 <label htmlFor="search"><div className={style.searchicon}><Image height={30} width={30} className={style.searchicon} src={ search } alt="" /></div></label>
                 <input className={style.input} type="text" placeholder="Seach Destination" id="search" />
+              </div> */}
+              <div className={style.contact}>
+                <div className={`${style.icondiv} flex-class`}>
+                <Image src={phone} width={15} height={15}></Image>
+
+                <p className={style.head}>CALL US NOW</p>
+                </div>
+                <p className={style.num}>9205184001, 9811042458, 9811136987</p>  
+                <p className={style.num}></p>
               </div>
               <a target="blank" href="https://www.facebook.com/AlAzeemTravels/">
 
