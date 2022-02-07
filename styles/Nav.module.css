@@ -153,9 +153,16 @@
     justify-content: flex-start;
   }
 
+  .numbox{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
   .num{
+    min-width: 100px;
     font-weight: 600;
     color: #00000090;
+    margin: 0 3px;
     /* text-align: center; */
     
   }
@@ -165,17 +172,30 @@
     .searchwrapper{
       width: 260px;
     }
+
+    .numbox{
+      width: min-content;
+
+    }
   }
 
   @media only screen and (max-width:1065px){
-    .searchwrapper{
-      width: 180px;
+    .num{
+      font-size: x-small;
+    }
+
+    .navli{
+        margin: 0;
     }
   }
 
   @media only screen and (max-width:950px){
     .searchwrapper{
      display:none
+    }
+
+    .contact{
+      display: none;
     }
   }
 
@@ -202,4 +222,22 @@
       width:130px
     }
 
+    .contact{
+      display: block;
+    }
+
+    .numbox{
+      width: auto;
+    }
+
+    .num{
+      font-size: medium;
+    }
+
+}
+
+@media only screen and (max-width:530px){
+  .contact{
+    display: none;
+  }
 }

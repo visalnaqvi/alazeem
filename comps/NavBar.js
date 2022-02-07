@@ -80,8 +80,11 @@ const Nav = () => {
 
                 <p className={style.head}>CALL US NOW</p>
                 </div>
-                <p className={style.num}>9205184001, 9811042458, 9811136987</p>  
-                <p className={style.num}></p>
+                <div className={`${style.numbox} flex-class`}>
+                <p className={style.num}>9205184001,</p>  
+                <p className={style.num}>9811042458,</p>  
+                <p className={style.num}>9205184001</p>  
+                </div>
               </div>
               <a target="blank" href="https://www.facebook.com/AlAzeemTravels/">
 
