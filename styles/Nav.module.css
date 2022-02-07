@@ -186,7 +186,7 @@
       justify-content: center;
     }
 
-    .num:last-child{
+    .middle{
       display: none;
     }
   }
@@ -246,7 +246,7 @@
       font-size: medium;
     }
 
-    .num:last-child{
+    .middle{
       display: none;
     }
 

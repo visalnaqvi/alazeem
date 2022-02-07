@@ -82,7 +82,7 @@ const Nav = () => {
                 </div>
                 <div className={`${style.numbox} flex-class`}>
                 <p className={style.num}>9205184001,</p>  
-                <p className={style.num}>9811042458,</p>  
+                <p className={`${style.num} ${style.middle}`}>9811042458,</p>  
                 <p className={style.num}>9811136987</p>  
                 </div>
               </div>
