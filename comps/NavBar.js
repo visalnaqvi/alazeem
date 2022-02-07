@@ -91,7 +91,7 @@ const Nav = () => {
               <div className={style.facebook}><Image width={43} height={43} className="facebook" src={Facebook} alt="facebook icon" /></div></a>
               <Link href="/contactus"><a><button className={`${style.btn} btn`}>Contact Us</button></a></Link>
 </nav>
-
+{/* 
 <nav className={`${style.nav} ${style.down} ${style.contactdown} flex-class`}>
 <div className={style.contact}>
                 <div className={`${style.icondiv} flex-class`}>
@@ -105,7 +105,7 @@ const Nav = () => {
                 <p className={style.num}>9811136987</p>  
                 </div>
               </div>
-</nav>
+</nav> */}
 
 
 <nav className={`${style.nav} ${style.down} flex-class`}>
