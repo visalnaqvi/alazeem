@@ -130,7 +130,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(../public/images/popupflights-desktop.jpg);
+  background-image: url(../public/images/iraq_pop_up.jpg);
   cursor: pointer;
 }
 
@@ -158,7 +158,7 @@
   }
 
   .popupimg{
-    background-image: url(../public//images/popupflights-mobile.jpg);
+    background-image: url(../public//images/iraq_pop_up.jpg);
   }
 
 }
