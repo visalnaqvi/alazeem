@@ -115,7 +115,7 @@
 
 @media only screen and (max-width:500px){
   .slider{
-    height:40vh;
+    height:330px;
   }
 
   .img3content{
@@ -123,8 +123,10 @@
   }
 
   .img1 {
+    background-size: contain;
+    background-color: #103B7D;
     height: 100%;
     width: 100%;
-    background-image: url(../public/images/umrah/3.jpg);
+    background-image: url(../public/images/umrah/5.png);
   }
 }
