@@ -62,7 +62,7 @@ const Nav = () => {
                     <ul className={`${style.ul} ${style.right}`}>
                       <li className={style.li}><Link href="/Tour-Packages/Mcleodganj-Tour-Package"><a className={style.a}>Mcleodganj Tour Package</a></Link></li>
                       <li className={style.li}><Link href=""><a className={style.a}>Saudi Arabia Tour Package</a></Link></li>
-                      <li className={style.li}><Link href=""><a className={style.a}>Umrah Tour Package</a></Link></li>
+                      <li className={style.li}><Link href="/umrahPackage"><a className={style.a}>Umrah Tour Package</a></Link></li>
                     </ul>
                     </div>
                     </div>
@@ -115,11 +115,15 @@ const Nav = () => {
                     <a className={style.navlia}>About</a>
                   </Link>
                 </li>
+                <li className={style.navli}><Link className="flex-class" href="/umrahPackage">
+                    <a className={style.navlia}>Umrah Packages</a>
+                  </Link>
+                </li>
                 <li className={style.navli}><Link className="flex-class" href="/Tour-Packages">
                     <a className={style.navlia}>Packages</a>
                   </Link>
                 </li>
-                <li className={style.navli}><Link href="/flights"><a className={style.navlia}>Flight Fare</a></Link></li> 
+                
 
               </ul>
 </nav>
