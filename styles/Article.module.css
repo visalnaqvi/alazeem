@@ -11,9 +11,11 @@
   
   .articletitle {
     font-size: 45px;
+    word-break: break-word;
     margin-bottom: 20px;
     width:100%;
     font-weight:400;
+    line-height: 50px;
   }
 
   .articletitlecenter {
@@ -36,9 +38,20 @@
     text-align: center;
     width: 100%;
     /* margin: 20px; */
-    line-height: 30px;
+    line-height: 2rem;
     letter-spacing: 1px;
     font-weight:400;
+    font-size: 1.2rem;
+  }
+
+  .newtext{
+    font-size: 1.3rem;
+    line-height:2.5rem;
+    text-align: justify;
+  }
+
+  .newtext strong{
+    color: rgb(77, 77, 77);
   }
 
   @media only screen and (max-width:500px){
@@ -51,6 +64,7 @@
       width:90%;
     }
     .articletitle , .articletitlecenter{
-      font-size: 40px;
+      font-size: 35px;
+      font-weight: 500;
     }
   }

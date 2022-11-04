@@ -1,0 +1,130 @@
+.slider {
+  overflow: hidden;
+  height: 80vh;
+  width: 100%;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  /* background-color: red; */
+  border-radius: 0;
+  position: relative;
+  box-shadow: 5px 8px 20px#00000040;
+}
+
+.innerwrapper {
+  width: 300%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0;
+  transition: 0.4s ease-in-out;
+}
+.img1 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../public/images/umrah/4.png);
+}
+.img2 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../public/images/umrah/1.jpg);
+}
+
+.img3 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../public/images/umrah/2.jpg);
+}
+
+
+
+.img3content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 60px;
+}
+
+.content {
+  font-size: 38px;
+  width: 50%;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.span {
+  font-size: 60px;
+  color: #fff;
+  text-decoration: underline #257aa4;
+}
+
+.contenttag {
+  font-size: 22px;
+  width: 50%;
+  color: #fff;
+}
+
+.btnbg {
+  letter-spacing: 1.2px;
+  outline: none;
+  height: 40px;
+  margin-top: 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: #fff;
+  padding: 0 20px;
+  font-weight: 600;
+}
+
+.btnw {
+  letter-spacing: 1.2px;
+  outline: none;
+  height: 40px;
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: transparent;
+  padding: 0 10px;
+  font-weight: 700;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.dots{
+    padding: 0 10px;
+    justify-content: flex-start;
+}
+
+.dotwrap{
+    margin-left: 6px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: #3f87ed30;
+}
+
+
+
+.dotin{
+    pointer-events: none;
+}
+
+@media only screen and (max-width:500px){
+  .slider{
+    height:40vh;
+  }
+
+  .img3content{
+    display:none
+  }
+
+  .img1 {
+    height: 100%;
+    width: 100%;
+    background-image: url(../public/images/umrah/3.jpg);
+  }
+}

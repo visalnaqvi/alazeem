@@ -89,7 +89,7 @@ const Nav = () => {
               <a target="blank" href="https://www.facebook.com/AlAzeemTravels/">
 
               <div className={style.facebook}><Image width={43} height={43} className="facebook" src={Facebook} alt="facebook icon" /></div></a>
-              <Link href="/contactus"><a><button className={`${style.btn} btn`}>Contact Us</button></a></Link>
+              <Link href="/umrahPackage"><a><button className={`${style.btn} btn`}>UMRAH PACKAGE</button></a></Link>
 </nav>
 {/* 
 <nav className={`${style.nav} ${style.down} ${style.contactdown} flex-class`}>
