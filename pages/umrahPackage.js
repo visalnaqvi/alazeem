@@ -124,38 +124,25 @@ Following are the four acts of <strong>Umrah Al Mufradah</strong> that involve f
 <br></br><br></br>
 <h3 className={style.articletitle}>TAWAF &#x2212; CIRCUMAMBULATION OF THE HOLY KAABA IN WORSHIP</h3>
 
-<p className={style.newtext}>After assuming a state of Ihram, the Muhrim performs the obligatory act of <strong>Tawaf in the Al Masjid Al Haram.</strong> The Muhrim must stop reciting the Talbiyah and start circumambulation the holy Kaaba seven times (as a reminder of the angels that circumambulate the celestial realms of <strong>Allah&#x02019;s house, al-Bayt al-Ma&#x02019;mur),</strong> by setting their right foot in and making Idtiba&#x02019;a. Men must bare their right shoulder by placing the Rida under their right arm and the lower parts of it over their left shoulder during the entirety of Tawaf.</p>
+<p className={style.newtext}>After assuming a state of Ihram, the Muhrim performs the obligatory act of <strong>Tawaf in the Al Masjid Al Haram.</strong> The Muhrim must stop reciting the Talbiyah and start circumambulation the holy Kaaba seven times (as a reminder of the angels that circumambulate the celestial realms of <strong>Allah&#x02019;s house, al-Bayt al-Ma&#x02019;mur).</strong></p>
 <br></br>
 <p className={style.newtext}> They must circumambulate the <strong>Masjid Al Haram</strong> by starting from the Black Stone and completing it there at with the sincere intention of seeking closeness to <strong>Allah</strong>. The worship is validated only if the pilgrim recites the prescribed du&#x02019;aa (supplication) during each one of the seven circumambulations.</p>
 <br></br>
-<p className={style.newtext}>Pilgrims can to Istilam (kiss or gesture towards the Black Stone), if he/she can during the circumambulations. Otherwise, they can touch it with their right hand and start moving towards completing the seven anticlockwise circumambulations while reciting du&#x02019;aa with the holy Kaaba on their left, without any interruptions or distractions.</p>
-<br></br>
-<p className={style.newtext}>During the first three circumambulations, only the men must make Ramal (fast-paced walk on entry into the <strong>holy Kaaba</strong>) and the remaining four are completed by walking (at a normal pace) between the al Rukn al Yamani (the Rukn of the <strong>holy Kaaba</strong>) and the Black Stone.</p>
-<br></br>
-<p className={style.newtext}>The last circumambulation ends exactly where the first one began, to ensure that the pilgrim completed all seven rounds without moving or falling behind a single step or more. And with the seventh round of circumambulation and performance of eight Istilam, the state of Tawaf concludes. At this point, men must cover their shoulders with the upper part of the Ihram sheet.</p>
+
+<p className={style.newtext}>The last circumambulation ends exactly where the first one began, to ensure that the pilgrim completed all seven rounds without moving or falling behind a single step or more. And with the seventh round of circumambulation and performance of eight Istilam, the state of Tawaf concludes.</p>
 <br></br>
 <p className={style.newtext}>Upon completion of <strong>Tawaf,</strong> pilgrims can go behind Maqam Ibrahim (the station of Ibrahim) and perform <strong>Salat of Tawaf</strong> to offer the two short rak&#x02019;aa&#x02019;s and thereafter drink the holy Zamzam water from Well of Zamzam in the basement of the Sacred Mosque while supplicating to <strong>Allah.</strong></p>
 <br></br>
-<p className={style.newtext}>After drinking Zamzam, pilgrims then proceed to the Multazam, a section of the <strong>holy Kaaba</strong> between the Black Stone and the door of the Kaaba, to supplicate to Allah and offer du&#x02019;aa.</p>
 <br></br>
 <br></br>
-<br></br>
-<h3 className={style.articletitle}>TSA&#x02019;IY &#x2212; WALKING SEVEN TIMES BETWEEN THE HILLS OF SAFA AND MARWAH IN WORSHIP</h3>
+<h3 className={style.articletitle}>SA&#x02019;IY &#x2212; WALKING SEVEN TIMES BETWEEN THE HILLS OF SAFA AND MARWAH IN WORSHIP</h3>
 <p className={style.newtext}>
 Umrah pilgrims intending to make Sa&#x02019;iy must make their way out of the Al Masjid Al Haram towards the Masaa&#x02019; (the place of Sa&#x02019;iy) which commemorates the struggle Prophet Abraham&#x02019;s wife Hazarat Hajra went through to search for water for her son in between the hills of Safa in the south and Marwah in the North. In essence, Sa&#x02019;iy is a great way to spend some time on self-reflection and self-realisation.
 Pilgrims start Sa&#x02019;iy by going up the hill of Safa to see the holy Kaaba from the Safa door. 
 </p>
 <br></br>
 <p className={style.newtext}>
-They must face the <strong>Kaaba</strong> with utmost devotion and love, while raising their hands to supplicate to<strong>Allah.</strong> They must then descend from Safa and walk towards the hill of Marwah while reciting the supplication <strong>Subhan Allah</strong> and keep moving until they reach two green pillars between which only the men have to run through while the women walk at a normal pace. When on top of Marwah, praise Allah facing the Kaaba and recite the supplication mentioning Allah.
-</p>
-<br></br>
-<p className={style.newtext}>
-The procedure continues with pilgrims going from Safa to Marwah and returning back to Safa, until the they complete seven laps in total. Each round is nearly 450m long. The seventh round will end at Marwah where all pilgrims must stand facing the Kaaba and repeat the same supplications that were recited at Safa. Men must perform Sa&#x02019;iy with their shoulders covered.
-</p>
-<br></br>
-<p className={style.newtext}>
-After offering two Raka of Nafl (at a desirable time) in the<strong>Al Masjid Al Haram,</strong> pilgrims should come out of the Holy Mosque with their left foot out and then offer a du&#x02019;aa.
+The procedure continues with pilgrims going from Safa to Marwah and returning back to Safa, until the they complete seven laps in total. Each round is nearly 450m long. The seventh round will end at Marwah.
 </p>
 <br></br>
 <br></br>
@@ -169,9 +156,6 @@ Finally, the last step of your journey, shaving or clipping the hair in Mina. Me
 All the prohibitions imposed on the conduct of pilgrims by <strong>Irham</strong> are lifted, upon completion of this last obligatory ritual. They can then remove Ihram sheets and change into their regular clothes.
 </p>
 <br></br>
-<p className={style.newtext}>
-Discover some of the best 5-star hotels in <strong>Makkah</strong> near haram abound with amenities perfect for pilgrims, families and business travelers.
-</p>
 </div>
 <Article
         heading={headingMain}
