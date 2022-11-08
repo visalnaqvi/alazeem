@@ -97,6 +97,9 @@
         text-align: start;
         width: 95%;
     }
+    .ul li{
+        font-size: 1rem;
+    }
     /* .middle{
         flex-direction: column;
     } */
