@@ -209,7 +209,7 @@ const UmrahPackage = () => {
           className={styl.close}
           onClick={() => {
             document.querySelector('.flOne').style.top =
-              "-100%";
+              "-200%";
           }}
         >
           <Image width={70} height={70} src={close} alt="a"></Image>
@@ -252,7 +252,7 @@ const UmrahPackage = () => {
           className={styl.close}
           onClick={() => {
             document.querySelector('.flTwo').style.top =
-              "-100%";
+              "-200%";
           }}
         >
           <Image width={70} height={70} src={close} alt="a"></Image>
@@ -301,7 +301,7 @@ const UmrahPackage = () => {
           className={styl.close}
           onClick={() => {
             document.querySelector('.flThree').style.top =
-              "-100%";
+              "-200%";
           }}
         >
           <Image width={70} height={70} src={close} alt="a"></Image>
