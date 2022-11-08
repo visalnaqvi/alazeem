@@ -91,6 +91,7 @@
 }
 
 .flightOneWrap{
+    display: none;
     position: fixed;
     top: -200%;
     bottom: 0;

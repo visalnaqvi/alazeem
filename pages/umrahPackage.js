@@ -87,6 +87,8 @@ const UmrahPackage = () => {
       <div onClick={() => {
               document.querySelector('.flThree').style.top =
                 "00%";
+                document.querySelector('.flThree').style.display =
+                "flex";
             }}>
       <UmrahCard
             
@@ -98,6 +100,8 @@ const UmrahPackage = () => {
           <div onClick={() => {
               document.querySelector('.flTwo').style.top =
                 "00%";
+                document.querySelector('.flTwo').style.display =
+                "flex";
             }}>
           <UmrahCard
            styl={styl}
@@ -108,6 +112,8 @@ const UmrahPackage = () => {
            <div onClick={() => {
               document.querySelector('.flOne').style.top =
                 "00%";
+                document.querySelector('.flOne').style.display =
+                "flex";
             }}>
            <UmrahCard
          styl={styl}
@@ -210,6 +216,9 @@ const UmrahPackage = () => {
           onClick={() => {
             document.querySelector('.flOne').style.top =
               "-200%";
+              document.querySelector('.flOne').style.display =
+              "none"
+              
           }}
         >
           <Image width={70} height={70} src={close} alt="a"></Image>
@@ -253,6 +262,8 @@ const UmrahPackage = () => {
           onClick={() => {
             document.querySelector('.flTwo').style.top =
               "-200%";
+              document.querySelector('.flTwo').style.display =
+              "none";
           }}
         >
           <Image width={70} height={70} src={close} alt="a"></Image>
@@ -302,6 +313,8 @@ const UmrahPackage = () => {
           onClick={() => {
             document.querySelector('.flThree').style.top =
               "-200%";
+              document.querySelector('.flThree').style.display =
+              "none";
           }}
         >
           <Image width={70} height={70} src={close} alt="a"></Image>
