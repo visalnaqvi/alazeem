@@ -93,6 +93,9 @@
 }
 
 @media only screen and (max-width:650px){
+    .top{
+        background-image: url(../public/images/umrah/bgmb.png);
+    }
     .heading{
         margin-bottom: 30px;
     }
