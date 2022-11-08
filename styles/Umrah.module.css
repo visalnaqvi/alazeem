@@ -47,7 +47,98 @@
     font-style: italic;
 }
 
+.imgBox{
+    width: 100%;
+    height: auto;
+}
+
+.imgBoxBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderBox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mobiC{
+    display: none;
+}
+
+.carousel .slide{
+    padding: 30px 0;
+}
+
+.tableHead{
+    font-weight: 700;
+    background-color: 	#2192FF;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    border: none;
+}
+
+.cell{
+    border: none;
+    padding: 10px;
+}
+
+.drkcell{
+    background-color: #eee;
+}
+
+.flightOneWrap{
+    position: fixed;
+    top: -100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000050;
+    z-index: 100;
+}
+
+.flightOne{
+    transition: 0.5s ease;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px 5px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px 5px #00000040;
+    overflow: scroll;
+}
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 0;
+   background-color: #00000040;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.pkgBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
 @media only screen and (max-width:650px){
+    .deskC{
+        display: none;
+    }
+    .mobiC{
+        display: block;
+    }
     .bodyImage{
         display: none;
     }
@@ -60,5 +151,8 @@
     .body{
         padding: 15px;
         width: 100%;
+    }
+    .imgBoxBox{
+        flex-direction: column;
     }
 }

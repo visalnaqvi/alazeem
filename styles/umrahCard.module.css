@@ -1,0 +1,129 @@
+.wrapper{
+    background-color: #fff;
+    background-color: #eee;
+    width: 600px;
+    margin: 20px 10px;
+    box-shadow: 5px 5px 20px 10px #00000030;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.top{
+    padding: 20px;
+    background-color: #fff;
+    background-image: url(../public/images/umrah/top.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: start;
+}
+
+.heading{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.img{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.middle{
+    display: flex;
+    padding: 20px;
+    background-color: #00C981;
+}
+
+.left{
+    width: 50%;
+}
+
+.heading2{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.text{
+    font-size: 1rem;
+    color: #fff;
+}
+
+.bottom{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00665A;
+    color: #fff;
+}
+
+.semiBold{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.btn{
+    padding: 10px;
+    color: #00665A;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 3px;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+@media only screen and (max-width:650px){
+    .wrapper{
+        text-align: start;
+        width: 95%;
+    }
+    /* .middle{
+        flex-direction: column;
+    } */
+    .left{
+        text-align: start;
+    }
+
+    .heading2{
+        font-size: 1.2rem;
+    }
+
+    .top{
+        background-size: contain;
+        background-position: bottom;
+    }
+
+    /* .bottom{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    } */
+
+    .btn{
+        font-size: 0.8rem;
+    }
+
+    .semiBold{
+        font-size: 1rem;
+    }
+}
