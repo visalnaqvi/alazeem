@@ -19,6 +19,10 @@
     outline: none;
     border: 2px solid #fff;
     cursor: pointer;
+    margin: 5px;
+    color: steelblue;
+    font-size: 1.2rem;
+    border-radius: 5px;
 }
 
 .table .tr td button:hover{
@@ -53,3 +57,77 @@
     margin: 10px;
 }
 
+.rowWrap{
+    display: flex;
+}
+
+
+.heading{
+    font-size: 3rem;
+    margin: 10px;
+}
+
+.preview,.submit{
+    padding: 20px;
+    margin: 10px;
+    width: 50%;
+    background-color: steelblue;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 3px solid steelblue;
+    transition: 0.3s ease;
+}
+.submit{
+    background-color: orange;
+    border: orange;
+    margin: 20px;
+}
+.submit:hover{
+    color: orange;
+    background-color: crimson;
+    color: #fff;
+}
+.preview:hover{
+    background-color: rgb(237, 247, 255);
+    color: steelblue;
+}
+
+.loading{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -200%;
+    bottom: 0;
+    background-color: #00000060;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.loadingWrapper{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 5px 5px 30px 5px #00000050;
+}
+
+.loadingTime{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.loadingText{
+    text-align: center;
+    font-size: 1.3rem;
+}

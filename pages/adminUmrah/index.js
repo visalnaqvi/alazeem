@@ -6,6 +6,8 @@ import Link from "next/link"
 import { useEffect, useState } from "react";
 const AboutUs = () => {
   const [pckages, setPack] = useState();
+  const [ids, setID] = useState();
+  const [time, setTime] = useState(5);
 
   const config={
     apiKey: "AIzaSyBwGQoCe0wTlR61fueDKA0yA4n5xmMfPrg",
@@ -24,7 +26,10 @@ if(!firebase.apps.length){
 }else{ firebase.app() };
 const db = firebase.firestore()
 useEffect(()=>{
-
+  db.collection("ids").doc("idtracker").onSnapshot((s)=>{
+    setID(s.data().id+1);
+    ids&&console.log(ids);
+  })
 db.collection("umrahPackages")
 .onSnapshot((querySnapshot) => {
         const inpack = []
@@ -35,27 +40,53 @@ db.collection("umrahPackages")
 })
 
 }, [])
-  function addData() {
-    // Add a new document in collection "cities"
-    const status = document.querySelector(".status");
-    db.collection("fares")
+
+
+
+function addData(){
+  
+  document.querySelector('.loading').style.top = "0%";
+  document.querySelector('.loading').style.display = "flex";
+    db.collection("umrahPackages")
+    
       .doc()
       .set({
-        html: document.querySelector('.thebox').innerHTML,
-        id : len+1,
+        Arrival:["-"],
+        DD:["-"],
+        Departure:["-"],
+        Flights:["-"],
+        Price: "-",
+        Hotels: ["Al Sundus/ similar 600 mtr.","Rehab Al Safwa/ Similar 500 mtr."],
+        Tags:["Hotel 4/5/6 Bed Sharing","All Meals and Laudary","Air Ticket and Visa","Insurance and Ziyarat","Round Trip Transport"], 
+        Title:"Add a new Title",
+        id:ids,
       })
       .then(() => {
-        status.style.top = '0%';
-       
-        setTimeout(()=>{
-          status.style.top = '-100%';
-      
-        },3000)
+        console.log("su")
+      })
+      .catch((error) => {
+        console.error("Error writing document: ", error);
+      })
+
+      db.collection("ids")
+      .doc("idtracker")
+      .set({
+        id:ids
+      })
+      .then(() => {
+        console.log("ids",ids)
       })
       .catch((error) => {
         console.error("Error writing document: ", error);
       });
-  }
+      setID(ids+1);
+      setTimeout(()=>{
+        document.querySelector('.loading').style.top = "-200%";
+        document.querySelector('.loading').style.display = "none";
+      },5000)
+ 
+}
+  
   return (
     <>
       <Head>
@@ -68,18 +99,30 @@ db.collection("umrahPackages")
         <link rel="icon" href="/logo512.png" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
       </Head>
-
+      <div className={`${style.loading} loading`}>
+        <div className={style.loadingWrapper}>
+          <p className={style.loadingTime}>{time}</p>
+          <p className={style.loadingText}>Loaing..Please Wait</p>
+        </div>
+      </div>
       <table className={style.table}>
 
       {pckages && pckages.map((tag)=>(
-              <tr className={style.tr} key={tag}>
+              <tr className={style.tr} key={tag.id}>
                 <td>
                     {tag.data().Title}
+                    <div>
                     <Link href={"/adminUmrah/"+tag.id}><button>Edit</button></Link>
+                   
+                    </div>
                 </td>
               </tr>
             ))}
      </table>
+     <button onClick={
+      addData
+      
+     } className={style.submit}>Add New</button>
     </>
   );
 };
