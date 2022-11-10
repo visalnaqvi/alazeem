@@ -33,8 +33,8 @@ useEffect(()=>{
             var f = []
             f.push(querySnapshot.data().Flights[i]);
             f.push(querySnapshot.data().DD[i]);
-            f.push(querySnapshot.data().Arrival[i]);
             f.push(querySnapshot.data().Departure[i]);
+            f.push(querySnapshot.data().Arrival[i]);
             finalt.push(f);
         }
         setFinal(finalt);
