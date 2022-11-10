@@ -3,8 +3,8 @@ import GreyBox from "../GreyBox/GreyBox";
 import PackageSlider from "./PackageSlider";
 import { useEffect, useState } from "react";
 import firebase from 'firebase/app';
-import style from "../../styles/Article.module.css"
 import "firebase/firestore"
+import style from "../../styles/Article.module.css"
 import Grid from "../Grid";
 const PackageBody = ({grid}) => {
 

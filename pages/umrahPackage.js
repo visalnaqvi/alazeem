@@ -5,65 +5,44 @@ import styl from "../styles/Umrah.module.css";
 import Article from "../comps/Article";
 import Head from "next/dist/shared/lib/head";
 import Image from "next/image";
-import UmrahCard from "../comps/umrahCard";
+import { useEffect, useState } from "react";
+import UmrahPackageCollector from "../comps/UmrahPackageCollector";
 import close from "../public/icons/close_big.svg";
+import firebase from 'firebase/app';
+import "firebase/firestore"
 const UmrahPackage = () => {
-  // useEffect(() => {
-  //   const cardOne = document.querySelector(".cardOne");
-  //   const flOne = document.querySelector(`.${styl.flightOneWrap}`)
-  //   cardOne.addEventListener("click",function(){
-  //     console.log('j')
-  //     document.querySelector(`.flOne`).style.top =
-  //             "0";
-  //   })
-  // });
-  const headingMain = "Al-Azeem Tours and Travel";
-  const textMain = [
-    "We present before you ",
-    <strong className={style.articletext} key="1">
-      AL-AZEEM TOUR & TRAVELS as one stop platform for all your travel needs
-    </strong>,
-    ".With a focus on customer service, at ",
-    <b className={style.articletext} key="2">
-      Al-Azeem Tour{" "}
-    </b>,
-    " we offer a fantastic",
-    <strong className={style.articletext} key="3">
-      {" "}
-      range of trips
-    </strong>,
-    " to meet your budget , ambitions and expectations. All of us here in the",
-    <b className={style.articletext} key="4">
-      {" "}
-      Al-Azeem
-    </b>,
-    " team, work tirelessly to ensure that your ",
-    <strong className={style.articletext} key="5">
-      trip
-    </strong>,
-    " is carefree, successful and enjoyable experience from start to finish. That means attention to your",
-    <strong className={style.articletext} key="6">
-      {" "}
-      travel plans,
-    </strong>,
-    " accommodation, specialist inclusions and leisure time as well as to health and safety, financial protection and ",
-    <strong className={style.articletext} key="7">
-      travel insurance
-    </strong>,
-    ".Specialist knowledge and experience is only half of the story. What distinguishes ous is our passion for the ",
-    <strong className={style.articletext} key="8">
-      trips
-    </strong>,
-    " we organise, for the destinations that we feature. We feature ",
-    <strong className={style.articletext} key="9">
-      {" "}
-      trips around the world
-    </strong>,
-    "and our latest inclusion is ",
-    <b className={style.articletext} key="10">
-      tour to Saudi Arabia.
-    </b>,
-  ];
+  
+  const [pckages, setPack] = useState();
+
+  const config={
+    apiKey: "AIzaSyBwGQoCe0wTlR61fueDKA0yA4n5xmMfPrg",
+    authDomain: "buttons-2dc4a.firebaseapp.com",
+    databaseURL: "https://buttons-2dc4a-default-rtdb.firebaseio.com",
+    projectId: "buttons-2dc4a",
+    storageBucket: "buttons-2dc4a.appspot.com",
+    messagingSenderId: "241629842019",
+    appId: "1:241629842019:web:6c248c713e6a27cd494656",
+    measurementId: "G-QK6TC8JTHZ"
+}
+
+if(!firebase.apps.length){
+    firebase.initializeApp(config)
+    
+}else{ firebase.app() };
+const db = firebase.firestore()
+useEffect(()=>{
+
+db.collection("umrahPackages")
+.onSnapshot((querySnapshot) => {
+        const inpack = []
+        querySnapshot.forEach((doc) => {
+            inpack.push(doc.data());
+            });
+            setPack(inpack)
+})
+
+}, [])
+ 
  
   return (
     <>
@@ -83,263 +62,8 @@ const UmrahPackage = () => {
       <br></br>
       <br></br>
       <br></br>
-      <div className={styl.pkgBox}>
-      <div onClick={() => {
-              document.querySelector('.flThree').style.top =
-                "00%";
-                document.querySelector('.flThree').style.display =
-                "flex";
-            }}>
-      <UmrahCard
-            
-            styl={styl}
-            heading="Umrha Package 25 Days"
-            pricing="85,000"
-          ></UmrahCard>
-          </div>
-          <div onClick={() => {
-              document.querySelector('.flTwo').style.top =
-                "00%";
-                document.querySelector('.flTwo').style.display =
-                "flex";
-            }}>
-          <UmrahCard
-           styl={styl}
-            heading="Umrha Package 23 Days"
-            pricing="85,000"
-          ></UmrahCard>
-          </div>
-           <div onClick={() => {
-              document.querySelector('.flOne').style.top =
-                "00%";
-                document.querySelector('.flOne').style.display =
-                "flex";
-            }}>
-           <UmrahCard
-         styl={styl}
-          heading="1 Month Ramzan Umrha Package"
-          pricing="1,15,000"
-        ></UmrahCard>
-        </div>
-      </div>
-      {/* <div className={styl.mainUp}>
-        <div className={styl.leftMainUp}>
-          <h1 className={style.articletitlecenter}>Umrah Package</h1>
-          <ul>
-            <li className={style.articletextcenter}>Hotel 4/5/6 Bed Sharing</li>
-            <li className={style.articletextcenter}>All Meals and Laudary</li>
-            <li className={style.articletextcenter}>Air Ticket and Visa</li>
-            <li className={style.articletextcenter}>Insurance and Ziyarat</li>
-            <li className={style.articletextcenter}>Round Trip Transport</li>
-          </ul>
-          <br></br>
-          <h2
-            style={{ fontSize: "1.6rem", fontWeight: "500" }}
-            className={style.articletitlecenter}
-          >
-            Makkah Hotel
-          </h2>
-          <p className={style.articletextcenter}>Al Sundus/ similar 600 mtr.</p>
-          <br></br>
-          <h2
-            style={{ fontSize: "1.6rem", fontWeight: "500" }}
-            className={style.articletitlecenter}
-          >
-            Madina Hotel
-          </h2>
-          <p className={style.articletextcenter}>
-            Rehab Al Safwa/ Similar 500 mtr.
-          </p>
-        </div>
-        <div className={styl.bodyImage}></div>
-      </div> */}
-      {/* <div className={styl.imgBoxBox}>
-      <div className={styl.imgBox}>
-        <Image alt="c1" src={c1}></Image>
-      </div>
-      <div className={styl.imgBox}>
-        <Image alt="c1" src={c2}></Image>
-      </div>
-      <div className={styl.imgBox}>
-        <Image alt="c1" src={c3}></Image>
-      </div>
-      </div> */}
-     
-      {/* <Carousel
-        className={styl.deskC}
-        showStatus={false}
-        autoPlay={true}
-        infiniteLoop={true}
-      >
-        <div className={styl.sliderBox}>
-          <div className="cardOne">
-          <UmrahCard
-            styl={styl}
-            heading="Umrha Package 25 Days"
-            pricing="85,000"
-          ></UmrahCard>
-          </div>
-          <UmrahCard
-           styl={styl}
-            heading="Umrha Package 23 Days"
-            pricing="85,000"
-          ></UmrahCard>
-        </div>
-
-        <UmrahCard
-         styl={styl}
-          heading="1 Month Ramzan Umrha Package"
-          pricing="1,15,000"
-        ></UmrahCard>
-      </Carousel>
-      <Carousel
-        className={styl.mobiC}
-        showStatus={false}
-        autoPlay={true}
-        infiniteLoop={true}
-      >
-      <div className="cardOne">
-        <UmrahCard  className="cardOne" heading="Umrha Package 25 Days" pricing="85,000"></UmrahCard></div>
-        <UmrahCard
-          styl={styl}
-          heading="Umrha Package 23 Days"
-          pricing="85,000"
-        ></UmrahCard>
-        <UmrahCard
-          heading="1 Month Ramzan Umrha Package"
-          pricing="1,15,000"
-        ></UmrahCard>
-      </Carousel> */}
-      <div className={`${styl.flightOneWrap} flOne`}>
-        <div
-          className={styl.close}
-          onClick={() => {
-            document.querySelector('.flOne').style.top =
-              "-200%";
-              document.querySelector('.flOne').style.display =
-              "none"
-              
-          }}
-        >
-          <Image width={70} height={70} src={close} alt="a"></Image>
-        </div>
-        <div className={styl.flightOne}>
-          <table border="0" style={{ border: "none" }}>
-            <thead className={styl.tableHead}>
-              <tr>
-              <td className={styl.cell}>Flight Number</td>
-                <td className={styl.cell}>Date & Destination</td>
-                <td className={styl.cell}>Departure</td>
-                <td className={styl.cell}>Arrival</td>
-               
-              </tr>
-            </thead>
-            <tr>
-              <td className={styl.cell}>SV757</td>
-              <td className={styl.cell}>26 MAR DEL JED</td>
-              <td className={styl.cell}>12:20 </td>
-              <td className={styl.cell}>15:20</td>
-            </tr>
-            <tr>
-              <td className={`${styl.cell} ${styl.drkcell}`}>SV 1468</td>
-              <td className={`${styl.cell} ${styl.drkcell}`}>24 APR MED RUH</td>
-              <td className={`${styl.cell} ${styl.drkcell}`}>05:10</td>
-              <td className={`${styl.cell} ${styl.drkcell}`}>6:35</td>
-            </tr>
-            <tr>
-              <td className={styl.cell}>SV 760</td>
-              <td className={styl.cell}>24 MAR RUH DEL</td>
-              <td className={styl.cell}>09:45</td>
-              <td className={styl.cell}>17:00</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div className={`${styl.flightOneWrap} flTwo`}>
-        <div
-          className={styl.close}
-          onClick={() => {
-            document.querySelector('.flTwo').style.top =
-              "-200%";
-              document.querySelector('.flTwo').style.display =
-              "none";
-          }}
-        >
-          <Image width={70} height={70} src={close} alt="a"></Image>
-        </div>
-        <div className={styl.flightOne}>
-          <table border="0" style={{ border: "none" }}>
-            <thead className={styl.tableHead}>
-              <tr>
-              <td className={styl.cell}>Flight Number</td>
-                <td className={styl.cell}>Date & Destination</td>
-                <td className={styl.cell}>Departure</td>
-                <td className={styl.cell}>Arrival</td>
-              
-              </tr>
-            </thead>
-            <tr>
-              <td className={styl.cell}>WY242</td>
-              <td className={styl.cell}>15 NOV DEL MCT</td>
-              <td className={styl.cell}>10:20</td>
-              <td className={styl.cell}>12:30</td>
-            </tr>
-            <tr>
-              <td className={`${styl.cell} ${styl.drkcell}`}>WY675</td>
-              <td className={`${styl.cell} ${styl.drkcell}`}>15 NOV MCT JED</td>
-              <td className={`${styl.cell} ${styl.drkcell}`}>14:35</td>
-              <td className={`${styl.cell} ${styl.drkcell}`}>17:10</td>
-            </tr>
-            <tr>
-              <td className={styl.cell}>WY 680</td>
-              <td className={styl.cell}>7 DEC MED MCT</td>
-              <td className={styl.cell}>19:30</td>
-              <td className={styl.cell}>23:25</td>
-            </tr>
-            <tr>
-              <td className={`${styl.cell} ${styl.drkcell}`}>WY 241</td>
-              <td className={`${styl.cell} ${styl.drkcell}`}>8 DECMCT DEL</td>
-              <td className={`${styl.cell} ${styl.drkcell}`}>04:25</td>
-              <td className={`${styl.cell} ${styl.drkcell}`}>09:00</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div className={`${styl.flightOneWrap} flThree`}>
-        <div
-          className={styl.close}
-          onClick={() => {
-            document.querySelector('.flThree').style.top =
-              "-200%";
-              document.querySelector('.flThree').style.display =
-              "none";
-          }}
-        >
-          <Image width={70} height={70} src={close} alt="a"></Image>
-        </div>
-        <div className={styl.flightOne}>
-          <table border="0" style={{ border: "none" }}>
-            <thead className={styl.tableHead}>
-              <tr>
-              <td className={styl.cell}>Flight Number</td>
-                <td className={styl.cell}>Date & Destination</td>
-                <td className={styl.cell}>Departure</td>
-                <td className={styl.cell}>Arrival</td>
-              
-              </tr>
-            </thead>
-            <tr>
-              <td className={styl.cell}>-</td>
-              <td className={styl.cell}>-</td>
-              <td className={styl.cell}>-</td>
-              <td className={styl.cell}>-</td>
-            </tr>
-            
-          </table>
-        </div>
-      </div>
+      {pckages && <UmrahPackageCollector packages = {pckages}></UmrahPackageCollector>}
+      
       <br></br>
       <br></br>
       <Footer></Footer>
@@ -507,11 +231,7 @@ const UmrahPackage = () => {
         </p>
         <br></br>
       </div>
-      <Article
-        heading={headingMain}
-        text={textMain}
-        style={{ textAlign: "justify" }}
-      ></Article>
+      
     </>
   );
 };

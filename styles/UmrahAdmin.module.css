@@ -1,0 +1,55 @@
+.table{
+    margin: 50px auto;
+    width: 80%;
+}
+
+.table .tr td{
+    padding: 20px;
+    background-color: steelblue;
+    color: #fff ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.table .tr td button{
+    padding: 10px;
+    width: 100px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.table .tr td button:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+.idWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left{
+    width: 500px;
+    padding: 20px;
+}
+
+.input{
+    width: 100%;
+    padding: 10px;
+    background-color: #eee;
+    border: 2px solid #dbdbdb;
+    outline-offset: none;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+.label{
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
