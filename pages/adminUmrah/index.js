@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 const AboutUs = () => {
   const [pckages, setPack] = useState();
   const [ids, setID] = useState();
-  const [time, setTime] = useState(5);
 
   const config={
     apiKey: "AIzaSyBwGQoCe0wTlR61fueDKA0yA4n5xmMfPrg",
@@ -83,7 +82,7 @@ function addData(){
       setTimeout(()=>{
         document.querySelector('.loading').style.top = "-200%";
         document.querySelector('.loading').style.display = "none";
-      },5000)
+      },3000)
  
 }
   
@@ -101,8 +100,9 @@ function addData(){
       </Head>
       <div className={`${style.loading} loading`}>
         <div className={style.loadingWrapper}>
-          <p className={style.loadingTime}>{time}</p>
-          <p className={style.loadingText}>Loaing..Please Wait</p>
+          <p className={style.loadingTime}>Loading</p>
+          <br></br>
+          <p className={style.loadingText}>Usually Takes just 5 sec...</p>
         </div>
       </div>
       <table className={style.table}>
