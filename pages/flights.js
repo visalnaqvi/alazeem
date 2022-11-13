@@ -7,6 +7,7 @@ import InfoCardStretch from "../comps/InfoCardStretch/InfoCardStretch";
 import styles from "../styles/Hero.module.css";
 import SliderSingle from "../comps/Packages/SliderSingle";
 import firebase from 'firebase/app';
+import Script from 'next/script'
 import { useEffect, useState } from "react";
 import "firebase/firestore";
 
@@ -51,6 +52,18 @@ const AboutUs = () => {
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
       </Head>
+      <Script strategy="lazyOnload" src={'https://www.googletagmanager.com/gtag/js?id=G-DT357YR96S'} />
+
+<Script strategy="lazyOnload" id="analytics">
+    {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DT357YR96S', {
+        page_path: window.location.pathname,
+        });
+    `}
+</Script>
       <div className={`${style.wrapperd} dflex-class`}>
       <div className={style.dleft}>
       <div className={`${styles.slide} ${styles.flight} bg-class flex-class`}>

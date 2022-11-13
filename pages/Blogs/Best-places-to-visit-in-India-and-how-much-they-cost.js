@@ -6,6 +6,7 @@ import Table from "../../comps/blogs/Table";
 import "firebase/firestore"
 import { useEffect, useState } from "react";
 import firebase from 'firebase/app';
+import Script from 'next/script'
 import SliderSingle from "../../comps/Packages/SliderSingle";
 import heroImage from "../../public/blog-images/must-visit-place-in-india-and-how-much-they-cost/hero.jpg"
 import goaImage from "../../public/blog-images/must-visit-place-in-india-and-how-much-they-cost/goa.jpg"
@@ -97,6 +98,18 @@ let mcleodganjPackages=[{title:"Weekend Gateways - Dharamshala",price:"Rs 8,000"
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
       </Head>
+      <Script strategy="lazyOnload" src={'https://www.googletagmanager.com/gtag/js?id=G-DT357YR96S'} />
+
+<Script strategy="lazyOnload" id="analytics">
+    {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DT357YR96S', {
+        page_path: window.location.pathname,
+        });
+    `}
+</Script>
       <div className={`${style.wrapper} flex-class`}>
         <div className={style.left}>
           <Headings h1="Must-visit places in India, how much they cost, and are they worth the expense?"></Headings>

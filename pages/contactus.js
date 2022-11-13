@@ -1,5 +1,6 @@
 import ContactUs from "../comps/Contact/Contact";
 import Head from "next/head";
+import Script from 'next/script'
 const ContactUsPage = () => {
     return (<>
         <Head>
@@ -13,6 +14,18 @@ const ContactUsPage = () => {
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
       </Head>
+      <Script strategy="lazyOnload" src={'https://www.googletagmanager.com/gtag/js?id=G-DT357YR96S'} />
+
+<Script strategy="lazyOnload" id="analytics">
+    {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DT357YR96S', {
+        page_path: window.location.pathname,
+        });
+    `}
+</Script>
         <ContactUs></ContactUs> </>);
 }
  

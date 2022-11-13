@@ -9,6 +9,7 @@ import Image from "next/dist/client/image";
 import { useEffect } from "react";
 import Link from "next/dist/client/link";
 import popImg from "../public/images/close_small_figma.svg"
+import Script from 'next/script'
 export default function Home() {
   const headingMain = "Our foundation";
   const textMain = ["We present before you ",<strong className={style.articletext} key="1">AL-AZEEM TOUR & TRAVELS as one stop platform for all your travel needs</strong>,
@@ -80,7 +81,18 @@ export default function Home() {
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
       </Head>
-      <div className={`${styles.popup} popup`}>
+      <Script strategy="lazyOnload" src={'https://www.googletagmanager.com/gtag/js?id=G-DT357YR96S'} />
+
+<Script strategy="lazyOnload" id="analytics">
+    {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DT357YR96S', {
+        page_path: window.location.pathname,
+        });
+    `}
+</Script>      <div className={`${styles.popup} popup`}>
       <Link href="/flights"><div className={styles.popupimg}>
             </div></Link>
             <div className={`${styles.close} close`}>

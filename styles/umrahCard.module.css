@@ -160,12 +160,13 @@
 }
 
 @media only screen and (max-width:650px){
+    .date{
+        margin-top:5px;
+    }
     .top{
         background-image: url(../public/images/umrah/bgmb.png);
     }
-    .heading{
-        margin-bottom: 30px;
-    }
+    
     .wrapper{
         text-align: start;
         width: 95%;

@@ -8,6 +8,7 @@ import UmrahPackageCollector from "../comps/UmrahPackageCollector";
 import firebase from 'firebase/app';
 import fs from "../styles/Footer.module.css"
 import Link from "next/dist/client/link";
+import Script from 'next/script'
 import "firebase/firestore"
 const UmrahPackage = () => {
   
@@ -61,6 +62,18 @@ db.collection("umrahPackages")
         <link rel="icon" href="/logo512.png" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
       </Head>
+      <Script strategy="lazyOnload" src={'https://www.googletagmanager.com/gtag/js?id=G-DT357YR96S'} />
+
+<Script strategy="lazyOnload" id="analytics">
+    {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DT357YR96S', {
+        page_path: window.location.pathname,
+        });
+    `}
+</Script>
       <Slider></Slider>
       <br></br>
       <br></br>
