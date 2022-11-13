@@ -24,6 +24,9 @@ const UmrahCard = ({packh}) => {
         <div className={style.wrapper}>
             <div className={style.top}>
                 <h1 className={style.heading}>{packh.Title}</h1>
+                <div className={style.date}>
+                  <p>Departure on: {packh.Date}</p>
+                </div>
                 <ul className={style.ul}>
                 {tags.map((tag)=>(
                     <li key={Math.random()}>
@@ -36,6 +39,7 @@ const UmrahCard = ({packh}) => {
                     
                 </ul>
             </div>
+           
             <div className={style.middle}>
                 <div className={style.left}>
                     <p className={style.heading2}>Makkah Hotel</p>

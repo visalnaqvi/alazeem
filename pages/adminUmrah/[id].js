@@ -50,6 +50,7 @@ const Post = () => {
   function previewData() {
     // Add a new document in collection "cities"
     var title = document.getElementById("title").value;
+    var date = document.getElementById("date").value;
     var tagsIn = document.querySelectorAll(".tagsinput");
     var tags = [];
     tagsIn.forEach((t) => {
@@ -91,6 +92,7 @@ const Post = () => {
       Departure: dpArr,
       Tags: tags,
       id: data.id,
+      Date:date,
     };
     setData(newData);
   }
@@ -98,6 +100,7 @@ const Post = () => {
  
 
     var title = document.getElementById("title").value;
+    var date = document.getElementById("date").value;
     var tagsIn = document.querySelectorAll(".tagsinput");
     var tags = [];
     tagsIn.forEach((t) => {
@@ -141,6 +144,7 @@ const Post = () => {
           Hotels: hotels,
           Price: price,
           id: data.id,
+          Date:date,
         })
         .then(() => {
           console.log("su");
@@ -202,6 +206,16 @@ const Post = () => {
                 id="title"
                 type="text"
                 defaultValue={data.Title}
+              ></input>
+              <br></br>
+              <label className={style.label} htmlFor="title">
+                Date
+              </label>
+              <input
+                className={style.input}
+                id="date"
+                type="text"
+                defaultValue={data.Date}
               ></input>
               <br></br>
               <label className={style.label}>Inclusions</label>

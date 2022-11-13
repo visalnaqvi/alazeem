@@ -147,6 +147,18 @@
    cursor: pointer;
 }
 
+.date p{
+    display: inline-block;
+    margin: 10px 0;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #ffe863;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 5px;
+}
+
 @media only screen and (max-width:650px){
     .top{
         background-image: url(../public/images/umrah/bgmb.png);

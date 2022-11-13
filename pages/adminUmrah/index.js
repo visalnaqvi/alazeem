@@ -52,6 +52,7 @@ function addData(){
       .set({
         Arrival:["-"],
         DD:["-"],
+        Date:"-",
         Departure:["-"],
         Flights:["-"],
         Price: "-",
