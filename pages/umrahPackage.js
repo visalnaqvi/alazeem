@@ -53,7 +53,11 @@ db.collection("umrahPackages")
         <link rel="icon" href="%PUBLIC_URL%/logo192.png" />
         <meta
           name="description"
-          content="Best Tour and Travels Agency in Delhi.Hajj Umrah Tour Package available. Hajj Umrah economic tour packages. We have trips available all over India. Features including Hotel Booking , Travel Planning etc.Umrah Package by Al Azeem Tours and Travel"
+          content="Best Tour and Travels Agency in Delhi Laxmi Nagar.Hajj Umrah Tour Package available. Hajj Umrah economic tour packages. Including Hotel Booking , Travel Planning etc.Umrah Package by Al Azeem Tours and Travel"
+        />
+        <meta
+          name="keywords"
+          content="umrah, umrah packages, hajj package, hajj umrah packages 2022, economy packages, 1 month ramdam umrah package, tours and travel, affordale umrah package, umrah flight tickets, hotel booking, "
         />
         <link rel="icon" href="/logo512.png" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />

@@ -56,7 +56,7 @@ function addData(){
         Flights:["-"],
         Price: "-",
         Hotels: ["Al Sundus/ similar 600 mtr.","Rehab Al Safwa/ Similar 500 mtr."],
-        Tags:["Hotel 4/5/6 Bed Sharing","All Meals and Laudary","Air Ticket and Visa","Insurance and Ziyarat","Round Trip Transport"], 
+        Tags:["All Meals and Laudary","Air Ticket and Visa","Hotel 4/5/6 Bed Sharing","Insurance and Ziyarat","Round Trip Transport","Flight by Oman Airways"], 
         Title:"Add a new Title",
         id:ids,
       })

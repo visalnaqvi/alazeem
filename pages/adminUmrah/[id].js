@@ -55,6 +55,7 @@ const Post = () => {
     tagsIn.forEach((t) => {
       tags.push(t.value);
     });
+    console.log(tags);
     var hotel1 = document.getElementById("hotel1").value;
     var hotel2 = document.getElementById("hotel2").value;
     var hotels = [hotel1, hotel2];
@@ -94,8 +95,7 @@ const Post = () => {
     setData(newData);
   }
   function addData() {
-    // Add a new document in collection "cities"
-    previewData();
+ 
 
     var title = document.getElementById("title").value;
     var tagsIn = document.querySelectorAll(".tagsinput");
@@ -207,7 +207,7 @@ const Post = () => {
               <label className={style.label}>Inclusions</label>
               {data.Tags.map((tag) => (
                 <input
-                  key={tag}
+                  key={Math.random()}
                   className={`${style.input} tagsinput`}
                   id={tag}
                   type="text"
@@ -261,7 +261,7 @@ const Post = () => {
             <div className="tableGene">
               {final &&
                 final.map((e) => (
-                  <div key={e[0] + e[2] + e[3]} id={e[4]} className="wrap">
+                  <div key={Math.random()} id={e[4]} className="wrap">
                     <div className={`${style.rowWrap} flightrows`}>
                       <input
                         className={`${style.input} flno`}

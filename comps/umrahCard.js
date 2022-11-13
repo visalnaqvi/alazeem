@@ -26,7 +26,7 @@ const UmrahCard = ({packh}) => {
                 <h1 className={style.heading}>{packh.Title}</h1>
                 <ul className={style.ul}>
                 {tags.map((tag)=>(
-                    <li key={tag}>
+                    <li key={Math.random()}>
                         <div className={style.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
@@ -79,7 +79,7 @@ const UmrahCard = ({packh}) => {
               </tr>
             </thead>
             {final.map((tag)=>(
-                    <tr key={"final"+packh.id+tag[0]+tag[2]}>
+                    <tr key={Math.random()}>
                     <td className={style.cell}>{tag[0]}</td>
                     <td className={style.cell}>{tag[1]}</td>
                     <td className={style.cell}>{tag[2]}</td>
