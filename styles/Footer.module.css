@@ -59,7 +59,15 @@
     font-size: 20px;
     box-shadow:-4px -4px 30px #00000010;
   }
+  .ftUmrah{
+    padding: 20px 40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:10px;
+    color:#00665A;
 
+  }
   @media only screen and (max-width:800px){
     .footerup{
       flex-direction:column;

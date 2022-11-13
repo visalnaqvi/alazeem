@@ -2,13 +2,12 @@ import Slider from "../comps/SlideUmrah";
 import style from "../styles/Article.module.css";
 import Footer from "../comps/Footer/Footer";
 import styl from "../styles/Umrah.module.css";
-import Article from "../comps/Article";
 import Head from "next/dist/shared/lib/head";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import UmrahPackageCollector from "../comps/UmrahPackageCollector";
-import close from "../public/icons/close_big.svg";
 import firebase from 'firebase/app';
+import fs from "../styles/Footer.module.css"
+import Link from "next/dist/client/link";
 import "firebase/firestore"
 const UmrahPackage = () => {
   
@@ -70,7 +69,22 @@ db.collection("umrahPackages")
       
       <br></br>
       <br></br>
-      <Footer></Footer>
+      <div style={{borderRadius:"10px",backgroundColor:"#00665A"}} className={`${fs.footerup} flex-class`}>
+        <div className={fs.left}>
+            <p className={fs.title}>Contact Us for more information</p>
+            <p className={fs.text}>Our services have evolved and deploy a seamless process, which includes verification, carefully monitored application and appointment processes, 24X7 helpline, fee collection etc. to enhance the experience of every applicant.</p>
+        </div>
+        <div className={`${fs.right} flex-class`}>
+        <div>
+        <a href="tel:+919205184001"><div className={`${fs.button} ${fs.ftUmrah}`}>
+        +919205184001
+        </div></a>
+        <a href="tel:+919811042458"><div className={`${fs.button} ${fs.ftUmrah}`}>
+        +919811042458 
+        </div></a>
+        </div>
+        </div>
+    </div> 
       <br></br>
       <br></br>
       <div className={styl.body}>

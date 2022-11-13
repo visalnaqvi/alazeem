@@ -21,11 +21,11 @@ const Nav = () => {
           li.classList.add(`${style.active}`);
       })
     })
-    btn.addEventListener("click",()=>{
-      lis.forEach((li)=>{
-        li.classList.remove(`${style.active}`);
-      })
-    })
+    // btn.addEventListener("click",()=>{
+    //   lis.forEach((li)=>{
+    //     li.classList.remove(`${style.active}`);
+    //   })
+    // })
   },[])
 
     return (<>
@@ -68,7 +68,7 @@ const Nav = () => {
                     </div>
                 </li>
                 <li className={style.navli}><Link href="/Blogs/Best-places-to-visit-in-India-and-how-much-they-cost"><a className={style.navlia}>Blogs</a></Link></li> 
-                <li className={style.navli}><Link href="/flights"><a className={style.navlia}>Flight Fare</a></Link></li> 
+                <li className={style.navli}><Link href="/umrahPackage"><a className={style.navlia}>Umrah Packages</a></Link></li> 
               </ul>
               {/* <div className={`${style.searchwrapper} flex-class`}>
                 <label htmlFor="search"><div className={style.searchicon}><Image height={30} width={30} className={style.searchicon} src={ search } alt="" /></div></label>
@@ -89,7 +89,7 @@ const Nav = () => {
               <a target="blank" href="https://www.facebook.com/AlAzeemTravels/">
 
               <div className={style.facebook}><Image width={43} height={43} className="facebook" src={Facebook} alt="facebook icon" /></div></a>
-              <Link href="/umrahPackage"><a><button className={`${style.btn} btn`}>UMRAH PACKAGE</button></a></Link>
+              {/* <Link href="/umrahPackage"><a><button className={`${style.btn} btn`}>UMRAH PACKAGE</button></a></Link> */}
 </nav>
 {/* 
 <nav className={`${style.nav} ${style.down} ${style.contactdown} flex-class`}>
