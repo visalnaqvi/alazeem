@@ -47,18 +47,28 @@ db.collection("umrahPackages")
   return (
     <>
       <Head>
+      <meta
+          name="keywords"
+          content="umrah, umrah packages, hajj package, hajj umrah packages 2022, economy packages, 1 month ramdam umrah package, tours and travel, affordale umrah package, umrah flight tickets, hotel booking,Umrah package service,
+          Best umrah package,
+          Best umrah package from delhi,
+          Best umrah packahe for Jaipur,
+          Best umrah package from Mumbai,
+          Cheapest group fare from Mumbai to jedda,
+          Cheapest group fare from Jaipur to jedda,
+          Cheapest group fare from Mumbai to jedda,
+          "
+        />
+      <meta
+          name="description"
+          content="Best Tour and Travels Agency in Delhi Laxmi Nagar.Hajj Umrah Tour Package available. Hajj Umrah economic tour packages. Including Hotel Booking , Travel Planning etc.Umrah Package by Al Azeem Tours and Travel"
+        />
+       
         <title>
           YOUR GUIDE TO UMRAH RITUALS - Umrah Package by AA Travels (Al-Azeem)
         </title>
         <link rel="icon" href="%PUBLIC_URL%/logo192.png" />
-        <meta
-          name="description"
-          content="Best Tour and Travels Agency in Delhi Laxmi Nagar.Hajj Umrah Tour Package available. Hajj Umrah economic tour packages. Including Hotel Booking , Travel Planning etc.Umrah Package by Al Azeem Tours and Travel"
-        />
-        <meta
-          name="keywords"
-          content="umrah, umrah packages, hajj package, hajj umrah packages 2022, economy packages, 1 month ramdam umrah package, tours and travel, affordale umrah package, umrah flight tickets, hotel booking, "
-        />
+       
         <link rel="icon" href="/logo512.png" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
       </Head>

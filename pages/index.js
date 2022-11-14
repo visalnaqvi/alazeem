@@ -71,12 +71,40 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-      <title>Al Azeem Tour 	&#x00026; Travels - INT./DOM. Flight Ticketing, Visa Assistance, Holiday Packages</title>
-      <link rel="icon" href="%PUBLIC_URL%/logo192.png" />
+      <meta
+          name="keywords"
+          content="Air ticketing agency in Delhi,
+          Travel agency in Laxmi Nagar,
+          Cheapest air ticketing agency in Delhi,
+          Turkey visa proving agency,
+          Dubai visa travelling agency,
+          Thailand Visa services,
+          Holiday packages for Kashmir,
+          Holiday package for Manali,
+          Holiday package for Kerala,
+          Holiday package for Goa,
+          Holiday package for Dubai,
+          Holiday package for Thailand,
+          Holiday package for Bankok,
+          Umrah packages,
+          Cheapest umrah package,
+          Best Delhi Jedda group fare,
+          Umrah package service,
+          Best umrah package,
+          Best umrah package from delhi,
+          Best umrah packahe for Jaipur,
+          Best umrah package from Mumbai,
+          Cheapest group fare from Mumbai to jedda,
+          Cheapest group fare from Jaipur to jedda,
+          "
+        />
         <meta
       name="description"
       content="Best Tour and Travels Agency in Delhi. INnternational and Domestic Flight Ticketing, Visa Assistance, Holiday Packages and Hajj Umrah Tour Package available. Hajj Umrah economic tour packages. We have trips available all over India. Features including Hotel Booking , Travel Planning etc"
     />
+      <title>Al Azeem Tour 	&#x00026; Travels - INT./DOM. Flight Ticketing, Visa Assistance, Holiday Packages</title>
+      <link rel="icon" href="%PUBLIC_URL%/logo192.png" />
+        
         <link rel="icon" href="/logo512.png" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
