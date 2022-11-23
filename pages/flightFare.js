@@ -37,6 +37,8 @@ db.collection("flightFares")
        pckages && 
             <PackageTableCollector packages = {pckages}></PackageTableCollector>
 }
+<br></br>
+<br></br>
         </div>
      );
 }
