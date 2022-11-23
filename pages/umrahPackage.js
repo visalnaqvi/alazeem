@@ -1,13 +1,11 @@
 import Slider from "../comps/SlideUmrah";
 import style from "../styles/Article.module.css";
-import Footer from "../comps/Footer/Footer";
 import styl from "../styles/Umrah.module.css";
 import Head from "next/dist/shared/lib/head";
 import { useEffect, useState } from "react";
 import UmrahPackageCollector from "../comps/UmrahPackageCollector";
 import firebase from 'firebase/app';
 import fs from "../styles/Footer.module.css"
-import Link from "next/dist/client/link";
 import Script from 'next/script'
 import "firebase/firestore"
 const UmrahPackage = () => {

@@ -67,7 +67,7 @@ const Nav = () => {
                     </div>
                     </div>
                 </li>
-                <li className={style.navli}><Link href="/Blogs/Best-places-to-visit-in-India-and-how-much-they-cost"><a className={style.navlia}>Blogs</a></Link></li> 
+                <li className={style.navli}><Link href="/flightFare"><a className={style.navlia}>Flight Fares</a></Link></li> 
                 <li className={style.navli}><Link href="/umrahPackage"><a className={style.navlia}>Umrah Packages</a></Link></li> 
               </ul>
               {/* <div className={`${style.searchwrapper} flex-class`}>
@@ -117,6 +117,10 @@ const Nav = () => {
                 </li>
                 <li className={style.navli}><Link className="flex-class" href="/umrahPackage">
                     <a className={style.navlia}>Umrah Packages</a>
+                  </Link>
+                </li>
+                <li className={style.navli}><Link className="flex-class" href="/flightFare">
+                    <a className={style.navlia}>Flight Fares</a>
                   </Link>
                 </li>
                 <li className={style.navli}><Link className="flex-class" href="/Tour-Packages">

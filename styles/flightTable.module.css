@@ -1,0 +1,49 @@
+
+.cell{
+    border: none;
+    padding: 10px;
+    background-color: #eee;
+}
+.tableHead{
+    font-weight: 700;
+  
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    border: none;
+}
+
+.tableHead tr .cell{
+    background-color: 	#2192FF;
+    
+}
+
+
+.wrapper{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tableWrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    text-align: center;
+    background-color:gold;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: 90%;
+}
+
+.tableWrap table{
+    font-weight: 1.2rem;
+    width: 90%;
+}

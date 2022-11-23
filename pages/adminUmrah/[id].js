@@ -4,8 +4,6 @@ import firebase from "firebase/app";
 import { useEffect, useState } from "react";
 import "firebase/firestore";
 import UmrahCard from "../../comps/umrahCard";
-import Image from "next/image";
-import close from "../../public/icons/close_big.svg";
 const Post = () => {
   const [data, setData] = useState();
   var finalt = [];
@@ -176,6 +174,7 @@ const Post = () => {
     document.querySelector(".loading").style.display = "flex";
   }
   function addFlight() {
+    
     var filghtNew = document.querySelector(".flnoNew");
     var ddNew = document.querySelector(".ddNew");
     var dpNew = document.querySelector(".dpNew");
