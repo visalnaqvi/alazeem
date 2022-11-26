@@ -39,7 +39,7 @@ db.collection("flightFares")
 }
 <br></br>
 <br></br>
-        </div>
+ </div>
      );
 }
  

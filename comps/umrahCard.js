@@ -59,6 +59,8 @@ const UmrahCard = ({packh}) => {
             </div>
         </div>
         <div id={packh.id} className={`${style.flightOneWrap} flOne`}>
+        
+        <div className={style.flightOne}>
         <div
           className={style.close}
           onClick={() => {
@@ -71,7 +73,6 @@ const UmrahCard = ({packh}) => {
         >
           <Image width={70} height={70} src={close} alt="a"></Image>
         </div>
-        <div className={style.flightOne}>
           <table border="0" style={{ border: "none" }}>
             <thead className={style.tableHead}>
               <tr>

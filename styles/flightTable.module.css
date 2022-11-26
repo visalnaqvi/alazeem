@@ -22,17 +22,13 @@
 .wrapper{
     width: 100%;
     padding: 30px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .tableWrap{
-    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    flex-direction: column;
 }
 .heading{
     text-align: center;
@@ -46,4 +42,18 @@
 .tableWrap table{
     font-weight: 1.2rem;
     width: 90%;
+}
+
+@media only screen and (max-width:650px){
+    .cell{
+        font-size: small;
+    }
+
+    .heading{
+        width: 100%;
+    }
+
+    .tableWrap table{
+        width: 100%;
+    }
 }

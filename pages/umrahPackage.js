@@ -82,10 +82,10 @@ db.collection("umrahPackages")
         });
     `}
 </Script>
-      <Slider></Slider>
-      <br></br>
-      <br></br>
-      <br></br>
+      <div className={styl.displayBox}>
+      <h1 className={style.articletitle}>Umrah Packages By <br></br> Al Azeem Travels</h1>
+      </div>
+     
       {pckages && <UmrahPackageCollector packages = {pckages}></UmrahPackageCollector>}
       
       <br></br>
@@ -93,7 +93,7 @@ db.collection("umrahPackages")
       <div style={{borderRadius:"10px",backgroundColor:"#00665A"}} className={`${fs.footerup} flex-class`}>
         <div className={fs.left}>
             <p className={fs.title}>Contact Us for more information</p>
-            <p className={fs.text}>Our services have evolved and deploy a seamless process, which includes verification, carefully monitored application and appointment processes, 24X7 helpline, fee collection etc. to enhance the experience of every applicant.</p>
+            <p className={fs.text}>Planning for Umrah? Book your umrah package with us as we provide the highest-quality Umrah packages from India at amazingly reasonable prices, ensuring that all of your travel needs are met to your satisfaction.</p>
         </div>
         <div className={`${fs.right} flex-class`}>
         <div>
