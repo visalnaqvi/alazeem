@@ -111,22 +111,15 @@ const Nav = () => {
 <nav className={`${style.nav} ${style.down} flex-class`}>
               <ul className="down-ul flex-class">
                 <li className={style.navli}><Link className="active" href="/"><a className={`${style.navlia} ${style.active}`}>Home</a></Link></li>
-                <li className={style.navli}><Link className="flex-class" href="/aboutus">
-                    <a className={style.navlia}>About</a>
-                  </Link>
-                </li>
                 <li className={style.navli}><Link className="flex-class" href="/umrahPackage">
                     <a className={style.navlia}>Umrah Packages</a>
                   </Link>
                 </li>
                 <li className={style.navli}><Link className="flex-class" href="/flightFare">
-                    <a className={style.navlia}>Flight Fares</a>
+                    <a className={style.navlia}>Flights Fare</a>
                   </Link>
                 </li>
-                <li className={style.navli}><Link className="flex-class" href="/Tour-Packages">
-                    <a className={style.navlia}>Packages</a>
-                  </Link>
-                </li>
+               
                 
 
               </ul>

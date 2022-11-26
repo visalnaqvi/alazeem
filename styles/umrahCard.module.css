@@ -214,4 +214,28 @@
     .flightOne{
         width: 95%;
     }
+
+    .middle{
+       
+        flex-direction: column;
+    }
+
+    .middle .left{
+        width: 100%;
+    }
+
+    .middle .first{
+        margin-bottom: 15px;
+    }
+
+    .middle .heading2{
+        margin-bottom: 3px;
+    }
+
+    /* .middle  .first{
+        border-right: 1px solid #fff;
+        margin-right: 10px;
+        margin-left: 10px;
+
+    } */
 }

@@ -211,11 +211,11 @@
     }
   }
 
-  @media only screen and (max-width:800px){
+  /* @media only screen and (max-width:800px){
       .facebook{
         display:none;
       }
-  }
+  } */
 
 
   @media only screen and (max-width:750px){
@@ -228,6 +228,11 @@
     .down{
       display:block;
       padding:20px 0;
+    }
+    .down ul{
+      display: flex;
+      justify-content: space-evenly;
+      font-size: small;
     }
 
     .btn{
@@ -266,4 +271,5 @@
     .contact{
       display: none;
     }
+    
 }

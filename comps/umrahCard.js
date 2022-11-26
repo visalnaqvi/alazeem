@@ -41,7 +41,7 @@ const UmrahCard = ({packh}) => {
             </div>
            
             <div className={style.middle}>
-                <div className={style.left}>
+                <div className={`${style.left} ${style.first}`}>
                     <p className={style.heading2}>Makkah Hotel</p>
                     <p className={style.text}>{hotels[0]}</p>
                 </div>

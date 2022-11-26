@@ -83,7 +83,6 @@ db.collection("umrahPackages")
     `}
 </Script>
       <div className={styl.displayBox}>
-      <h1 className={style.articletitle}>Umrah Packages By <br></br> Al Azeem Travels</h1>
       </div>
      
       {pckages && <UmrahPackageCollector packages = {pckages}></UmrahPackageCollector>}
