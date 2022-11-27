@@ -167,7 +167,6 @@
     
   }
   
-
   @media only screen and (max-width:1144px){
     .searchwrapper{
       width: 260px;
@@ -271,5 +270,13 @@
     .contact{
       display: none;
     }
+  
     
 }
+@media only screen and (max-width:400px){
+  
+  .down .navlia{
+    font-size: small;
+}
+}
+
