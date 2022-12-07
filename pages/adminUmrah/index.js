@@ -27,9 +27,8 @@ const db = firebase.firestore()
 useEffect(()=>{
   db.collection("ids").doc("idtracker").onSnapshot((s)=>{
     setID(s.data().id+1);
-    ids&&console.log(ids);
   })
-db.collection("umrahPackages")
+db.collection("umrahPackages").orderBy("id")
 .onSnapshot((querySnapshot) => {
         const inpack = []
         querySnapshot.forEach((doc) => {

@@ -21,7 +21,10 @@ const UmrahCard = ({packh}) => {
       }
     return ( 
         <>
+        <div className={style.wrapMain}>
+        {/* <div className={style.cross}></div> */}
         <div className={style.wrapper}>
+       
             <div className={style.top}>
                 <h1 className={style.heading}>{packh.Title}</h1>
                 <div className={style.date}>
@@ -93,6 +96,7 @@ const UmrahCard = ({packh}) => {
             ))}
           </table>
         </div>
+      </div>
       </div>
       </>
      );
