@@ -47,14 +47,31 @@ db.collection("umrahPackages").orderBy("id")
       <Head>
       <meta
           name="keywords"
-          content="umrah, umrah packages, hajj package, hajj umrah packages 2022, economy packages, 1 month ramdam umrah package, tours and travel, affordale umrah package, umrah flight tickets, hotel booking,Umrah package service,
+          content="Umrah package,
           Best umrah package,
-          Best umrah package from delhi,
-          Best umrah packahe for Jaipur,
-          Best umrah package from Mumbai,
-          Cheapest group fare from Mumbai to jedda,
-          Cheapest group fare from Jaipur to jedda,
-          Cheapest group fare from Mumbai to jedda,
+          Cheapest umrah package,
+          Umrah package from Delhi,
+          December umrah packages,
+          Jan umrah packages,
+          Feb umrah packages,
+          Ramzan umrah package,
+          Cheapest Ramzan umrah package,
+          Best Ramzan umrah package,
+          Ramzan umrah package from Delhi,
+          March umrah package,
+          April umrah package,
+          May umrah package,
+          June umrah package,
+          July umrah package,
+          August umrah package,
+          Sept umrah packages,
+          Oct umrah package,
+          Nov umrah package,
+          Dec umrah packages,
+          Cheapest Air fare to Jeddah,
+          Umrah visa,
+          Cheapest umrah visa,
+          Best umrah operator,
           "
         />
       <meta
