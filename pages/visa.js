@@ -1,9 +1,47 @@
 import styleh from "../styles/Hero.module.css"
 import style from "../styles/Visa.module.css"
 import txtstyle from "../styles/Article.module.css"
+import Head from "next/dist/shared/lib/head"
 const Visa = () => {
     return ( 
         <>
+        <Head>
+      <meta
+          name="keywords"
+          content="Dubai Visa,
+          Dubai Visa Charges,
+          Dubai Visa Agent in Delhi,
+          Dubai Visa agent In Laxmi Nagar,
+          Saudi Arab Tourist Visa,
+          Saudi Arab tourist Visa Charges,
+          30 days Saudi Arab tourist Visa Charges,
+          60 Days Saudi Arab tourist Visa Charges ,
+          Saudi Arab Tourist Visa Agent in Delhi,
+          Thailand Visa ,
+          Bangkok Visa Agent in Delhi,
+          Thailand Visa agent in Delhi,
+          Thailand Visa Charges,
+          Turkey Visa ,
+          Turkey Visa Agent in Delhi,
+          U K Visa,
+          U K visa Agent In Delhi,
+          Schengen Visa, US visa Agent In Delhi ,
+          Bangladesh Tourist Visa,
+          Bangladesh Visa,"
+        />
+      <meta
+          name="description"
+          content="Best Tour and Travels Agency in Delhi Laxmi Nagar.Hajj Umrah Tour Package available. Hajj Umrah economic tour packages. Including Hotel Booking , Travel Planning etc.Umrah Package by Al Azeem Tours and Travel"
+        />
+       
+        <title>
+          Cheapest Dubai Visa 30 Days - AA Travels Laxmi Nagar Delhi
+        </title>
+        <link rel="icon" href="%PUBLIC_URL%/logo192.png" />
+       
+        <link rel="icon" href="/logo512.png" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+      </Head>
             <div className={`${styleh.slide} ${styleh.visa} bg-class flex-class`}>
             
             <div className={styleh.content}>
