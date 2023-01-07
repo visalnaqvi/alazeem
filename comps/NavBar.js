@@ -39,7 +39,7 @@ const Nav = () => {
               </div>
               <ul className={`${style.upul} flex-class`}>
                 <li className={style.navli}><Link href="/"><a className={`${style.navlia} ${style.active}`}>Home</a></Link></li>
-                <li className={style.navli}><Link href="/aboutus"><a className={style.navlia}>About Us</a></Link></li>
+                <li className={style.navli}><Link href="/visa"><a className={style.navlia}>Visa</a></Link></li>
                 <li className={`${style.navli} ${style.pack}`}><Link href="/Tour-Packages"><a className={style.navlia}>Packages</a></Link>
                   <div className={`flex-class`}>
                   <div className={`${style.packwrap} flex-class`}>
@@ -110,13 +110,16 @@ const Nav = () => {
 
 <nav className={`${style.nav} ${style.down} flex-class`}>
               <ul className="down-ul flex-class">
-                <li className={style.navli}><Link className="active" href="/"><a className={`${style.navlia} ${style.active}`}>Home</a></Link></li>
                 <li className={style.navli}><Link className="flex-class" href="/umrahPackage">
                     <a className={style.navlia}>Umrah Packages</a>
                   </Link>
                 </li>
                 <li className={style.navli}><Link className="flex-class" href="/flightFare">
                     <a className={style.navlia}>Flights Fare</a>
+                  </Link>
+                </li>
+                <li className={style.navli}><Link className="flex-class" href="/visa">
+                    <a className={style.navlia}>Visa</a>
                   </Link>
                 </li>
                

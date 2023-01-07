@@ -96,6 +96,10 @@
     font-size: large;
   }
 
+  .visa{
+    background-image: url(../public/images/passport.jpeg);
+  }
+
   @media only screen and (max-width:500px){
     .heading{
       font-size:35px;

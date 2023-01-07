@@ -1,0 +1,94 @@
+.note{
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right,#0359AF,#0776DD);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.note p{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.btnHolder{
+    display: flex;
+}
+
+.btnHolder .btn{
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    color: #0359AF;
+    font-weight: 700;
+}
+
+.body{
+    width: 90%;
+    margin: auto;
+}
+
+.table{
+    margin: auto;
+}
+
+.table table{
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.table table tr td{
+    height: 20px;
+    padding: 10px 5px;
+    border: none;
+}
+
+.table table tr{
+    border: none;
+    background-color: #f8f8f8;
+}
+
+.table table tr.odd{
+    background-color: #0359AF20;
+}
+
+.table table thead tr{
+    background-image: linear-gradient(to right,#0359AF,#0776DD);
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media only screen and (max-width:920px){
+    .note{
+        flex-direction: column;
+    }
+
+    .btnHolder{
+        margin-top: 20px;
+    }
+
+    .table table{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:440px){
+    
+    .btnHolder{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .btnHolder .btn{
+        width: 100%;
+        margin: 5px 0;
+    }
+}
