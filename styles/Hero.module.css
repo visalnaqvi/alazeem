@@ -98,11 +98,15 @@
 
   .visa{
     background-image: url(../public/images/visa.jpg);
-    background-position: bottom;
+    background-position: center;
   }
 
   .visa .shade{
     background-color: #00000010;
+  }
+
+  .visa .content{
+    text-shadow: 5px 5px 10px #000000;
   }
 
   @media only screen and (max-width:500px){
