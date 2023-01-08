@@ -52,7 +52,7 @@ const Visa = () => {
         </div>
         <div className={style.note}>
             <div className={style.content}>
-                <p className={style.heading}>Call Mr. S K Gupta</p>
+                <p className={style.heading}>S K Gupta</p>
                 <p className={style.text}>For Visa Assistance</p>
                 </div>
             <div className={style.btnHolder}>
