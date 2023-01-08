@@ -9,10 +9,15 @@
     align-items: center;
 }
 
-.note p{
+.note .heading{
     color: #fff;
     font-weight: 700;
     font-size: 1.5rem;
+}
+
+.note .text{
+    color: #fff;
+    font-size: 1.3rem;
 }
 
 .btnHolder{
@@ -90,5 +95,13 @@
     .btnHolder .btn{
         width: 100%;
         margin: 5px 0;
+    }
+
+    .note{
+        text-align: center;
+    }
+
+    .note .heading{
+        margin-bottom: 10px;
     }
 }

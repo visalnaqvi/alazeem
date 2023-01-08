@@ -97,7 +97,12 @@
   }
 
   .visa{
-    background-image: url(../public/images/passport.jpeg);
+    background-image: url(../public/images/visabg.jpg);
+    background-position: bottom;
+  }
+
+  .visa .shade{
+    background-color: #00000010;
   }
 
   @media only screen and (max-width:500px){

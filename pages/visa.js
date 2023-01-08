@@ -51,10 +51,13 @@ const Visa = () => {
             <div className={styleh.shade}></div>
         </div>
         <div className={style.note}>
-            <p>For visa Assistance Call S K Gupta</p>
+            <div className={style.content}>
+                <p className={style.heading}>Call Mr. S K Gupta</p>
+                <p className={style.text}>For Visa Assistance</p>
+                </div>
             <div className={style.btnHolder}>
-                <div className={style.btn}>+91 9811136987</div>
-                <div className={style.btn}>+91 9205184001</div>
+                <a href="tel:+919811136987"><div className={style.btn}>+91 9811136987</div></a>
+                <a href="tel:+919205184001"><div className={style.btn}>+91 9205184001</div></a>
             </div>
         </div>
         <div className={style.body}>
