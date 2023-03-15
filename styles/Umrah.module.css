@@ -90,7 +90,249 @@
     justify-content: flex-start;
     align-items: center;
 }
+
+.flexBox{
+    display: flex;
+    margin-top: 30px;
+}
+
+.timelineCardTop{
+    background-color: #00C981;
+   text-align: center;
+   color: #fff;
+   font-size: 30px;
+}
+
+.timelineCardBottom{
+   text-align: center;
+   font-size: 30px;
+   padding: 10px;
+}
+
+.hajCard{
+    display: flex;
+}
+
+.hajCardWrap{
+    position: relative;
+    margin: 20px;
+    padding: 30px 10px;
+    border: 1px solid #dbdbdb;
+    box-shadow: 5px 5px 20px #00000030;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.hajCard .left{
+    width: 70%;
+}
+
+.hajCard .right{
+    width: 30%;
+}
+
+.hajCard h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.tag{
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.infoWrap{
+    /* display: flex;
+    justify-content: start;
+    align-items: center; */
+    margin-bottom: 30px;
+}
+
+.infoWrapCard{
+    width: 100%;
+    margin: 10px 0;
+    background-color: #00C981;
+    padding: 10px;
+    color: #fff;
+    margin-right: 20px;
+    box-shadow: 3px 3px 10px #00000050;
+}
+
+.infoHead{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.infoText{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.underline{
+    width: 50%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #ffe863;
+    margin-bottom: 10px;
+}
+
+.hajInnerWrapper{
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+/* .innerWrapLeft{
+    width: 70%;
+}
+
+.innerWrapRight{
+    width: 30%;
+} */
+
+
+.hajCard h2{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    /* text-align: center; */
+}
+
+.nul{
+    margin-bottom: 30px;
+}
+
+.nul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.img{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.pricing{
+    margin-top: 50px;
+}
+
+.pricing .infoWrapCard{
+    background-color: #ffe863;
+    padding: 15px;
+    color: #000;
+    box-shadow: 5px 5px 10px #00000020;
+    margin-left: -50%;
+    width: 150%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hajCardWrap{
+    padding-bottom: 65px;
+}
+.contact{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #00C981;
+    padding: 10px 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 10px;
+}
+
+.ctag{
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.chead{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.quicLinks{
+    margin: 40px 30px;
+
+}
+
+.quicLinks p{
+    font-weight: 700;
+}
+
+.quicLinks a{
+    background-color: #eee;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.quicLinks a:hover{
+    background-color: #f8f8f8;
+}
+
+.urhamHead{
+    font-size: 35px;
+    font-weight: 800;
+    padding: 30px 0;
+    text-align: center;
+}
 @media only screen and (max-width:650px){
+    .quicLinks{
+        text-align: center;
+        margin: 20px;
+    }
+    .quicLinks a{
+        display: block;
+        text-align: start;
+    }
+
+    .hajCardWrap{
+        margin: 30px 0;
+        padding: 20px 10px;
+    }
+    .hajCard{
+        flex-direction: column;
+    }
+
+    .hajCard .left{
+        width: 100%;
+    }
+    
+    .hajCard .right{
+        width: 100%;
+    }
+
+    .pricing .infoWrapCard{
+        width: 100%;
+        margin: 5px 0;
+        flex-direction: column;
+    }
+
+    .nul .img{
+        display: none;
+    }
+
+    .nul li{
+        border-bottom: 1px solid #dbdbdb;
+        padding-bottom: 10px;
+    }
+
+    .contact{
+        display: none;
+    }
+    
     .deskC{
         display: none;
     }

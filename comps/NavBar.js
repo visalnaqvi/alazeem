@@ -67,7 +67,7 @@ const Nav = () => {
                     </div>
                 </li>
                 <li className={style.navli}><Link href="/flightFare"><a className={style.navlia}>Flight Fares</a></Link></li> 
-                <li className={style.navli}><Link href="/umrahPackage"><a className={style.navlia}>Umrah Packages</a></Link></li> 
+                <li className={style.navli}><Link href="/umrahPackage"><a className={style.navlia}>Hajj/Umrah Packages</a></Link></li> 
               </ul>
               {/* <div className={`${style.searchwrapper} flex-class`}>
                 <label htmlFor="search"><div className={style.searchicon}><Image height={30} width={30} className={style.searchicon} src={ search } alt="" /></div></label>
@@ -114,7 +114,7 @@ const Nav = () => {
                   </Link>
                 </li>
                 <li className={style.navli}><Link className="flex-class" href="/umrahPackage">
-                    <a className={style.navlia}>Umrah Packages</a>
+                    <a className={style.navlia}>Hajj/Umrah Packages</a>
                   </Link>
                 </li>
                 <li className={style.navli}><Link className="flex-class" href="/flightFare">
