@@ -76,12 +76,12 @@ db.collection("umrahPackages").orderBy("id")
           Umrah visa,
           Cheapest umrah visa,
           Best umrah operator,
-          Huj package,
+          Haj package,
           best umrah packages from sri nagar,
 best umrah packages from Lucknow,
 umrah packages from Sri Nagar,
 umrah packages from Lucknow,
-huj packages 2023,
+Haj packages 2023,
           "
         />
       <meta
@@ -114,8 +114,8 @@ huj packages 2023,
         
 
       <div className={styl.quicLinks}>
-        <p>Quick Link:<a href="#haj1">HAJ 2023 16 – 20 Days PACKAGE</a>
-        <a href="#haj2">HAJ 2023 35 – 40 PACKAGE</a>
+        <p>Quick Link:<a href="#haj1">HAJ 2023 (16 – 20 Days PACKAGE)</a>
+        <a href="#haj2">HAJ 2023 (35 – 40 Days PACKAGE)</a>
         <a href="#umrah">Umrah Packages</a></p>
       </div>
 
@@ -258,7 +258,7 @@ huj packages 2023,
         
         </div>
         <div className={styl.right}>
-        <h2>5 DAYS HUJ PERIOD SCHEDULE</h2>
+        <h2>5 DAYS Haj PERIOD SCHEDULE</h2>
               <VerticalTimeline lineColor={ "#00C981" } layout={ '1-column-left' }>
       <VerticalTimelineElement
         className={styl.verticalTimelineElement}
@@ -537,7 +537,7 @@ huj packages 2023,
         
         </div>
         <div className={styl.right}>
-        <h2>5 DAYS HUJ PERIOD SCHEDULE</h2>
+        <h2>5 DAYS Haj PERIOD SCHEDULE</h2>
               <VerticalTimeline lineColor={ "#00C981" } layout={ '1-column-left' }>
       <VerticalTimelineElement
         className={styl.verticalTimelineElement}
