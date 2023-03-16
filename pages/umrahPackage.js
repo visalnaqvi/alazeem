@@ -76,6 +76,12 @@ db.collection("umrahPackages").orderBy("id")
           Umrah visa,
           Cheapest umrah visa,
           Best umrah operator,
+          Huj package,
+          best umrah packages from sri nagar,
+best umrah packages from Lucknow,
+umrah packages from Sri Nagar,
+umrah packages from Lucknow,
+huj packages 2023,
           "
         />
       <meta
