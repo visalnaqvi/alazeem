@@ -87,7 +87,7 @@ const Post = () => {
             id: data.id,
         })
         .then(() => {
-          console.log("su");
+          console.log("Success");
         })
         .catch((error) => {
           console.error("Error writing document: ", error);
