@@ -77,7 +77,7 @@ const Post = () => {
     if (confirm(text) == true) {
       db.collection("flightFares")
         .doc(id)
-        .set({
+        .update({
             Title: title,
             FlightsNumandTime: flnoArr,
             sector: sectorArr,

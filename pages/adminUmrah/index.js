@@ -6,8 +6,6 @@ import Link from "next/link"
 import { useEffect, useState } from "react";
 const AboutUs = () => {
   const [pckages, setPack] = useState();
-  const [ids, setID] = useState();
-
   const config={
     apiKey: "AIzaSyBwGQoCe0wTlR61fueDKA0yA4n5xmMfPrg",
     authDomain: "buttons-2dc4a.firebaseapp.com",
@@ -25,10 +23,8 @@ if(!firebase.apps.length){
 }else{ firebase.app() };
 const db = firebase.firestore()
 useEffect(()=>{
-  db.collection("ids").doc("idtracker").onSnapshot((s)=>{
-    setID(s.data().id+1);
-  })
-db.collection("umrahPackages").orderBy("id")
+  console.log("date",Date.now())
+db.collection("umrahPackages").orderBy("id","desc")
 .onSnapshot((querySnapshot) => {
         const inpack = []
         querySnapshot.forEach((doc) => {
@@ -58,7 +54,7 @@ function addData(){
         Hotels: ["Al Sundus/ similar 600 mtr.","Rehab Al Safwa/ Similar 500 mtr."],
         Tags:["All Meals and Laudary","Air Ticket and Visa","Hotel 4/5/6 Bed Sharing","Insurance and Ziyarat","Round Trip Transport","Flight by Oman Airways"], 
         Title:"Add a new Title",
-        id:ids,
+        id:Date.now(),
       })
       .then(() => {
         console.log("su")
@@ -67,18 +63,7 @@ function addData(){
         console.error("Error writing document: ", error);
       })
 
-      db.collection("ids")
-      .doc("idtracker")
-      .set({
-        id:ids
-      })
-      .then(() => {
-        console.log("ids",ids)
-      })
-      .catch((error) => {
-        console.error("Error writing document: ", error);
-      });
-      setID(ids+1);
+  
       setTimeout(()=>{
         document.querySelector('.loading').style.top = "-200%";
         document.querySelector('.loading').style.display = "none";

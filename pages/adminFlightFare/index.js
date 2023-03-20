@@ -6,7 +6,6 @@ import Link from "next/link"
 import { useEffect, useState } from "react";
 const AboutUs = () => {
   const [pckages, setPack] = useState();
-  const [ids, setID] = useState();
 
   const config={
     apiKey: "AIzaSyBwGQoCe0wTlR61fueDKA0yA4n5xmMfPrg",
@@ -25,11 +24,7 @@ if(!firebase.apps.length){
 }else{ firebase.app() };
 const db = firebase.firestore()
 useEffect(()=>{
-  db.collection("ids").doc("idtrackerflightfare").onSnapshot((s)=>{
-    setID(s.data().id+1);
-    ids&&console.log(ids);
-  })
-db.collection("flightFares")
+db.collection("flightFares").orderBy("id","desc")
 .onSnapshot((querySnapshot) => {
         const inpack = []
         querySnapshot.forEach((doc) => {
@@ -56,7 +51,7 @@ function addData(){
         travelDate:"-",
         seat:["-"],
         groupFare:["-"],
-        id:ids,
+        id:Date.now(),
       })
       .then(() => {
         console.log("su")
@@ -64,19 +59,6 @@ function addData(){
       .catch((error) => {
         console.error("Error writing document: ", error);
       })
-
-      db.collection("ids")
-      .doc("idtrackerflightfare")
-      .set({
-        id:ids
-      })
-      .then(() => {
-        console.log("ids",ids)
-      })
-      .catch((error) => {
-        console.error("Error writing document: ", error);
-      });
-      setID(ids+1);
       setTimeout(()=>{
         document.querySelector('.loading').style.top = "-200%";
         document.querySelector('.loading').style.display = "none";

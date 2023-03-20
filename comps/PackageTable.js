@@ -18,6 +18,7 @@ const PackageTable = ({pack}) => {
         final.push(f);
     }
     return ( 
+      
       <div className={style.wrapper}>
        <div className={style.tableWrap}>
        <p className={style.heading}>{pack.Title}</p>
@@ -32,15 +33,20 @@ const PackageTable = ({pack}) => {
            
           </tr>
         </thead>
+        <tbody>
         {final.map((tag)=>(
+
                 <tr key={Math.random()}>
-                <td className={style.cell}>{tag[0]}</td>
-                <td className={style.cell}>{tag[1]}</td>
-                <td className={style.cell}>{tag[2]}</td>
-                <td className={style.cell}>{tag[3]}</td>
-                <td className={style.cell}>{tag[4]}</td>
-              </tr>
+                  {tag.map(t=>{
+                      if(t!="" && t!=undefined && t!=null){ 
+                        return t.includes("#") ? 
+                        <td key={Math.random()} rowSpan={t.charAt(t.indexOf('#')+1)} className={style.cell}>{t.split("#")[0]}</td>:
+                        <td key={Math.random()} className={style.cell}>{t}</td>
+                      }
+                  })}
+                </tr>
         ))}
+        </tbody>
       </table>
       </div>
       </div>
