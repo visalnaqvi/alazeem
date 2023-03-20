@@ -1,6 +1,5 @@
 import style from "../styles/flightTable.module.css";
 const PackageTable = ({pack}) => {
-  console.log(pack);
     var final = [];
     var flightnum = pack.FlightsNumandTime
     var len = flightnum.length
