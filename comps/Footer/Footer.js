@@ -4,7 +4,7 @@ const Footer = () => {
     return ( <>
         <FooterUp></FooterUp> 
         <div className={style.footerbottom}>
-            <p>Al-Azeem Tours and Travel 2021</p>
+            <p>Al-Azeem Tours and Travel 2023</p>
         </div>
     </> );
 }
