@@ -6,6 +6,7 @@ import Link from "next/link"
 import { useEffect, useState } from "react";
 const AboutUs = () => {
   const [pckages, setPack] = useState();
+  const [IDs,setIDs] = useState();
 
   const config={
     apiKey: "AIzaSyBwGQoCe0wTlR61fueDKA0yA4n5xmMfPrg",
@@ -22,18 +23,56 @@ if(!firebase.apps.length){
     firebase.initializeApp(config)
     
 }else{ firebase.app() };
-const db = firebase.firestore()
+const db = firebase.firestore().collection("flightFares");
 useEffect(()=>{
-db.collection("flightFares").orderBy("id","desc")
+db.orderBy("timeStamp","desc")
 .onSnapshot((querySnapshot) => {
+        let i = 0;
         const inpack = []
+        const ids = []
         querySnapshot.forEach((doc) => {
-            inpack.push(doc);
+              const idsObj = {timeStamp:"",docId:""}
+              inpack.push(doc.data());
+              idsObj.timeStamp = doc.data().timeStamp;
+              idsObj.docId = doc.id;
+              ids.push(idsObj)
             });
+            inpack.forEach(t=>{t.index = i++})
             setPack(inpack)
+            setIDs(ids)
 })
 
 }, [])
+
+function moveUp(index){
+  if(index !=0){
+    let newTimeStamp = IDs[index-1].timeStamp;
+    let currentTimeStamp = IDs[index].timeStamp;
+    let cuurentDocId = IDs[index].docId;
+    let prevDocId = IDs[index-1].docId;
+    db.doc(cuurentDocId).update({timeStamp:newTimeStamp})
+          .then(()=>{console.log("Order Updated")})
+          .catch((e)=>{console.log("Error Occured in Order Update:",e)});
+    db.doc(prevDocId).update({timeStamp:currentTimeStamp})
+    .then(()=>{console.log("Order Updated")})
+    .catch((e)=>{console.log("Error Occured in Order Update:",e)});
+  }
+}
+
+function moveDown(index){
+  if(index != IDs.length-1){
+    let newTimeStamp = IDs[index+1].timeStamp;
+    let currentTimeStamp = IDs[index].timeStamp;
+    let cuurentDocId = IDs[index].docId;
+    let nextDocId = IDs[index+1].docId;
+    db.doc(cuurentDocId).update({timeStamp:newTimeStamp})
+          .then(()=>{console.log("Order Updated")})
+          .catch((e)=>{console.log("Error Occured in Order Update:",e)});
+    db.doc(nextDocId).update({timeStamp:currentTimeStamp})
+    .then(()=>{console.log("Order Updated")})
+    .catch((e)=>{console.log("Error Occured in Order Update:",e)});
+  }
+}
 
 
 
@@ -41,20 +80,22 @@ function addData(){
   
   document.querySelector('.loading').style.top = "0%";
   document.querySelector('.loading').style.display = "flex";
-    db.collection("flightFares")
-    
-      .doc()
-      .set({
+    db
+      .add({
         Title:"Click to Edit Title",
         FlightsNumandTime:["-"],
         sector:["-"],
         travelDate:"-",
         seat:["-"],
         groupFare:["-"],
-        id:Date.now(),
+        timeStamp:Date.now(),
       })
-      .then(() => {
-        console.log("su")
+      .then((docRef) => {
+        const docId = docRef.id;
+        db.doc(docId).update({DocId:docId})
+          .then(()=>{console.log("docId Updated")})
+          .catch((e)=>{console.log("Error Occured:",e)});
+        console.log("Success in Adding New Document and Updating Doc ID")
       })
       .catch((error) => {
         console.error("Error writing document: ", error);
@@ -88,12 +129,16 @@ function addData(){
       <table className={style.table}>
 
       {pckages && pckages.map((tag)=>(
-              <tr className={style.tr} key={tag.id}>
+              <tr className={style.tr} key={tag.DocId}>
                 <td>
-                    {tag.data().Title}
+                    {tag.Title}
+                    <div  style={{display:"flex"}}>
                     <div>
-                    <Link href={"/adminFlightFare/"+tag.id}><button>Edit</button></Link>
+                    <Link href={"/adminFlightFare/"+tag.DocId}><button>Edit</button></Link>
                    
+                    </div>
+                    <button onClick={()=>{moveUp(tag.index)}}>MoveUp</button>
+                    <button onClick={()=>{moveDown(tag.index)}} style={{width:"100%"}}>MoveDown</button>
                     </div>
                 </td>
               </tr>

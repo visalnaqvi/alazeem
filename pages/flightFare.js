@@ -23,7 +23,7 @@ if(!firebase.apps.length){
 const db = firebase.firestore()
 useEffect(()=>{
 
-db.collection("flightFares").orderBy("id","desc")
+db.collection("flightFares").orderBy("timeStamp","desc")
 .onSnapshot((querySnapshot) => {
         const inpack = []
         querySnapshot.forEach((doc) => {

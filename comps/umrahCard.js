@@ -56,20 +56,20 @@ const UmrahCard = ({packh}) => {
             <div className={style.bottom}>
                 <p className={style.semiBold}>At just ₹ {packh.Price}/-</p>
                 <button onClick={()=>{
-                    document.getElementById(`${packh.id}`).style.top = "0%";
-                    document.getElementById(`${packh.id}`).style.display = "flex";
+                    document.getElementById(`${packh.DocId}`).style.top = "0%";
+                    document.getElementById(`${packh.DocId}`).style.display = "flex";
                 }} className={style.btn}>View Flight Details</button>
             </div>
         </div>
-        <div id={packh.id} className={`${style.flightOneWrap} flOne`}>
+        <div id={packh.DocId} className={`${style.flightOneWrap} flOne`}>
         
         <div className={style.flightOne}>
         <div
           className={style.close}
           onClick={() => {
-            document.getElementById(`${packh.id}`).style.top =
+            document.getElementById(`${packh.DocId}`).style.top =
               "-200%";
-              document.getElementById(`${packh.id}`).style.display =
+              document.getElementById(`${packh.DocId}`).style.display =
               "none"
               
           }}

@@ -4,7 +4,7 @@ const PackageTableCollector = ({packages}) => {
 <div style={{ display:"flex",justifyContent:"space-evenly",alignItems:"flex-start",flexWrap:"wrap"}}>
             {packages.map((pack)=>(
                 
-            <PackageTable key={pack.id} pack = {pack}></PackageTable>
+            <PackageTable key={pack.DocId} pack = {pack}></PackageTable>
            
             ))}
       </div>

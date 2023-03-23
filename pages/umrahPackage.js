@@ -34,7 +34,7 @@ if(!firebase.apps.length){
 const db = firebase.firestore()
 useEffect(()=>{
 
-db.collection("umrahPackages").orderBy("id","desc")
+db.collection("umrahPackages").orderBy("timeStamp","desc")
 .onSnapshot((querySnapshot) => {
         const inpack = []
         querySnapshot.forEach((doc) => {

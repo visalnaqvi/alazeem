@@ -6,6 +6,7 @@ import Link from "next/link"
 import { useEffect, useState } from "react";
 const AboutUs = () => {
   const [pckages, setPack] = useState();
+  const [IDs,setIDs] = useState();
   const config={
     apiKey: "AIzaSyBwGQoCe0wTlR61fueDKA0yA4n5xmMfPrg",
     authDomain: "buttons-2dc4a.firebaseapp.com",
@@ -21,19 +22,56 @@ if(!firebase.apps.length){
     firebase.initializeApp(config)
     
 }else{ firebase.app() };
-const db = firebase.firestore()
+const db = firebase.firestore().collection("umrahPackages");
 useEffect(()=>{
-  console.log("date",Date.now())
-db.collection("umrahPackages").orderBy("id","desc")
+db.orderBy("timeStamp","desc")
 .onSnapshot((querySnapshot) => {
-        const inpack = []
-        querySnapshot.forEach((doc) => {
-            inpack.push(doc);
-            });
-            setPack(inpack)
+  let i = 0;
+  const inpack = []
+  const ids = []
+  querySnapshot.forEach((doc) => {
+        const idsObj = {timeStamp:"",docId:""}
+        inpack.push(doc.data());
+        idsObj.timeStamp = doc.data().timeStamp;
+        idsObj.docId = doc.id;
+        ids.push(idsObj)
+      });
+      inpack.forEach(t=>{t.index = i++})
+      setPack(inpack)
+      setIDs(ids)
 })
 
 }, [])
+
+function moveUp(index){
+  if(index !=0){
+    let newTimeStamp = IDs[index-1].timeStamp;
+    let currentTimeStamp = IDs[index].timeStamp;
+    let cuurentDocId = IDs[index].docId;
+    let prevDocId = IDs[index-1].docId;
+    db.doc(cuurentDocId).update({timeStamp:newTimeStamp})
+          .then(()=>{console.log("Order Updated")})
+          .catch((e)=>{console.log("Error Occured in Order Update:",e)});
+    db.doc(prevDocId).update({timeStamp:currentTimeStamp})
+    .then(()=>{console.log("Order Updated")})
+    .catch((e)=>{console.log("Error Occured in Order Update:",e)});
+  }
+}
+
+function moveDown(index){
+  if(index != IDs.length-1){
+    let newTimeStamp = IDs[index+1].timeStamp;
+    let currentTimeStamp = IDs[index].timeStamp;
+    let cuurentDocId = IDs[index].docId;
+    let nextDocId = IDs[index+1].docId;
+    db.doc(cuurentDocId).update({timeStamp:newTimeStamp})
+          .then(()=>{console.log("Order Updated")})
+          .catch((e)=>{console.log("Error Occured in Order Update:",e)});
+    db.doc(nextDocId).update({timeStamp:currentTimeStamp})
+    .then(()=>{console.log("Order Updated")})
+    .catch((e)=>{console.log("Error Occured in Order Update:",e)});
+  }
+}
 
 
 
@@ -41,10 +79,8 @@ function addData(){
   
   document.querySelector('.loading').style.top = "0%";
   document.querySelector('.loading').style.display = "flex";
-    db.collection("umrahPackages")
-    
-      .doc()
-      .set({
+    db
+      .add({
         Arrival:["-"],
         DD:["-"],
         Date:"-",
@@ -54,15 +90,18 @@ function addData(){
         Hotels: ["Al Sundus/ similar 600 mtr.","Rehab Al Safwa/ Similar 500 mtr."],
         Tags:["All Meals and Laudary","Air Ticket and Visa","Hotel 4/5/6 Bed Sharing","Insurance and Ziyarat","Round Trip Transport","Flight by Oman Airways"], 
         Title:"Add a new Title",
-        id:Date.now(),
+        timeStamp:Date.now(),
       })
-      .then(() => {
-        console.log("su")
+      .then((docRef) => {
+        const docId = docRef.id;
+        db.doc(docId).update({DocId:docId})
+          .then(()=>{console.log("docId Updated")})
+          .catch((e)=>{console.log("Error Occured:",e)});
+        console.log("Success in Adding New Document and Updating Doc ID")
       })
       .catch((error) => {
         console.error("Error writing document: ", error);
       })
-
   
       setTimeout(()=>{
         document.querySelector('.loading').style.top = "-200%";
@@ -95,10 +134,14 @@ function addData(){
       {pckages && pckages.map((tag)=>(
               <tr className={style.tr} key={tag.id}>
                 <td>
-                    {tag.data().Title}
+                    {tag.Title}
+                    <div  style={{display:"flex"}}>
                     <div>
-                    <Link href={"/adminUmrah/"+tag.id}><button>Edit</button></Link>
+                    <Link href={"/adminUmrah/"+tag.DocId}><button>Edit</button></Link>
                    
+                    </div>
+                    <button onClick={()=>{moveUp(tag.index)}}>MoveUp</button>
+                    <button onClick={()=>{moveDown(tag.index)}} style={{width:"100%"}}>MoveDown</button>
                     </div>
                 </td>
               </tr>

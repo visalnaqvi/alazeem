@@ -83,8 +83,7 @@ const Post = () => {
             sector: sectorArr,
             travelDate: tdArr,
             seat: seatArr,
-            groupFare: gfArr,
-            id: data.id,
+            groupFare: gfArr
         })
         .then(() => {
           console.log("Success");
