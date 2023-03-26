@@ -350,9 +350,9 @@
     .iraqInfo{
         width: 100%;
     }
-    .table{
+    /* .table{
         display: none;
-    }
+    } */
     .mobileViewIraq{
         display: block;
     }
