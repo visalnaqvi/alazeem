@@ -82,7 +82,11 @@
     border-radius: 10px;
 }
 
-
+.iraqImage{
+    background-image: url(../public/iraq.jpeg);
+    height: 70vh;
+    background-size: contain;
+}
 
 .pkgBox{
     display: flex;
@@ -127,11 +131,15 @@
     width: 70%;
 }
 
+.hajCard .iraqInnerWrap{
+    width: 100%;
+}
+
 .hajCard .right{
     width: 30%;
 }
 
-.hajCard h1{
+.hajCardWrap h1{
     font-size: 35px;
     font-weight: 700;
 }
@@ -288,7 +296,66 @@
     padding: 30px 0;
     text-align: center;
 }
+
+
+.table{
+    width: 100%;
+    border-spacing: 0px;
+    position: relative;
+}
+
+/* .table tr{
+    background-image: linear-gradient(#f0f0f0,#f8f8f8);
+} */
+
+.table tr td{
+    vertical-align: top;
+    margin: 0;
+    padding: 10px;
+    padding-top: 20px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.tableHeading{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-right: 0 30px;
+    width: 40%;
+}
+
+.tableHead{
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.tableHead td{
+    padding: 10px 10px;   
+    background-image: linear-gradient(to right, #00C981, #009461);
+}
+
+.iraqInfo{
+    width: 70%;
+}
+
+.mobileViewIraq{
+    display: none;
+}
+
 @media only screen and (max-width:650px){
+
+    .iraqInfo{
+        width: 100%;
+    }
+    .table{
+        display: none;
+    }
+    .mobileViewIraq{
+        display: block;
+    }
     .quicLinks{
         text-align: center;
         margin: 20px;
@@ -362,5 +429,9 @@
         margin: 0;
         border-radius: 0;
         background-image: url(../public/images/umrah/1.jpg);
+    }
+
+    .iraqImage{
+        background-image: url(../public/iraq.jpeg);
     }
 }
