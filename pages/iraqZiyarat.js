@@ -631,27 +631,27 @@ const IraqZiyaratPackage = () => {
         <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>Flights</p>
                   <div className={styl.underline}></div>
-                  <p className={styl.infoText}>Travel with best internatinal companies</p>
+                  <p className={styl.infoText}>Travel With Best International Companies</p>
             </div>
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>Hotels</p>
                   <div className={styl.underline}></div>
-                  <p className={styl.infoText}>Best internatinal hotels with best services</p>
+                  <p className={styl.infoText}>Best International Hotels With Best Services</p>
             </div>
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>Visa</p>
                   <div className={styl.underline}></div>
-                  <p className={styl.infoText}>VISA Assistance is included with package free of cost</p>
+                  <p className={styl.infoText}>VISA Assistance Is Included In Package Free Of Cost</p>
             </div>
             <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>Transpost</p>
+                  <p className={styl.infoHead}>Transport</p>
                   <div className={styl.underline}></div>
-                  <p className={styl.infoText}>Best transport services included</p>
+                  <p className={styl.infoText}>Best Transport Services Included</p>
             </div>
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>Meals</p>
                   <div className={styl.underline}></div>
-                  <p className={styl.infoText}>All day meals included</p>
+                  <p className={styl.infoText}>All Day Meals Included</p>
             </div>
         </div>
        
