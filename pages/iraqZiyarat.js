@@ -51,7 +51,7 @@ const IraqZiyaratPackage = () => {
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>Departure</p>
                   <div className={styl.underline}></div>
-                  <p className={`${styl.infoText} ${styl.pad}`}>INSHALLAH on 22nd May 2023</p>
+                  <p className={`${styl.infoText} ${styl.pad}`}>22nd May 2023</p>
             </div>
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>11 Days Package</p>

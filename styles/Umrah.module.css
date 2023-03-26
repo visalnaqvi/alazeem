@@ -395,13 +395,23 @@
     width: 90%;
 }
 .mobileViewIraq  .infoWrapCard{
-    margin: 10px auto;
+    margin: 20px auto;
     width: 90%;
     box-shadow: none;
     color: #000;
     background-color: #f8f8f8;
     border-left: 5px solid #00C981;
     border-radius: 10px;
+}
+
+.mobileViewIraq  .infoWrapCard .infoHead{
+    font-size: 1.2rem;
+}
+
+.mobileViewIraq  .infoWrapCard .infoText{
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #444444;
 }
 
 .pad{
@@ -526,7 +536,7 @@
 
     .iraqImage{
         background-image: url(../public/iraq.jpeg);
-        height: 45vh;
+        height: 35vh;
         background-size: cover;
         background-position: left;
     }
