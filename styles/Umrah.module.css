@@ -535,8 +535,8 @@
 
     .iraqImage{
         background-image: url(../public/iraq.jpeg);
-        height: 35vh;
         background-size: cover;
         background-position: left;
+        height: 40vh;
     }
 }
