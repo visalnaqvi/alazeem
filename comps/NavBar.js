@@ -68,13 +68,14 @@ const Nav = () => {
                     <ul className={`${style.ul} ${style.right}`}>
                       <li className={style.li}><Link href="/Tour-Packages/Mcleodganj-Tour-Package"><a className={style.a}>Mcleodganj Tour Package</a></Link></li>
                       <li className={style.li}><Link href=""><a className={style.a}>Saudi Arabia Tour Package</a></Link></li>
-                      <li className={style.li}><Link href="/umrahPackage"><a className={style.a}>Umrah Tour Package</a></Link></li>
+                      <li className={style.li}><Link href="/umrahPackage"><a className={style.a}>Umrah Tour</a></Link></li>
                     </ul>
                     </div>
                     </div>
                 </li>
                 <li className={style.navli}><Link href="/flightFare"><a className={style.navlia}>Flight Fares</a></Link></li> 
-                <li className={style.navli}><Link href="/umrahPackage"><a className={style.navlia}>Haj/Umrah Packages</a></Link></li> 
+                <li className={style.navli}><Link href="/umrahPackage"><a className={style.navlia}>Haj/Umrah</a></Link></li> 
+                <li className={style.navli}><Link href="/iraqZiyarat"><a className={style.navlia}>Iraq Ziyarat</a></Link></li> 
               </ul>
               {/* <div className={`${style.searchwrapper} flex-class`}>
                 <label htmlFor="search"><div className={style.searchicon}><Image height={30} width={30} className={style.searchicon} src={ search } alt="" /></div></label>
@@ -120,7 +121,11 @@ const Nav = () => {
                   </Link>
                 </li>
                 <li className={style.navli}><Link className="flex-class" href="/umrahPackage">
-                    <a className={style.navlia}>Haj/Umrah Packages</a>
+                    <a className={style.navlia}>Haj/Umrah</a>
+                  </Link>
+                </li>
+                <li className={style.navli}><Link className="flex-class" href="/iraqZiyarat">
+                    <a className={style.navlia}>Iraq Ziyarat</a>
                   </Link>
                 </li>
                 <li className={style.navli}><Link className="flex-class" href="/flightFare">
