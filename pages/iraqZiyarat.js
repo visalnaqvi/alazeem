@@ -42,7 +42,7 @@ const IraqZiyaratPackage = () => {
         <div className={styl.hajCardWrap}>
         <h1>Iraq Ziyarat</h1>
           <br></br>
-          <p className={style.newtext}>Ziyarah basically means to visit the Shrine of the HOLY places like IRAQ .This visit has several etiquette & manners that need to be observed in order for the ziyarat to be successful. The Iraq Ziyarat broadly known for Holi Ziyarat for SHAIKH ABDUL QADIR JILANI (R.A.) Baghdad, HAZRAT ALI (R.A.) NAJAF E ASHRAF, Maidan E KARBALA AND ROZA-E-IMAM HUSSAIN (R.A.) of KARBALA and many more Ziarats given in list below. 
+          <p className={style.newtext}>Ziyarat basically means to visit the Shrine of the HOLY places like IRAQ .This visit has several etiquette & manners that need to be observed in order for the ziyarat to be successful. The Iraq Ziyarat broadly known for Holi Ziyarat for SHAIKH ABDUL QADIR JILANI (R.A.) Baghdad, HAZRAT ALI (R.A.) NAJAF E ASHRAF, Maidan E KARBALA AND ROZA-E-IMAM HUSSAIN (R.A.) of KARBALA and many more Ziarats given in list below. 
             <br></br><br></br>
 	Al Azeem Tour & Travels from Delhi (India) basically renowned and authorized (IATA) travel Agent organising Ziarat Groups for Holi Shrines of Iraq Basically all Ziayarat are in Baghdad, Najaf E Ashraf and Karbalai Maullah mostly these destinations are located around 250 Km from Baghdad. We are also organising Economical Umrah Groups, Groups for Baitul Muqadas
 </p>
@@ -56,8 +56,8 @@ const IraqZiyaratPackage = () => {
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>11 Days Package</p>
                   <div className={styl.underline}></div>
-                  <p className={styl.infoText}>BAGHDAD - 2 Nights</p>
-                  <p className={styl.infoText}>NAJAF E ASHRAF - 5 Nights</p>
+                  <p className={styl.infoText}>BAGHDAD - 5 Nights</p>
+                  <p className={styl.infoText}>NAJAF E ASHRAF - 2 Nights</p>
                   <p className={styl.infoText}>KARBALAI MAULLAH - 3 Nights</p>
             </div>
             <div className={styl.infoWrapCard}>
@@ -84,7 +84,7 @@ const IraqZiyaratPackage = () => {
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>SHAIKH ABDUL JABBAR JILANI (R.A.)</p>
+                        <p>SHAIKH ABDUL QADIR JILANI (R.A.)</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
@@ -565,7 +565,7 @@ const IraqZiyaratPackage = () => {
                 </tr>
 
                 <tr className={styl.evenTr}>
-                  <td className={styl.tableHeading}>SAMARRAH- TJIS ZIYARAT IS EXTRA PAYABLE NOT INCLUDED IN PACKAGE 140KM FROM BAGDAD</td>
+                  <td className={styl.tableHeading}>SAMARRAH- THIS ZIYARAT IS EXTRA PAYABLE NOT INCLUDED IN PACKAGE 140KM FROM BAGDAD</td>
                   <td>
                   <ul className={styl.nul}>
                     <li>
@@ -671,7 +671,7 @@ const IraqZiyaratPackage = () => {
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>SHAIKH ABDUL JABBAR JILANI (R.A.)</p>
+                        <p>SHAIKH ABDUL QADIR JILANI (R.A.)</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
