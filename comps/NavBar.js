@@ -3,13 +3,15 @@ import hamburger from '../public/icons/hamburger.svg'
 import search from '../public/icons/search.svg'
 import Link from 'next/link';
 import Facebook from "../public/icons/facebook.svg"
-import { useEffect } from 'react'; 
+import { useEffect,useState } from 'react'; 
 import Image from "next/image"
 import style from "../styles/Nav.module.css"
 import phone from "../public/icons/phone.svg"
+import { useRouter } from "next/router";
 import image from 'next/image';
 const Nav = () => {
-
+  const [number, setNumber] = useState();
+  const router = useRouter();
   useEffect(()=>{
     const lis = document.querySelectorAll("li a");
     const btn = document.querySelector(".btn")
@@ -26,6 +28,11 @@ const Nav = () => {
     //     li.classList.remove(`${style.active}`);
     //   })
     // })
+    if(router.pathname == '/flightFare'){
+      setNumber("9811136987")
+    }else{
+      setNumber("9811042458")
+    }
   },[])
 
     return (<>
@@ -81,7 +88,7 @@ const Nav = () => {
                 </div>
                 <div className={`${style.numbox} flex-class`}>
                 <p className={style.num}>9205184001,</p>  
-                <p className={`${style.num} ${style.middle}`}>9811042458</p>  
+                <p className={`${style.num} ${style.middle}`}>{number}</p>  
                 </div>
               </div>
               <a target="blank" href="https://www.facebook.com/AlAzeemTravels/">
