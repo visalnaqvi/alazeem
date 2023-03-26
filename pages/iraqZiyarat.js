@@ -2,6 +2,9 @@ import style from "../styles/Article.module.css";
 import styl from "../styles/Umrah.module.css";
 import Image from "next/image";
 import tick from "../public/icons/check.png"
+import whatsApp from "../public/whatsapp-svgrepo-com.svg"
+import phone from "../public/phone-svgrepo-com.svg"
+
 import Head from "next/dist/shared/lib/head";
 import { useEffect, useState } from "react";
 import UmrahPackageCollector from "../comps/UmrahPackageCollector";
@@ -37,7 +40,7 @@ const IraqZiyaratPackage = () => {
      
    
         <div className={styl.hajCardWrap}>
-        <h1>Ghaus-ul-Azam Sayyiduna Hazrat Abdul Qadir Jilani </h1>
+        <h1>Iraq Ziyarat</h1>
           <br></br>
           <p className={style.newtext}>Ziyarah basically means to visit the Shrine of the HOLY places like IRAQ .This visit has several etiquette & manners that need to be observed in order for the ziyarat to be successful. The Iraq Ziyarat broadly known for Holi Ziyarat for SHAIKH ABDUL QADIR JILANI (R.A.) Baghdad, HAZRAT ALI (R.A.) NAJAF E ASHRAF, Maidan E KARBALA AND ROZA-E-IMAM HUSSAIN (R.A.) of KARBALA and many more Ziarats given in list below. 
             <br></br><br></br>
@@ -48,20 +51,23 @@ const IraqZiyaratPackage = () => {
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>Departure</p>
                   <div className={styl.underline}></div>
-                  <p className={styl.infoText}>INSHALLAH on 22nd May 2023</p>
+                  <p className={`${styl.infoText} ${styl.pad}`}>INSHALLAH on 22nd May 2023</p>
             </div>
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>11 Days Package</p>
                   <div className={styl.underline}></div>
-                  <p className={styl.infoText}>BAGHDAD - 2 Nights, NAJAF E ASHRAF - 5 Nights, KARBALAI MAULLAH - 3 Nights</p>
+                  <p className={styl.infoText}>BAGHDAD - 2 Nights</p>
+                  <p className={styl.infoText}>NAJAF E ASHRAF - 5 Nights</p>
+                  <p className={styl.infoText}>KARBALAI MAULLAH - 3 Nights</p>
             </div>
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>Package Cost </p>
                   <div className={styl.underline}></div>
-                  <p className={styl.infoText}>Rs. 90,000/-</p>
+                  <p className={`${styl.infoText} ${styl.pad}`}>Rs. 90,000/-</p>
             </div>
         </div>
           <div className={styl.innerWrapLeft}>
+          
             <table className={styl.table}>
               <tr className={styl.tableHead}>
               
@@ -617,7 +623,37 @@ const IraqZiyaratPackage = () => {
         
         </div>
 
+
         <div className={styl.mobileViewIraq}>
+
+        <p className={style.articletitlecenter}>Included Services</p>
+        <div className={`${styl.infoWrap}`}>
+        <div className={styl.infoWrapCard}>
+                  <p className={styl.infoHead}>Flights</p>
+                  <div className={styl.underline}></div>
+                  <p className={styl.infoText}>Travel with best internatinal companies</p>
+            </div>
+            <div className={styl.infoWrapCard}>
+                  <p className={styl.infoHead}>Hotels</p>
+                  <div className={styl.underline}></div>
+                  <p className={styl.infoText}>Best internatinal hotels with best services</p>
+            </div>
+            <div className={styl.infoWrapCard}>
+                  <p className={styl.infoHead}>Visa</p>
+                  <div className={styl.underline}></div>
+                  <p className={styl.infoText}>VISA Assistance is included with package free of cost</p>
+            </div>
+            <div className={styl.infoWrapCard}>
+                  <p className={styl.infoHead}>Transpost</p>
+                  <div className={styl.underline}></div>
+                  <p className={styl.infoText}>Best transport services included</p>
+            </div>
+            <div className={styl.infoWrapCard}>
+                  <p className={styl.infoHead}>Meals</p>
+                  <div className={styl.underline}></div>
+                  <p className={styl.infoText}>All day meals included</p>
+            </div>
+        </div>
        
       <div className={styl.hajCardWrap} id="haj2"> 
       <div className={styl.hajCard}>
@@ -1403,7 +1439,28 @@ const IraqZiyaratPackage = () => {
 
 
       </div>
-      
+      <div style={{zIndex:"10", display:"flex",position:"fixed",bottom:"13px",right:"13px"}}>
+
+<a target="blank" href="tel:+919205184001"><button
+style={{backgroundColor:"#2192FF",
+padding:"15px",
+border:"none",
+display:"flex",
+justifyContent:"center",
+zIndex:"10",
+alignItems:"center",
+borderRadius:"100%"}}><Image width={40} height={40} src={phone} alt="dkc"></Image></button></a>
+<a target="blank" href="https://wa.me/919205184001"><button 
+style={{backgroundColor:"#25D366",
+        marginLeft:"10px",
+        padding:"15px",
+        zIndex:"10",
+        border:"none",
+        display:"flex",
+        justifyContent:"center",
+        alignItems:"center",
+        borderRadius:"100%"}}><Image width={40} height={40} src={whatsApp} alt="dkc"></Image></button></a>
+</div>
     </>
   );
 };

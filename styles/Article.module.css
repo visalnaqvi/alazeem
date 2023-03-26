@@ -46,8 +46,8 @@
 
   .newtext{
     font-size: 1.2rem;
-    line-height:2rem;
-    text-align: justify;
+    line-height:2.1rem;
+    color: #444444;
   }
 
   .newtext strong{

@@ -325,7 +325,7 @@
 
 .tableHead{
     position: sticky;
-    z-index: 100;
+    z-index: 1;
     top: 0;
     color: #fff;
     font-size: 1.2rem;
@@ -360,7 +360,7 @@
 }
 
 .mobileViewIraq .underline{
-    
+    display: none;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -373,6 +373,44 @@
     margin: 0;
     color: #fff;
     background-image: linear-gradient(to right, #00C981, #009461);
+}
+
+.iraqInfo{
+    width: 100%;
+    display: flex;
+    padding: 0;
+}
+.iraqInfo .infoWrapCard{
+    background-image: linear-gradient(to right, #00C981, #009461);
+
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    /* color: #000; */
+    box-shadow: 5px 5px 10px #00000030;
+}
+
+.iraqInfo .infoWrapCard .underline{
+    margin: 10px auto;
+    width: 90%;
+}
+.mobileViewIraq  .infoWrapCard{
+    margin: 10px auto;
+    width: 90%;
+    box-shadow: none;
+    color: #000;
+    background-color: #f8f8f8;
+    border-left: 5px solid #00C981;
+    border-radius: 10px;
+}
+
+.pad{
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.mobileViewIraq .iraqInfo .underline{
+    margin-bottom: 5px;
 }
 
 @media only screen and (max-width:650px){
@@ -428,6 +466,31 @@
         line-height: 28px;
     }
 
+
+    .mobileViewIraq .nul li{
+        border-bottom: 1px solid #dbdbdb;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .mobileViewIraq .hajCardWrap{
+        border: none;
+        margin: 0;
+        padding:10px 0;
+    }
+
+   .iraqInfo{
+    flex-direction: column;
+   }
+
+   .iraqInfo .infoWrapCard{
+    padding: 20px 10px;
+   }
+
+    .pad{
+        margin-top: 0;
+    }
+
     .contact{
         display: none;
     }
@@ -463,5 +526,8 @@
 
     .iraqImage{
         background-image: url(../public/iraq.jpeg);
+        height: 45vh;
+        background-size: cover;
+        background-position: left;
     }
 }
