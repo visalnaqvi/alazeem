@@ -356,13 +356,23 @@
 
 .mobileViewIraq .hajCardWrap h2{
     font-size: 1.3rem;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 .mobileViewIraq .underline{
-    background-color: #009461;
+    
     margin-bottom: 20px;
-    width: 90%;
+    width: 100%;
+}
+
+.mobileViewIraq .cardHeading{
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    color: #fff;
+    background-image: linear-gradient(to right, #00C981, #009461);
 }
 
 @media only screen and (max-width:650px){
