@@ -626,7 +626,7 @@ const IraqZiyaratPackage = () => {
 
       
           <div className={styl.innerWrapLeft}>
-          <h1>BAGHDAD</h1>
+          <h2>BAGHDAD</h2>
           <ul className={styl.nul}>
                     <li>
                         <div className={styl.img}>
@@ -705,7 +705,7 @@ const IraqZiyaratPackage = () => {
 
       
           <div className={styl.innerWrapLeft}>
-          <h1>BAGHDAD – ADHAMIYAH -5 KM</h1>
+          <h2>BAGHDAD – ADHAMIYAH -5 KM</h2>
           <ul className={styl.nul}>
                     <li>
                         <div className={styl.img}>
@@ -754,7 +754,7 @@ const IraqZiyaratPackage = () => {
 
       
           <div className={styl.innerWrapLeft}>
-          <h1>BAGHDAD – AL ALAWE RAILWAY YARD 5 KM</h1>
+          <h2>BAGHDAD – AL ALAWE RAILWAY YARD 5 KM</h2>
           <ul className={styl.nul}>
                     <li>
                         <div className={styl.img}>
@@ -815,7 +815,7 @@ const IraqZiyaratPackage = () => {
 
       
           <div className={styl.innerWrapLeft}>
-          <h1>BAGHDAD – 60TH ROAD – 5 KM</h1>
+          <h2>BAGHDAD – 60TH ROAD – 5 KM</h2>
           <ul className={styl.nul}>
                     <li>
                         <div className={styl.img}>
@@ -852,7 +852,7 @@ const IraqZiyaratPackage = () => {
 
       
           <div className={styl.innerWrapLeft}>
-          <h1>BAGHDAD – KAZMAIN – 10 KM</h1>
+          <h2>BAGHDAD – KAZMAIN – 10 KM</h2>
           <ul className={styl.nul}>
                     <li>
                         <div className={styl.img}>
@@ -889,7 +889,7 @@ const IraqZiyaratPackage = () => {
 
       
           <div className={styl.innerWrapLeft}>
-          <h1>BAGHDAD 60 KM FROM ASTANA</h1>
+          <h2>BAGHDAD 60 KM FROM ASTANA</h2>
           <ul className={styl.nul}>
                     <li>
                         <div className={styl.img}>
@@ -944,7 +944,7 @@ const IraqZiyaratPackage = () => {
 
       
           <div className={styl.innerWrapLeft}>
-          <h1>BAGHDAD – AL MIDAN 5KM FROM ASTANA</h1>
+          <h2>BAGHDAD – AL MIDAN 5KM FROM ASTANA</h2>
           <ul className={styl.nul}>
                     <li>
                         <div className={styl.img}>
@@ -975,7 +975,7 @@ const IraqZiyaratPackage = () => {
 
       
           <div className={styl.innerWrapLeft}>
-          <h1>NAJAF CITY – 220 KM FROM BAGDAD</h1>
+          <h2>NAJAF CITY – 220 KM FROM BAGDAD</h2>
           <ul className={styl.nul}>
                     <li>
                         <div className={styl.img}>
@@ -1022,7 +1022,7 @@ const IraqZiyaratPackage = () => {
 
       
           <div className={styl.innerWrapLeft}>
-          <h1>AULAD-E- MUSLIM</h1>
+          <h2>AULAD-E- MUSLIM</h2>
           <ul className={styl.nul}>
                     <li>
                         <div className={styl.img}>
@@ -1105,7 +1105,7 @@ const IraqZiyaratPackage = () => {
 
       
           <div className={styl.innerWrapLeft}>
-          <h1>KUFA CITY-180KM SOUTH OF BAGHDAD</h1>
+          <h2>KUFA CITY-180KM SOUTH OF BAGHDAD</h2>
           <ul className={styl.nul}>
                     <li>
                         <div className={styl.img}>
@@ -1200,7 +1200,7 @@ const IraqZiyaratPackage = () => {
 
       
           <div className={styl.innerWrapLeft}>
-          <h1>KARBALAI MUQADDAS-110 KM SOUTH OF BAGHDAD</h1>
+          <h2>KARBALAI MUQADDAS-110 KM SOUTH OF BAGHDAD</h2>
           <ul className={styl.nul}>
                     <li>
                         <div className={styl.img}>
@@ -1284,7 +1284,7 @@ const IraqZiyaratPackage = () => {
 
       
           <div className={styl.innerWrapLeft}>
-          <h1>SAMARRAH- TJIS ZIYARAT IS EXTRA PAYABLE NOT INCLUDED IN PACKAGE 140KM FROM BAGDAD</h1>
+          <h2>SAMARRAH- TJIS ZIYARAT IS EXTRA PAYABLE NOT INCLUDED IN PACKAGE 140KM FROM BAGDAD</h2>
           <ul className={styl.nul}>
                     <li>
                         <div className={styl.img}>
@@ -1321,7 +1321,7 @@ const IraqZiyaratPackage = () => {
 
       
           <div className={styl.innerWrapLeft}>
-          <h1>BAGHDAD – THIS ZIYARAT IS EXTRA PAYABLE NOT INCLUDED IN THIS PACKAGE 530 KM FROM BAGHDAD</h1>
+          <h2>BAGHDAD – THIS ZIYARAT IS EXTRA PAYABLE NOT INCLUDED IN THIS PACKAGE 530 KM FROM BAGHDAD</h2>
           <ul className={styl.nul}>
                     <li>
                         <div className={styl.img}>

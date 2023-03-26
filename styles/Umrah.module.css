@@ -345,14 +345,27 @@
     display: none;
 }
 
+.mobileViewIraq .hajCardWrap{
+    box-shadow: none;
+}
+
+.mobileViewIraq .hajCardWrap ul{
+    width: 90%;
+    margin: auto;
+}
+
+.mobileViewIraq .hajCardWrap h2{
+    font-size: 1.3rem;
+}
+
 @media only screen and (max-width:650px){
 
     .iraqInfo{
         width: 100%;
     }
-    /* .table{
+    .table{
         display: none;
-    } */
+    }
     .mobileViewIraq{
         display: block;
     }
