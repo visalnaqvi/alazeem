@@ -20,7 +20,46 @@ const IraqZiyaratPackage = () => {
  
   return (
     <>
-      
+      <Head>
+      <meta
+          name="keywords"
+          content="Iraq Ziyarat,
+          Iraq Ziarat,
+          Iraq Ziyarat Travel Agent,
+          Iraq Ziyarat Packages,
+          Iraq Ziyarat Places,
+          Iraq Ziyarat Visa for India,
+          Iraq Ziyarat Packages From India,
+          Iraq Ziyarat Packages from Delhi,
+          Iran Iraq Ziyarat Package,
+          Syria Ziyarat package,
+          Iraq ziyarat Packages from Delhi,
+          Iraq Ziarat Package from Delhi,
+          Iran Iraq Ziarat Package from Delhi,
+          Shaikh Abdul Qadir Jilani (RA) Ziyarat,
+          Ziyarat Ghous E Azam,
+          Imam Hussain Roza,
+          Imam Hussain shrine Ziyarat,
+          Best Ziyarat Package,
+          Best Tour Operator,
+          Ziyarat kafila from Delhi,
+          Iraq Ziyarat packages from Lucknow,
+          Iraq Ziyarat Package from Jammu and Srinagar,
+          "
+        />
+      <meta
+          name="description"
+          content="Best Tour and Travels Agency in Delhi Laxmi Nagar.Hajj Umrah Tour Package available. Hajj Umrah economic tour packages. Including Hotel Booking , Travel Planning etc.Umrah Package by Al Azeem Tours and Travel"
+        />
+       
+        <title>
+          Iraq Ziyarat Packages 2023 by AA Travels (Al-Azeem)
+        </title>
+        <link rel="icon" href="%PUBLIC_URL%/logo192.png" />
+       
+        <link rel="icon" href="/logo512.png" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+      </Head>
       <Script strategy="lazyOnload" src={'https://www.googletagmanager.com/gtag/js?id=G-DT357YR96S'} />
 
 <Script strategy="lazyOnload" id="analytics">
