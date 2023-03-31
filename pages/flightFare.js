@@ -151,28 +151,30 @@ db.collection("flightFares").orderBy("timeStamp","desc")
 }
 <br></br>
 <br></br>
-<div style={{display:"flex",position:"fixed",bottom:"13px",right:"13px"}}>
 
-<a target="blank" href="tel:+919811136987"><button
+ </div>
+ <div style={{zIndex:"10", display:"flex",position:"fixed",bottom:"13px",right:"13px"}}>
+
+<a target="blank" href="tel:+919205184001"><button
 style={{backgroundColor:"#2192FF",
 padding:"15px",
 border:"none",
 display:"flex",
 justifyContent:"center",
+zIndex:"10",
 alignItems:"center",
 borderRadius:"100%"}}><Image width={40} height={40} src={phone} alt="dkc"></Image></button></a>
-<a target="blank" href="https://wa.me/919811136987"><button 
+<a target="blank" href="https://wa.me/919205184001"><button 
 style={{backgroundColor:"#25D366",
         marginLeft:"10px",
         padding:"15px",
+        zIndex:"10",
         border:"none",
         display:"flex",
         justifyContent:"center",
         alignItems:"center",
         borderRadius:"100%"}}><Image width={40} height={40} src={whatsApp} alt="dkc"></Image></button></a>
 </div>
-
- </div>
  </>);
 }
  
