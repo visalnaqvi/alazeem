@@ -493,7 +493,7 @@
 
 .hajjPkgBoxPrice{
     width: 250px;
-    background-color: #ffe23f;
+    background-color: #ffe863;
     color: #000;
     padding: 10px 10px 10px 0;
     font-weight: 700;
@@ -691,6 +691,14 @@
 
     .HajjBoxRight button{
         width: 100%;
+    }
+
+    .hajjPkgContainer h3{
+        font-size: 1.3rem;
+    }
+
+    .hajjPkgContainer .tag{
+        font-size: 0.9rem;
     }
 }
 
