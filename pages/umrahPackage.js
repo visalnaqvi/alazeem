@@ -143,7 +143,7 @@ Haj packages 2023,
           </div>
         
         </div>
-        <div className={styl.hajjPkgBox}>
+        {/* <div className={styl.hajjPkgBox}>
           <div className={styl.HajjBoxLeft}>
             <h3>HAJ 2023 - Tentative Haj 2023 Pkg</h3>
             <p className={styl.tag}>SHIFTING PACKAGE <strong>35 – 40 Days</strong></p>
@@ -163,7 +163,7 @@ Haj packages 2023,
           </div>
           </div>
         
-        </div>
+        </div> */}
       </div>
 
 
