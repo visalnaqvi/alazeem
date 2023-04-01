@@ -122,7 +122,7 @@ Haj packages 2023,
 
 
 <div className={styl.hajjPkgContainer}>
-        {/* <div className={styl.hajjPkgBox}>
+        <div className={styl.hajjPkgBox}>
           <div className={styl.HajjBoxLeft}>
             <h3>HAJ 2023 - Tentative Haj 2023 Pkg</h3>
             <p className={styl.tag}>SHORT PERIOD PACKAGE <strong>16 – 20 Days</strong></p>
@@ -134,7 +134,7 @@ Haj packages 2023,
           </div>
           <div className={styl.HajjBoxRight}>
             <div>
-            <a href="/hajjPackage"><button>More Details</button></a>
+            {/* <a href="/hajjPackage"><button>More Details</button></a> */}
             </div>
             <div className={styl.hajjPkgBoxPrice}>
             <p className={styl.PriceTag}>Starting At</p>
@@ -142,7 +142,7 @@ Haj packages 2023,
           </div>
           </div>
         
-        </div> */}
+        </div>
         {/* <div className={styl.hajjPkgBox}>
           <div className={styl.HajjBoxLeft}>
             <h3>HAJ 2023 - Tentative Haj 2023 Pkg</h3>
