@@ -134,7 +134,7 @@ Haj packages 2023,
             </div>
           </div>
           <div className={styl.HajjBoxRight}>
-            <div>
+          <div className={styl.btnCont}>
            <Link href="/hajjPackage"><a><button>More Details</button></a></Link>
             </div>
             <div className={styl.hajjPkgBoxPrice}>
@@ -155,7 +155,7 @@ Haj packages 2023,
             </div>
           </div>
           <div className={styl.HajjBoxRight}>
-            <div>
+            <div className={styl.btnCont}>
             <Link href="/hajjPackage#haj2"><a><button>More Details</button></a></Link>
             </div>
             <div className={styl.hajjPkgBoxPrice}>

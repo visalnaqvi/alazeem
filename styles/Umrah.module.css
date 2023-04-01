@@ -524,8 +524,10 @@
 
     .hajjPkgBox{
         width: 96%;
-        margin-bottom: 15px;
+        margin-top: 15px;
     }
+
+    
 }
 
 
@@ -647,5 +649,53 @@
         background-size: cover;
         background-position: left;
         height: 40vh;
+    }
+}
+
+@media only screen and (max-width:450px){
+    
+    .hajjPkgBox .details{
+        display: none;
+    }
+
+    .HajjBoxRight{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .HajjBoxLeft{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .hajjPkgBoxPrice{
+        margin: 0px;
+        width: 98%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .HajjBoxRight button a{
+        width: 100%;
+    }
+
+    .HajjBoxRight .btnCont{
+        width: 98%;
+    }
+
+    .HajjBoxRight button{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:340px){
+    .hajjPkgBoxPrice{
+      flex-direction: column;
     }
 }
