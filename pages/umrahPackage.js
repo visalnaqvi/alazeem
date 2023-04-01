@@ -116,54 +116,46 @@ Haj packages 2023,
           <a href="#umrah">Umrah Packages</a></p>
       </div> */}
 
-    
 
 
 
 
 
-<div className={styl.hajjPkgContainer}>
+
+      <div className={styl.hajjPkgContainer}>
         <div className={styl.hajjPkgBox}>
           <div className={styl.HajjBoxLeft}>
             <h3>HAJ 2023 - Tentative Haj 2023 Pkg</h3>
             <p className={styl.tag}>SHORT PERIOD PACKAGE <strong>16 – 20 Days</strong></p>
             <div className={styl.details}>
-              <p>Departure 21st June 2023</p>
-              <div></div>
-              <p>Arrival 06 Jul 2023</p>
+              <div className={styl.detailsLeft}>
+                <p>Departure 21st June 2023</p>
+                <div className={styl.circle}></div>
+                <p>Arrival 06 Jul 2023</p>
+              </div>
+              <div className={styl.detailsRight}>
+                <Link href="/hajjPackage#haj1"><a><button>More Details</button></a></Link>
+              </div>
             </div>
           </div>
-          <div className={styl.HajjBoxRight}>
-          <div className={styl.btnCont}>
-           <Link href="/hajjPackage"><a><button>More Details</button></a></Link>
-            </div>
-            <div className={styl.hajjPkgBoxPrice}>
-            <p className={styl.PriceTag}>Starting At</p>
-            <p className={styl.PriceP}><span>₹ 6,50,000 </span>Per Person</p>
-          </div>
-          </div>
-        
+
         </div>
         <div className={styl.hajjPkgBox}>
           <div className={styl.HajjBoxLeft}>
             <h3>HAJ 2023 - Tentative Haj 2023 Pkg</h3>
             <p className={styl.tag}>SHIFTING PACKAGE <strong>35 – 40 Days</strong></p>
             <div className={styl.details}>
-              <p>Departure 21st June 2023</p>
-              <div></div>
-              <p>Arrival 28 Jul 2023</p>
+              <div className={styl.detailsLeft}>
+                <p>Departure 21st June 2023</p>
+                <div className={styl.circle}></div>
+                <p>Arrival 06 Jul 2023</p>
+              </div>
+              <div className={styl.detailsRight}>
+                <Link href="/hajjPackage#haj2"><a><button>More Details</button></a></Link>
+              </div>
             </div>
           </div>
-          <div className={styl.HajjBoxRight}>
-            <div className={styl.btnCont}>
-            <Link href="/hajjPackage#haj2"><a><button>More Details</button></a></Link>
-            </div>
-            <div className={styl.hajjPkgBoxPrice}>
-            <p className={styl.PriceTag}>Starting At</p>
-            <p className={styl.PriceP}><span>₹ 6,50,000 </span>Per Person</p>
-          </div>
-          </div>
-        
+
         </div>
       </div>
 
