@@ -1,9 +1,5 @@
-import Slider from "../comps/SlideUmrah";
 import style from "../styles/Article.module.css";
 import styl from "../styles/Umrah.module.css";
-import umrahCardS from "../styles/umrahCard.module.css";
-import Image from "next/image";
-import tick from "../public/icons/check.png"
 import Head from "next/dist/shared/lib/head";
 import { useEffect, useState } from "react";
 import UmrahPackageCollector from "../comps/UmrahPackageCollector";
@@ -11,7 +7,6 @@ import firebase from 'firebase/app';
 import fs from "../styles/Footer.module.css"
 import Script from 'next/script'
 import "firebase/firestore"
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 const UmrahPackage = () => {
 
