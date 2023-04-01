@@ -1,6 +1,7 @@
 import Slider from "../comps/SlideUmrah";
 import style from "../styles/Article.module.css";
 import styl from "../styles/Umrah.module.css";
+import umrahCardS from "../styles/umrahCard.module.css";
 import Image from "next/image";
 import tick from "../public/icons/check.png"
 import Head from "next/dist/shared/lib/head";
@@ -10,13 +11,13 @@ import firebase from 'firebase/app';
 import fs from "../styles/Footer.module.css"
 import Script from 'next/script'
 import "firebase/firestore"
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 const UmrahPackage = () => {
-  
+
   const [pckages, setPack] = useState();
 
-  const config={
+  const config = {
     apiKey: "AIzaSyBwGQoCe0wTlR61fueDKA0yA4n5xmMfPrg",
     authDomain: "buttons-2dc4a.firebaseapp.com",
     databaseURL: "https://buttons-2dc4a-default-rtdb.firebaseio.com",
@@ -25,31 +26,31 @@ const UmrahPackage = () => {
     messagingSenderId: "241629842019",
     appId: "1:241629842019:web:6c248c713e6a27cd494656",
     measurementId: "G-QK6TC8JTHZ"
-}
+  }
 
-if(!firebase.apps.length){
+  if (!firebase.apps.length) {
     firebase.initializeApp(config)
-    
-}else{ firebase.app() };
-const db = firebase.firestore()
-useEffect(()=>{
 
-db.collection("umrahPackages").orderBy("timeStamp","desc")
-.onSnapshot((querySnapshot) => {
+  } else { firebase.app() };
+  const db = firebase.firestore()
+  useEffect(() => {
+
+    db.collection("umrahPackages").orderBy("timeStamp", "desc")
+      .onSnapshot((querySnapshot) => {
         const inpack = []
         querySnapshot.forEach((doc) => {
-            inpack.push(doc.data());
-            });
-            setPack(inpack)
-})
+          inpack.push(doc.data());
+        });
+        setPack(inpack)
+      })
 
-}, [])
- 
- 
+  }, [])
+
+
   return (
     <>
       <Head>
-      <meta
+        <meta
           name="keywords"
           content="Umrah package,
           Best umrah package,
@@ -84,23 +85,23 @@ umrah packages from Lucknow,
 Haj packages 2023,
           "
         />
-      <meta
+        <meta
           name="description"
           content="Best Tour and Travels Agency in Delhi Laxmi Nagar.Hajj Umrah Tour Package available. Hajj Umrah economic tour packages. Including Hotel Booking , Travel Planning etc.Umrah Package by Al Azeem Tours and Travel"
         />
-       
+
         <title>
           YOUR GUIDE TO UMRAH RITUALS - Umrah Package by AA Travels (Al-Azeem)
         </title>
         <link rel="icon" href="%PUBLIC_URL%/logo192.png" />
-       
+
         <link rel="icon" href="/logo512.png" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
       </Head>
       <Script strategy="lazyOnload" src={'https://www.googletagmanager.com/gtag/js?id=G-DT357YR96S'} />
 
-<Script strategy="lazyOnload" id="analytics">
-    {`
+      <Script strategy="lazyOnload" id="analytics">
+        {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
@@ -108,588 +109,60 @@ Haj packages 2023,
         page_path: window.location.pathname,
         });
     `}
-</Script>
+      </Script>
       <div className={styl.displayBox}>
       </div>
-        
-
-      <div className={styl.quicLinks}>
-        <p>Quick Link:<a href="#haj1">HAJ 2023 (16 – 20 Days PACKAGE)</a>
-        <a href="#haj2">HAJ 2023 (35 – 40 Days PACKAGE)</a>
-        <a href="#umrah">Umrah Packages</a></p>
-      </div>
 
 
-       <div className={styl.hajCardWrap} id="haj1"> 
-      <div className={styl.hajCard}>
-        <div className={styl.left}>
-        <h1>HAJ 2023 - Tentative Haj 2023 Pkg</h1>
-        <p className={styl.tag}>SHORT PERIOD PACKAGE <strong>16 – 20 Days</strong></p>
+      {/* <div className={styl.quicLinks}>
+        <p>Quick Link:<a href="/hajjPackage">HAJ 2023 (16 – 20 Days PACKAGE)</a>
+          <a href="/hajjPackage#haj2">HAJ 2023 (35 – 40 Days PACKAGE)</a>
+          <a href="#umrah">Umrah Packages</a></p>
+      </div> */}
 
-        <div className={styl.infoWrap}>
-            <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>Departure</p>
-                  <div className={styl.underline}></div>
-                  <p className={styl.infoText}>INSHALLAH on 21st June 2023 DEL – JED (Direct Flight) </p>
+      <div className={styl.hajjPkgContainer}>
+        <div className={styl.hajjPkgBox}>
+          <div className={styl.HajjBoxLeft}>
+            <h3>HAJ 2023 - Tentative Haj 2023 Pkg</h3>
+            <p className={styl.tag}>SHORT PERIOD PACKAGE <strong>16 – 20 Days</strong></p>
+            <div className={styl.details}>
+              <p>Departure 21st June 2023</p>
+              <div></div>
+              <p>Arrival 06 Jul 2023</p>
             </div>
-            <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>Arrival</p>
-                  <div className={styl.underline}></div>
-                  <p className={styl.infoText}>06 Jul 2023 (MED JED DEL OR MED RUH DEL / JED DEL)</p>
-            </div>
-            <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>Stay</p>
-                  <div className={styl.underline}></div>
-                  <p className={styl.infoText}>21 JUN TO 02 JUL JABAL AL NOUR DISTANCE 5-6 KM</p>
-            </div>
-        </div>
-
-      
-          <div className={styl.innerWrapLeft}>
-          <h2>INCLUSIONS</h2>
-          <ul className={styl.nul}>
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>HAJ KIT</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>AIR TICKET ECONOMY CLASS</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>BREAK FAST, LUNCH, DINNER</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>LOCAL TRANSPORT JED AIRPORT TO MAKKA, MADINA, AIRPORT AND LOCAL ZIYARAT MAKKA MADINA</p>
-                    </li>   
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>VISA WITH INSURANCE</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>LAUNDRY </p>
-                    </li>   
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>ACCOMODATION SHARING BASIS 4 TO 5 PERSON ACCORDING TO HOTEL ARRANGEMENT</p>
-                    </li>       
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>HAJ ARCAN UNDER THE GUIDANCE OF ULEMA</p>
-                    </li>            
-                </ul>
-
-                <h2>PKG EXCULDE</h2>
-          <ul className={styl.nul}>
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>QURBANI</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>ANY OTHER EXPENSES WHICH IS NOT MENTIONED IN PACKAGE</p>
-                    </li>            
-                </ul>
-                <h2>DOCUMENTS REQUIRED</h2>
-          <ul className={styl.nul}>
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>PASSPORT MINIMUM VALIDILTY ONE YEAR VALIDITY</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>BOTH DOSES VACCINATION CERTIFICATE</p>
-                    </li>    
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>4 PASSPORT SIZE PHOTOGRAPH WITH WHITE BACKGORUND</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>PAN CARD</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>ADHAR CARD</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>AGE BELOW 12 YEARS NOT ALLOWED</p>
-                    </li>          
-                </ul>
           </div>
-    
-       
+          <div className={styl.HajjBoxRight}>
+            <div>
+            <a href="/hajjPackage"><button>More Details</button></a>
+            </div>
+            <div className={styl.hajjPkgBoxPrice}>
+            <p className={styl.PriceTag}>Starting At</p>
+            <p className={styl.PriceP}><span>₹ 6,50,000 </span>Per Person</p>
+          </div>
+          </div>
         
         </div>
-        <div className={styl.right}>
-        <h2>5 DAYS Haj PERIOD SCHEDULE</h2>
-              <VerticalTimeline lineColor={ "#00C981" } layout={ '1-column-left' }>
-      <VerticalTimelineElement
-        className={styl.verticalTimelineElement}
-        position="right"
-        style={{overflow:"hidden",height:"70px",margin:"0",marginBottom:"30px"}}
-        contentArrowStyle={{borderRightColor:"#00C981"}}
-        contentStyle={ {borderRadius:"4px",background:"#f8f8f8",padding:"0px"} }
-        iconStyle={{ background: '#00C981', color: '#fff',height:"10px",width:"10px",marginLeft:"15px" }}
-      >
-        <div className={styl.timelineCard}>
-          <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>25 June</p>
-          </div>
-          <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Mina Camp</p>
-          </div>
-        </div>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        style={{overflow:"hidden",height:"100px",margin:"0",marginBottom:"30px"}}
-        className={styl.verticalTimelineElement}
-        position="right"
-        contentArrowStyle={{borderRightColor:"#00C981"}}
-        contentStyle={ {paddingLeft:"0px",borderRadius:"4px",background:"#f8f8f8",padding:"0px",lineHeight:"0px"} }
-        iconStyle={{ background: '#00C981', color: '#fff',height:"10px",width:"10px",marginLeft:"15px" }}
-      >
-        <div className={styl.timelineCard}>
-          <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>27 June</p>
-          </div>
-          <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Arafat camp Night At Muzdalifah Maidan 
-    </p>
-          </div>
-        </div>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className={styl.verticalTimelineElement}
-        style={{overflow:"hidden",height:"70px",margin:"0",marginBottom:"30px"}}
-        position="right"
-        contentArrowStyle={{borderRightColor:"#00C981"}}
-        contentStyle={ {paddingLeft:"0px",borderRadius:"4px",background:"#f8f8f8",padding:"0px",lineHeight:"0px"} }
-        iconStyle={{ background: '#00C981', color: '#fff',height:"10px",width:"10px",marginLeft:"15px" }}
-      >
-        <div className={styl.timelineCard}>
-          <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>28 - 29 JUNE</p>
-          </div>
-          <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Mina Camp</p>
-          </div>
-        </div>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className={styl.verticalTimelineElement}
-        position="right"
-        style={{overflow:"hidden",height:"70px",margin:"0",marginBottom:"30px"}}
-        contentArrowStyle={{borderRightColor:"#00C981"}}
-        contentStyle={ {paddingLeft:"0px",borderRadius:"4px",background:"#f8f8f8",padding:"0px",lineHeight:"0px"} }
-        iconStyle={{ background: '#00C981', color: '#fff',height:"10px",width:"10px",marginLeft:"15px" }}
-      >
-        <div className={styl.timelineCard}>
-          <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>30 JUNE - 1 JUL</p>
-          </div>
-          <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Jabal Al Nour 5-6 KM</p>
-          </div>
-        </div>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className={styl.verticalTimelineElement}
-        style={{overflow:"hidden",height:"70px",margin:"0",marginBottom:"30px"}}
-        position="right"
-        contentArrowStyle={{borderRightColor:"#00C981"}}
-        contentStyle={ {paddingLeft:"0px",borderRadius:"4px",background:"#f8f8f8",padding:"0px",lineHeight:"0px"} }
-        iconStyle={{ background: '#00C981', color: '#fff',height:"10px",width:"10px",marginLeft:"15px" }}
-      >
-        <div className={styl.timelineCard}>
-          <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>2 JULY</p>
-          </div>
-          <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Transfer to Madina Hotel Near Haram 200 Mtr. Distance</p>
-          </div>
-        </div>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className={styl.verticalTimelineElement}
-        position="right"
-        style={{overflow:"hidden",height:"100px",margin:"0",marginBottom:"30px"}}
-        contentArrowStyle={{borderRightColor:"#00C981"}}
-        contentStyle={ {paddingLeft:"0px",borderRadius:"4px",background:"#f8f8f8",padding:"0px",lineHeight:"0px"} }
-        iconStyle={{ background: '#00C981', color: '#fff',height:"10px",width:"10px",marginLeft:"15px" }}
-      >
-        <div className={styl.timelineCard}>
-          <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>6th JULY</p>
-          </div>
-          <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Departure Madina to Delhi</p>
-          </div>
-        </div>
-      </VerticalTimelineElement>
-              </VerticalTimeline>
-
-              <div className={styl.pricing}>
-              <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>ROOM CAPACITY</p>
-                  <p className={styl.infoText}>PKG COST</p>
+        <div className={styl.hajjPkgBox}>
+          <div className={styl.HajjBoxLeft}>
+            <h3>HAJ 2023 - Tentative Haj 2023 Pkg</h3>
+            <p className={styl.tag}>SHIFTING PACKAGE <strong>35 – 40 Days</strong></p>
+            <div className={styl.details}>
+              <p>Departure 21st June 2023</p>
+              <div></div>
+              <p>Arrival 28 Jul 2023</p>
             </div>
-            <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>4/5 SHARING</p>
-                  <p className={styl.infoText}>₹ 6,50,000 Per Person</p>
-            </div>
-            <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>3 BED SHARING</p>
-                  <p className={styl.infoText}>₹ 7,30,000 Per Person</p>
-            </div>
-            <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>2 BED SHARING</p>
-                  <p className={styl.infoText}>₹ 7,65,000 Per Person</p>
-            </div>
-              </div>
-        </div>
-        <div className={styl.contact}>
-         
-            <p className={style.ctag}>CALL US NOW FOR MORE INFORMATION</p>
-            <p className={styl.chead}>9205184001, 9811042458</p>
-         
-        </div>
-     
-      </div>
-    
-        
-      </div>
-
-
-
-
-      <div className={styl.hajCardWrap} id="haj2"> 
-      <div className={styl.hajCard}>
-        <div className={styl.left}>
-        <h1>HAJ 2023 - Tentative Haj 2023 Pkg</h1>
-        <p className={styl.tag}>SHIFTING PACKAGE <strong>35 – 40 Days</strong></p>
-
-        <div className={styl.infoWrap}>
-            <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>Departure</p>
-                  <div className={styl.underline}></div>
-                  <p className={styl.infoText}>INSHALLAH on 21st June 2023 DEL – JED (Direct Flight)</p>
-            </div>
-            <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>Arrival</p>
-                  <div className={styl.underline}></div>
-                  <p className={styl.infoText}>28 Jul 2023 (MED – JED – DEL / MED – RUH - DEL / JED DEL)</p>
-            </div>
-            <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>Stay</p>
-                  <div className={styl.underline}></div>
-                  <p className={styl.infoText}>21 JUN TO 02 JUL JABAL AL NOUR DISTANCE 5-6 KM</p>
-            </div>
-        </div>
-
-      
-          <div className={styl.innerWrapLeft}>
-          <h2>INCLUSIONS</h2>
-          <ul className={styl.nul}>
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>HAJ KIT</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>AIR TICKET ECONOMY CLASS</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>BREAK FAST, LUNCH, DINNER</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>LOCAL TRANSPORT JED AIRPORT TO MAKKA, MADINA, AIRPORT AND LOCAL ZIYARAT MAKKA MADINA</p>
-                    </li>   
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>VISA WITH INSURANCE</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>LAUNDRY </p>
-                    </li>   
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>ACCOMODATION SHARING BASIS 4 TO 5 PERSON ACCORDING TO HOTEL ARRANGEMENT</p>
-                    </li>       
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>HAJ ARCAN UNDER THE GUIDANCE OF ULEMA</p>
-                    </li>            
-                </ul>
-
-                <h2>PKG EXCULDE</h2>
-          <ul className={styl.nul}>
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>QURBANI</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>ANY OTHER EXPENSES WHICH IS NOT MENTIONED IN PACKAGE</p>
-                    </li>            
-                </ul>
-                <h2>DOCUMENTS REQUIRED</h2>
-          <ul className={styl.nul}>
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>PASSPORT MINIMUM VALIDILTY ONE YEAR VALIDITY</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>BOTH DOSES VACCINATION CERTIFICATE</p>
-                    </li>    
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>4 PASSPORT SIZE PHOTOGRAPH WITH WHITE BACKGORUND</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>PAN CARD</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>ADHAR CARD</p>
-                    </li>  
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>AGE BELOW 12 YEARS NOT ALLOWED</p>
-                    </li>          
-                </ul>
           </div>
-    
-       
+          <div className={styl.HajjBoxRight}>
+            <div>
+            <a href="/hajjPackage#haj2"><button>More Details</button></a>
+            </div>
+            <div className={styl.hajjPkgBoxPrice}>
+            <p className={styl.PriceTag}>Starting At</p>
+            <p className={styl.PriceP}><span>₹ 6,50,000 </span>Per Person</p>
+          </div>
+          </div>
         
         </div>
-        <div className={styl.right}>
-        <h2>5 DAYS Haj PERIOD SCHEDULE</h2>
-              <VerticalTimeline lineColor={ "#00C981" } layout={ '1-column-left' }>
-      <VerticalTimelineElement
-        className={styl.verticalTimelineElement}
-        position="right"
-        style={{overflow:"hidden",height:"70px",margin:"0",marginBottom:"30px"}}
-        contentArrowStyle={{borderRightColor:"#00C981"}}
-        contentStyle={ {borderRadius:"4px",background:"#f8f8f8",padding:"0px"} }
-        iconStyle={{ background: '#00C981', color: '#fff',height:"10px",width:"10px",marginLeft:"15px" }}
-      >
-        <div className={styl.timelineCard}>
-          <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>25 June</p>
-          </div>
-          <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Mina Camp</p>
-          </div>
-        </div>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        style={{overflow:"hidden",height:"100px",margin:"0",marginBottom:"30px"}}
-        className={styl.verticalTimelineElement}
-        position="right"
-        contentArrowStyle={{borderRightColor:"#00C981"}}
-        contentStyle={ {paddingLeft:"0px",borderRadius:"4px",background:"#f8f8f8",padding:"0px",lineHeight:"0px"} }
-        iconStyle={{ background: '#00C981', color: '#fff',height:"10px",width:"10px",marginLeft:"15px" }}
-      >
-        <div className={styl.timelineCard}>
-          <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>27 June</p>
-          </div>
-          <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Arafat camp Night At Muzdalifah Maidan 
-    </p>
-          </div>
-        </div>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className={styl.verticalTimelineElement}
-        style={{overflow:"hidden",height:"70px",margin:"0",marginBottom:"30px"}}
-        position="right"
-        contentArrowStyle={{borderRightColor:"#00C981"}}
-        contentStyle={ {paddingLeft:"0px",borderRadius:"4px",background:"#f8f8f8",padding:"0px",lineHeight:"0px"} }
-        iconStyle={{ background: '#00C981', color: '#fff',height:"10px",width:"10px",marginLeft:"15px" }}
-      >
-        <div className={styl.timelineCard}>
-          <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>28 - 30 JUNE</p>
-          </div>
-          <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Mina Camp</p>
-          </div>
-        </div>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className={styl.verticalTimelineElement}
-        position="right"
-        style={{overflow:"hidden",height:"70px",margin:"0",marginBottom:"30px"}}
-        contentArrowStyle={{borderRightColor:"#00C981"}}
-        contentStyle={ {paddingLeft:"0px",borderRadius:"4px",background:"#f8f8f8",padding:"0px",lineHeight:"0px"} }
-        iconStyle={{ background: '#00C981', color: '#fff',height:"10px",width:"10px",marginLeft:"15px" }}
-      >
-        <div className={styl.timelineCard}>
-          <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>30 JUNE - 2  JUL</p>
-          </div>
-          <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Jabal Al Nour 5-6 KM</p>
-          </div>
-        </div>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className={styl.verticalTimelineElement}
-        style={{overflow:"hidden",height:"70px",margin:"0",marginBottom:"30px"}}
-        position="right"
-        contentArrowStyle={{borderRightColor:"#00C981"}}
-        contentStyle={ {paddingLeft:"0px",borderRadius:"4px",background:"#f8f8f8",padding:"0px",lineHeight:"0px"} }
-        iconStyle={{ background: '#00C981', color: '#fff',height:"10px",width:"10px",marginLeft:"15px" }}
-      >
-        <div className={styl.timelineCard}>
-          <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>3 /4  - 18th JULY</p>
-          </div>
-          <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Shifting Makka Hotel , Near Haram Distance 600 Mtr.</p>
-          </div>
-        </div>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className={styl.verticalTimelineElement}
-        position="right"
-        style={{overflow:"hidden",height:"100px",margin:"0",marginBottom:"30px"}}
-        contentArrowStyle={{borderRightColor:"#00C981"}}
-        contentStyle={ {paddingLeft:"0px",borderRadius:"4px",background:"#f8f8f8",padding:"0px",lineHeight:"0px"} }
-        iconStyle={{ background: '#00C981', color: '#fff',height:"10px",width:"10px",marginLeft:"15px" }}
-      >
-        <div className={styl.timelineCard}>
-          <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>19 JULY</p>
-          </div>
-          <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Departure Madina Hotel Near Haram 200 Mtr Distance</p>
-          </div>
-        </div>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className={styl.verticalTimelineElement}
-        position="right"
-        style={{overflow:"hidden",height:"100px",margin:"0",marginBottom:"30px"}}
-        contentArrowStyle={{borderRightColor:"#00C981"}}
-        contentStyle={ {paddingLeft:"0px",borderRadius:"4px",background:"#f8f8f8",padding:"0px",lineHeight:"0px"} }
-        iconStyle={{ background: '#00C981', color: '#fff',height:"10px",width:"10px",marginLeft:"15px" }}
-      >
-        <div className={styl.timelineCard}>
-          <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>28 July</p>
-          </div>
-          <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Departure to Delhi</p>
-          </div>
-        </div>
-      </VerticalTimelineElement>
-              </VerticalTimeline>
-
-              <div className={styl.pricing}>
-              <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>ROOM CAPACITY</p>
-                  <p className={styl.infoText}>PKG COST</p>
-            </div>
-            <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>4/5 SHARING</p>
-                  <p className={styl.infoText}>₹ 6,50,000 Per Person</p>
-            </div>
-            <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>3 BED SHARING</p>
-                  <p className={styl.infoText}>₹ 7,30,000 Per Person</p>
-            </div>
-            <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>2 BED SHARING</p>
-                  <p className={styl.infoText}>₹ 7,65,000 Per Person</p>
-            </div>
-              </div>
-        </div>
-        <div className={styl.contact}>
-         
-            <p className={style.ctag}>CALL US NOW FOR MORE INFORMATION</p>
-            <p className={styl.chead}>9205184001, 9811042458</p>
-         
-        </div>
-     
-      </div>
-    
-        
       </div>
 
 
@@ -705,29 +178,30 @@ Haj packages 2023,
 
 
 
-<div id="umrah">
-<h1 className={styl.urhamHead}>Umrah Packages</h1>
-      {pckages && <UmrahPackageCollector packages = {pckages}></UmrahPackageCollector>}
+
+      <div id="umrah">
+        <h1 className={styl.urhamHead}>Umrah Packages</h1>
+        {pckages && <UmrahPackageCollector packages={pckages}></UmrahPackageCollector>}
       </div>
       <br></br>
       <br></br>
-      <div style={{borderRadius:"10px",backgroundColor:"#00665A"}} className={`${fs.footerup} flex-class`}>
+      <div style={{ borderRadius: "10px", backgroundColor: "#00665A" }} className={`${fs.footerup} flex-class`}>
         <div className={fs.left}>
-            <p className={fs.title}>Contact Us for more information</p>
-            <p className={fs.text}>Planning for Umrah? Book your umrah package with us as we provide the highest-quality Umrah packages from India at amazingly reasonable prices, ensuring that all of your travel needs are met to your satisfaction.</p>
-            <p className={fs.text} style={{marginTop:"10px",letterSpacing:"1px",fontSize:"1.2rem"}}><strong>Email:  aatravels1170@gmail.com</strong></p>
+          <p className={fs.title}>Contact Us for more information</p>
+          <p className={fs.text}>Planning for Umrah? Book your umrah package with us as we provide the highest-quality Umrah packages from India at amazingly reasonable prices, ensuring that all of your travel needs are met to your satisfaction.</p>
+          <p className={fs.text} style={{ marginTop: "10px", letterSpacing: "1px", fontSize: "1.2rem" }}><strong>Email:  aatravels1170@gmail.com</strong></p>
         </div>
         <div className={`${fs.right} flex-class`}>
-        <div>
-        <a href="tel:+919205184001"><div className={`${fs.button} ${fs.ftUmrah}`}>
-        +919205184001
-        </div></a>
-        <a href="tel:+919811042458"><div className={`${fs.button} ${fs.ftUmrah}`}>
-        +919811042458 
-        </div></a>
+          <div>
+            <a href="tel:+919205184001"><div className={`${fs.button} ${fs.ftUmrah}`}>
+              +919205184001
+            </div></a>
+            <a href="tel:+919811042458"><div className={`${fs.button} ${fs.ftUmrah}`}>
+              +919811042458
+            </div></a>
+          </div>
         </div>
-        </div>
-    </div> 
+      </div>
       <br></br>
       <br></br>
       <div className={styl.body}>
@@ -892,7 +366,7 @@ Haj packages 2023,
         </p>
         <br></br>
       </div>
-      
+
     </>
   );
 };
