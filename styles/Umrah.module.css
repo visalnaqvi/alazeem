@@ -661,21 +661,28 @@
     .HajjBoxRight{
         justify-content: space-between;
         align-items: center;
+        padding-top: 10px;
     }
 
     .HajjBoxLeft{
         margin-bottom: 0;
         padding-bottom: 0;
     }
-    /* .hajjPkgBoxPrice{
-        margin: 0px;
-        width: 98%;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    } */
+    .PriceTag{
+        font-size: 0.6rem;
+    }
+
+    .hajjPkgBoxPrice{
+        width: 210px;
+    }
+
+    .hajjPkgBoxPrice .PriceP{
+        font-size: 0.6rem;
+    }
+    
+    .hajjPkgBoxPrice .PriceP span{
+        font-size: 1.2rem;
+    }
 
     .HajjBoxRight button a{
         width: 100%;
@@ -683,10 +690,14 @@
 
     .HajjBoxRight .btnCont{
         margin-top: 10px;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
 
     .HajjBoxRight button{
-        margin: 10px 0 0 8px;
         width: 100%;
         background-color: transparent;
         border: none;
@@ -699,10 +710,6 @@
         font-size: 1.3rem;
     }
 
-    .hajjPkgBoxPrice{
-        margin-top: 20px;
-    }
-
     .hajjPkgContainer .tag{
         font-size: 0.9rem;
     }
@@ -713,7 +720,5 @@
       flex-direction: column;
     }
 
-    .HajjBoxRight button{
-        margin: 10px 0 0 0px;
-    }
+  
 }
