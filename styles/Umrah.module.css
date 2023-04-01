@@ -713,12 +713,14 @@
     .hajjPkgContainer .tag{
         font-size: 0.9rem;
     }
+
+    .hajjPkgContainer .tag{
+        text-decoration: none;
+    }
 }
 
 @media only screen and (max-width:340px){
     .hajjPkgBoxPrice{
       flex-direction: column;
     }
-
-  
 }
