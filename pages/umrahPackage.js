@@ -121,7 +121,50 @@ Haj packages 2023,
 
 
 
-
+<div className={styl.hajjPkgContainer}>
+        <div className={styl.hajjPkgBox}>
+          <div className={styl.HajjBoxLeft}>
+            <h3>HAJ 2023 - Tentative Haj 2023 Pkg</h3>
+            <p className={styl.tag}>SHORT PERIOD PACKAGE <strong>16 – 20 Days</strong></p>
+            <div className={styl.details}>
+              <p>Departure 21st June 2023</p>
+              <div></div>
+              <p>Arrival 06 Jul 2023</p>
+            </div>
+          </div>
+          <div className={styl.HajjBoxRight}>
+            <div>
+            <a href="/hajjPackage"><button>More Details</button></a>
+            </div>
+            <div className={styl.hajjPkgBoxPrice}>
+            <p className={styl.PriceTag}>Starting At</p>
+            <p className={styl.PriceP}><span>₹ 6,50,000 </span>Per Person</p>
+          </div>
+          </div>
+        
+        </div>
+        <div className={styl.hajjPkgBox}>
+          <div className={styl.HajjBoxLeft}>
+            <h3>HAJ 2023 - Tentative Haj 2023 Pkg</h3>
+            <p className={styl.tag}>SHIFTING PACKAGE <strong>35 – 40 Days</strong></p>
+            <div className={styl.details}>
+              <p>Departure 21st June 2023</p>
+              <div></div>
+              <p>Arrival 28 Jul 2023</p>
+            </div>
+          </div>
+          <div className={styl.HajjBoxRight}>
+            <div>
+            <a href="/hajjPackage#haj2"><button>More Details</button></a>
+            </div>
+            <div className={styl.hajjPkgBoxPrice}>
+            <p className={styl.PriceTag}>Starting At</p>
+            <p className={styl.PriceP}><span>₹ 6,50,000 </span>Per Person</p>
+          </div>
+          </div>
+        
+        </div>
+      </div>
 
 
 
