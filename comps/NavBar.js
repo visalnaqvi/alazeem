@@ -1,6 +1,5 @@
 import logo from '../public/logo.png'
 import hamburger from '../public/icons/hamburger.svg'
-import search from '../public/icons/search.svg'
 import Link from 'next/link';
 import Facebook from "../public/icons/facebook.svg"
 import { useEffect,useState } from 'react'; 
@@ -8,7 +7,6 @@ import Image from "next/image"
 import style from "../styles/Nav.module.css"
 import phone from "../public/icons/phone.svg"
 import { useRouter } from "next/router";
-import image from 'next/image';
 const Nav = () => {
   const [number, setNumber] = useState();
   const router = useRouter();

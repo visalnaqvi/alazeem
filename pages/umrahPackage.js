@@ -8,6 +8,7 @@ import fs from "../styles/Footer.module.css"
 import Script from 'next/script'
 import "firebase/firestore"
 import 'react-vertical-timeline-component/style.min.css';
+import Link from 'next/link';
 const UmrahPackage = () => {
 
   const [pckages, setPack] = useState();
@@ -134,7 +135,7 @@ Haj packages 2023,
           </div>
           <div className={styl.HajjBoxRight}>
             <div>
-            {/* <a href="/hajjPackage"><button>More Details</button></a> */}
+           <Link href="/hajjPackage"><a><button>More Details</button></a></Link>
             </div>
             <div className={styl.hajjPkgBoxPrice}>
             <p className={styl.PriceTag}>Starting At</p>
