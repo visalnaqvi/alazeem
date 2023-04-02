@@ -151,9 +151,9 @@ const BaitulMuqadas = () => {
                     <h2 className={style.articletitle}>
                         DAY 2 - Amman
                     </h2>
-                    <p className={style.newtext}>
+                    {/* <p className={style.newtext}>
                         You're sure to wake up with a roaring appetite after your second day in Amman, so indulge in an authentic Jordanian breakfast. After breakfast Visit to ASHAB-E-KAIF    , PROPHET YOOSHA BIN NOON, ABU UBAIDA BIN AL JARRAH, KING ABDULLAH MOSQUE, DIRAR BIN AL AZWAR, ABDUL REHMAN BIN AUF. After completeing Spiritual Journey then  transfer to Hotel for Dinner and night stay.
-                    </p>
+                    </p> */}
                     <br></br>
                     <br></br>
                 </div>
