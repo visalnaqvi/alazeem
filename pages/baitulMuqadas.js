@@ -34,6 +34,113 @@ const BaitulMuqadas = ()=>{
         });
     `}
       </Script>
+
+      <div className={styl.baitulMuqadasWrap}>
+        <div className={`${styl.displayBox} ${styl.baitulMuqadas}`}>
+        </div>
+        <br></br><br></br>
+
+
+        <div className={styl.hajCardWrap}>
+          <h1 style={{ marginBottom: "0px" }} className={style.articletitle}>Baitul Muqaddas</h1>
+          <div className={umrahCardStyle.date}>
+            <p>Departure on: 15 May 2023</p>
+          </div>
+          <h2 style={{ fontWeight: "700", marginTop: "10px" }}>INCLUSIONS</h2>
+          <div className={styl.ulCont}>
+            <ul className={umrahCardStyle.ul}>
+
+              <li>
+                <div className={umrahCardStyle.img}>
+                  <Image src={tick} alt="tick icon"></Image>
+                </div>
+                <p>10 Nights 11 Days Package</p>
+              </li>
+
+              <li>
+                <div className={umrahCardStyle.img}>
+                  <Image src={tick} alt="tick icon"></Image>
+                </div>
+                <p>Friday Salah In Masjid Al Aqsa</p>
+              </li>
+
+
+
+            </ul>
+            <ul className={umrahCardStyle.ul}>
+
+
+              <li>
+                <div className={umrahCardStyle.img}>
+                  <Image src={tick} alt="tick icon"></Image>
+                </div>
+                <p>Air Tickets, Visa</p>
+              </li>
+              <li>
+                <div className={umrahCardStyle.img}>
+                  <Image src={tick} alt="tick icon"></Image>
+                </div>
+                <p>Hotels, Transport</p>
+              </li>
+
+
+            </ul>
+          </div>
+          <br></br>
+
+          <div className={styl.baitulMuqadasFlexOut}>
+            <div className={styl.baitulMuqadasFlex}>
+              <div className={styl.timelineCard}>
+                <div className={styl.timelineCardTop}>
+                  <p>AMMAN</p>
+                </div>
+                <div className={styl.timelineCardBottom}>
+                  <p>03 Nights</p>
+                </div>
+              </div>
+              <div className={styl.timelineCard}>
+                <div className={styl.timelineCardTop}>
+                  <p className={styl.small}>BAITUL MUQADDAS</p>
+                </div>
+                <div className={styl.timelineCardBottom}>
+                  <p>03 Nights</p>
+                </div>
+              </div>
+            </div>
+            <div className={styl.baitulMuqadasFlex}>
+              <div className={styl.timelineCard}>
+                <div className={styl.timelineCardTop}>
+                  <p>TABA BORDER</p>
+                </div>
+                <div className={styl.timelineCardBottom}>
+                  <p>02 Nights</p>
+                </div>
+              </div>
+              <div className={styl.timelineCard}>
+                <div className={styl.timelineCardTop}>
+                  <p>CAIRO</p>
+                </div>
+                <div className={styl.timelineCardBottom}>
+                  <p>02 Nights</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={styl.contact}>
+            <div className={styl.contactBox}>
+              <p className={styl.ctag}>CALL US NOW FOR MORE INFORMATION</p>
+              <p className={styl.chead}>9205184001, 9811042458</p>
+            </div>
+            <div className={styl.baitulMuqadasPrice}>
+              <p>Package Cost : Rs. 135786/-</p>
+            </div>
+          </div>
+        </div>
+
+
+
+</div>
         </>
     );
 }
