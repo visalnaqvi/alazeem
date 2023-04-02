@@ -113,6 +113,17 @@
    font-size: 30px;
 }
 
+.sideBorderBox{
+    box-shadow: 8px 0px 20px #00000020;
+    margin: 25px 0;
+    padding: 20px 10px;
+    border-left: 4px solid #00C981;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+
 .baitulMuqadasFlex , .baitulMuqadasFlexOut{
     display: flex;
     justify-content: space-evenly;
@@ -145,13 +156,14 @@
 
 .baitulMuqadasWrap .hajCardWrap{
     overflow: hidden;
-    width: 90%;
+    width:70%;
     margin: auto;
     background-image: url(../public/MasjidAlAqsa.png);
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: contain;
+    background-size: cover;
     padding-bottom: 20px;
+    min-width: 920px;
 }
 
 .baitulMuqadasWrap .contact{
@@ -166,12 +178,20 @@
     border-bottom-left-radius: 25px;
 }
 
+.baitulMuqadasWrap .contactBox .chead{
+    font-size: 1.2rem;
+}
+
+.baitulMuqadasWrap .contactBox .ctag{
+    font-size: 0.8rem;
+}
+
 .baitulMuqadasPrice{
     background-color: #ffe863;
     color: #000;
     padding: 10px;
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: right;
     margin-left: auto;
     border-top-left-radius: 10px;
@@ -608,6 +628,11 @@
         width: 96%;
         margin-top: 15px;
     }
+
+    .baitulMuqadasWrap .hajCardWrap{
+        width: 90%;
+        min-width: auto;
+    }
     
     .baitulMuqadasFlexOut{
         flex-direction: column;
@@ -827,12 +852,6 @@
     .hajjPkgBox button{
         margin-top: -100px;
     }
-    .baitulMuqadasWrap .contactBox .ctag{
-        font-size: 1rem;
-    }
-    .baitulMuqadasWrap .contactBox .chead{
-        font-size: 1.5rem;
-    }
 }
 
 
@@ -862,9 +881,6 @@
         font-size: 0.7rem;
     }
 
-    .baitulMuqadasPrice{
-        font-size: 1.3rem;
-    }
 
    
 }

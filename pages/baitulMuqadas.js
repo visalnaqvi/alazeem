@@ -42,7 +42,7 @@ const BaitulMuqadas = () => {
 
 
                 <div className={styl.hajCardWrap}>
-                    <h1 style={{ marginBottom: "0px" }} className={style.articletitle}>Baitul Muqaddas</h1>
+                    <h1 style={{ marginBottom: "0px" }} className={style.articleTitleBoldSmall}>Baitul Muqaddas</h1>
                     <div className={umrahCardStyle.date}>
                         <p>Departure on: 15 May 2023</p>
                     </div>
@@ -140,71 +140,70 @@ const BaitulMuqadas = () => {
                 <br></br>
                 <br></br>
                 <div className={styl.body}>
-                    <h1 className={style.articletitle}>DAY 1 - Amman</h1>
+                    <div className={styl.sideBorderBox}>
+                    <h1 className={style.articleTitleBoldSmall}>DAY 1 - Amman</h1>
 
                     <p className={style.newtext}>
                         On arrival of Respected Ziareen to Queen Alia International Airport Jordan, our authorized representative will  welcome of Ziareen and assist them in precedure to transfer to Hotel for Checkin. After rest Delicious and teasty Dinner in Hotel, and Overnight stay in Hotel at Amman.
                     </p>
-                    <br></br>
-                    <br></br>
-
-                    <h2 className={style.articletitle}>
+                    </div>
+                    <div className={styl.sideBorderBox}>
+                    <h2 className={style.articleTitleBoldSmall}>
                         DAY 2 - Amman
                     </h2>
                     <p className={style.newtext}>
                         You&apos;re sure to wake up with a roaring appetite after your second day in Amman, so indulge in an authentic Jordanian breakfast. After breakfast Visit to ASHAB-E-KAIF    , PROPHET YOOSHA BIN NOON, ABU UBAIDA BIN AL JARRAH, KING ABDULLAH MOSQUE, DIRAR BIN AL AZWAR, ABDUL REHMAN BIN AUF. After completeing Spiritual Journey then  transfer to Hotel for Dinner and night stay.
                     </p>
-                    <br></br>
-                    <br></br>
-                    <h3 className={style.articletitle}>
+                    </div>
+                    <div className={styl.sideBorderBox}>
+                    <h3 className={style.articleTitleBoldSmall}>
                         DAY 3 - Amman
                     </h3>
                     <p className={style.newtext}>
                         Zaireen suggested to wake up early and enjoy breakfast, and then ready to  move to KERAK TO VISIT MOOTHATH MAZAR, JAFAR AL TAYYAR, ZAID BIN HARISA, ABDULLAH IBNE RAWWAH, PROPHET SHOIAB, and then visit to PETRA,  Petra is a famous archaeological site in Jordan&apos;s southwestern desert dating to around 300 B.C. . stay in Hotel in Amman (Breakfast, Lunch, Dinner)
                     </p>
-                    <br></br>
-                    <br></br>
-                    <h3 className={style.articletitle}>
+                    </div>
+                    <div className={styl.sideBorderBox}>
+                    <h3 className={style.articleTitleBoldSmall}>
                         DAY 4 - Amman - Palestine
                     </h3>
 
                     <p className={style.newtext}>
                         After breakfast Check out from the Hotel move  to Israel through Allenby Bridge. The King Hussein Bridge (Allenby) Border crossing terminal is located approximately 57 km from the capital city of Amman and is the closest border to the city to access Isreal, Visit to NABI MUSA MUQAM. SALAH in MASJID-E-AQSA.  Overnight stay in Hotel. (Breakfast/Lunch/Dinner)
                     </p>
-                    <br></br>
-                    <br></br>
-
-                    <h3 className={style.articletitle}>
+                   </div>
+                   <div className={styl.sideBorderBox}>
+                    <h3 className={style.articleTitleBoldSmall}>
                         DAY 5 - Palestine
                     </h3>
                     <p className={style.newtext}>
                         After breakfast visit to TOMB SALMANUAL FARSI, RABIA BASRI, GOLDEN DOME, MASJID-E-AQSA, MASJID-E-BURAK, MEHRAB-E-BIBI MARIYAM, MUQAM-E-HAZRAT ZAKARIYA, UMAR MOSQUE, PROPHET YOUNUS. Stay in Hotel (Breakfast, Lunch, Dinner)
                     </p>
-                    <br></br>
-                    <br></br>
-
-                    <h3 className={style.articletitle}>
+                    </div>
+                    <div className={styl.sideBorderBox}>
+                    <h3 className={style.articleTitleBoldSmall}>
                         DAY 6 - Palestine
                     </h3>
                     <p className={style.newtext}>
                         After breakfast, visit HEBRON (PROPHET IBRAHIM, BIBI SAARA, PROPHET ISHAQ, BIBI RIFQA). SALAH in MASJID-E-AQSA. After completing these ziyarat then move to dead sea. The Dead Sea also known by other names, is a salt lake bordered by Jordan to the east and the West Bank and Israel to the west. Stay at hotel (Breakfast, Lunch, Dinner)
                     </p>
-                    <br></br>
-                    <br></br>
-                    <h3 className={style.articletitle}>
+                    </div>
+                    <div className={styl.sideBorderBox}>
+                    <h3 className={style.articleTitleBoldSmall}>
                         DAY 7 - Palestine-Amman
                     </h3>
                     <p className={style.newtext}>
                         After breakfast, check out from the hotel. Overnight stay in Amman Hotel.(Breakfast, Lunch and Dinner)
                     </p>
-                    <br></br>
-                    <br></br>
-                    <h3 className={style.articletitle}>
+                    </div>
+                    <div className={styl.sideBorderBox}>
+                    <h3 className={style.articleTitleBoldSmall}>
                         DAY 8 - DEPARTURE
                     </h3>
                     <p className={style.newtext}>
                         After breakfast, pick up from the hotel for Airport for departure (Breakfast).
                     </p>
+                    </div>
                 </div>
             </div>
         </>
