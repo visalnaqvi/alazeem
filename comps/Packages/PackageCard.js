@@ -1,46 +1,68 @@
 import Check from "../../public/icons/check.png"
 import Link from "next/link";
 import Image from "next/image";
+import iraqImg from "../../public/iraq.jpeg"
 import style from "../../styles/Package.module.css";
-import img from "../../public/images/cities/shimla.jpg"
-const Card = ({packh}) => {
-    console.log(packh.link)
+import hajjImg from "../../public/images/umrah/1.jpg";
+import baitulMuqadasImage from "../../public/BaitulMuqadas.jpeg";
+const Card = () => {
     return ( 
-      <Link href={`${packh.link}`}><a>
+        <>
+      <Link href="/iraqZiyarat"><a>
         <div className={`${style.packagecard} flex-class`}>
             
                 
-                <img className={style.imgwrap} src={packh.image} alt="img"></img>
+                {/* <Image className={style.imgwrap} src={iraqImg} alt="img"></Image> */}
             
                 <div className={style.top}>
-            <h2 className={style.title}>{packh.title}</h2>
+            <h2 className={style.title}>Iraq Ziyarat Package</h2>
             <p className={style.tag}>Includes Meals, Flights, Accommodation, Transfer, Sightseeing</p>
-            <div className={style.price}> <p>Strating at just Rs.{packh.price}/-
+            <div className={style.price}> <p>Strating at just Rs.90,000/-
                Per head</p></div>
 
-                {/* <div className="package-card-text">
-                    <div className={`${style.start} flex-class`}>
-                        <div className={style.check}><Image  src={Check} alt="check tick icon"/></div>
-                        <div className={style.left}><p>{packh.f1}</p></div>
-                    </div>
-                    <div className={`${style.start} flex-class`}>
-                        <div className={style.check}><Image  src={Check} alt="check tick icon"/></div>
-                        <div className={style.left}><p>{packh.f2}</p></div>
-                    </div>
-                    <div className={`${style.start} flex-class`}>
-                        <div className={style.check}><Image  src={Check} alt="check tick icon"/></div>
-                        <div className={style.left}><p>{packh.f3}</p></div>
-                    </div>
-                    <div className={`${style.start} flex-class`}>
-                        <div className={style.check}><Image  src={Check} alt="check tick icon"/></div>
-                        <div className={style.left}><p>{packh.f4}</p></div>
-                    </div>
-                </div> */}
-           {/* <Link href={`${packh.link}`}><a><button className={style.button}>Learn More</button></a></Link> */}
+              
            </div>
         </div>
         </a>
         </Link>
+
+
+        <Link href="/umrahPackage"><a>
+        <div className={`${style.packagecard} flex-class`}>
+            
+                
+                {/* <Image className={style.imgwrap} src={hajjImg} alt="img"></Image> */}
+            
+                <div className={style.top}>
+            <h2 className={style.title}>Haj/Umrah Packages</h2>
+            <p className={style.tag}>Includes Meals, Flights, Accommodation, Transfer, Sightseeing</p>
+            <div className={style.price}> <p>Strating at just Rs.83,000/-
+               Per head</p></div>
+
+                
+           </div>
+        </div>
+        </a>
+        </Link>
+
+        <Link href="/baitulMuqadas"><a>
+        <div className={`${style.packagecard} flex-class`}>
+            
+                
+                {/* <Image className={style.imgwrap} src={baitulMuqadasImage} alt="img"></Image> */}
+            
+                <div className={style.top}>
+            <h2 className={style.title}>Baitul Muqadas Packages</h2>
+            <p className={style.tag}>Includes Meals, Flights, Accommodation, Transfer, Sightseeing</p>
+            <div className={style.price}> <p>Strating at just Rs. 135786 /-
+               Per head</p></div>
+
+                
+           </div>
+        </div>
+        </a>
+        </Link>
+        </>
      );
 }
  

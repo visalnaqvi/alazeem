@@ -7,7 +7,6 @@
 }
 .tableHead{
     font-weight: 700;
-  
     color: #fff;
     padding: 10px;
     margin: 0;
@@ -16,12 +15,11 @@
 
 .tableHead tr .cell{
     background-color: 	#2192FF;
-    
 }
 
 
 .wrapper{
-    width: 60%;
+    width: 85%;
     padding: 30px 0;
     background-color:"#eeeeee",
 }

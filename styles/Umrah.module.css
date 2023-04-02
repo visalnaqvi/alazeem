@@ -605,6 +605,39 @@
     padding: 10px;
 }
 
+.wrapOfSideBar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mainContent{
+    width: 75%;
+}
+
+.sideBar::-webkit-scrollbar {
+    display: none;
+  }
+
+.sideBar{
+    padding-top: 20px;
+    width: 25%;
+    position: sticky;
+    top: 0;
+    border-left: 1px solid #dbdbdb;
+    padding-left: 10px;
+    height: 100vh;
+    background-color: #f8f8f8;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.mainContent .body{
+    width: 100%;
+    padding: 0 20px;
+}
+
 @media only screen and (max-width:980px){
     .baitulMuqadas{
         height: 50vh;
@@ -620,6 +653,17 @@
 }
 
 @media only screen and (max-width:942px){
+   
+    .mainContent{
+        width: 100%;
+    }
+    
+   
+    
+    .sideBar{
+        display: none;
+    }
+    
     .hajjPkgContainer{
         flex-direction: column;
     }

@@ -1,11 +1,14 @@
 import "firebase/firestore"
 import firebase from 'firebase/app';
 import whatsApp from "../public/whatsapp-svgrepo-com.svg"
+import phone from "../public/phone-svgrepo-com.svg"
 import PackageTableCollector from "../comps/PackageTableCollector";
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import phone from "../public/phone-svgrepo-com.svg"
+import styl from "../styles/Umrah.module.css"
+import style from "../styles/Article.module.css"
+import Card from "../comps/Packages/PackageCard";
 const FlightFares = () => {
     const [pckages, setPack] = useState();
 
@@ -143,6 +146,9 @@ db.collection("flightFares").orderBy("timeStamp","desc")
         <link rel="icon" href="/logo512.png" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
       </Head>
+
+      <div className={styl.wrapOfSideBar}>
+      <div className={styl.mainContent}>
     <div>
         
         {
@@ -152,7 +158,19 @@ db.collection("flightFares").orderBy("timeStamp","desc")
 <br></br>
 <br></br>
 
- </div>
+    </div>
+    </div>
+    <div className={styl.sideBar}>
+                    
+                    <p className={style.articleTitleBoldSmall}>Other Packages from AA Travels</p>
+                    <Card></Card>
+              
+            </div>
+    </div>
+
+
+
+
  <div style={{zIndex:"10", display:"flex",position:"fixed",bottom:"13px",right:"13px"}}>
 
 <a target="blank" href="tel:+919205184001"><button
