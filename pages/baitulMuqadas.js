@@ -156,6 +156,55 @@ const BaitulMuqadas = () => {
                     </p>
                     <br></br>
                     <br></br>
+                    <h3 className={style.articletitle}>
+                        DAY 3 - Amman
+                    </h3>
+                    <p className={style.newtext}>
+                        Zaireen suggested to wake up early and enjoy breakfast, and then ready to  move to KERAK TO VISIT MOOTHATH MAZAR, JAFAR AL TAYYAR, ZAID BIN HARISA, ABDULLAH IBNE RAWWAH, PROPHET SHOIAB, and then visit to PETRA,  Petra is a famous archaeological site in Jordan's southwestern desert dating to around 300 B.C. . stay in Hotel in Amman (Breakfast, Lunch, Dinner)
+                    </p>
+                    <br></br>
+                    <br></br>
+                    <h3 className={style.articletitle}>
+                        DAY 4 - Amman - Palestine
+                    </h3>
+
+                    <p className={style.newtext}>
+                        After breakfast Check out from the Hotel move  to Israel through Allenby Bridge. The King Hussein Bridge (Allenby) Border crossing terminal is located approximately 57 km from the capital city of Amman and is the closest border to the city to access Isreal, Visit to NABI MUSA MUQAM. SALAH in MASJID-E-AQSA.  Overnight stay in Hotel. (Breakfast/Lunch/Dinner)
+                    </p>
+                    <br></br>
+                    <br></br>
+
+                    <h3 className={style.articletitle}>
+                        DAY 5 - Palestine
+                    </h3>
+                    <p className={style.newtext}>
+                        After breakfast visit to TOMB SALMANUAL FARSI, RABIA BASRI, GOLDEN DOME, MASJID-E-AQSA, MASJID-E-BURAK, MEHRAB-E-BIBI MARIYAM, MUQAM-E-HAZRAT ZAKARIYA, UMAR MOSQUE, PROPHET YOUNUS. Stay in Hotel (Breakfast, Lunch, Dinner)
+                    </p>
+                    <br></br>
+                    <br></br>
+
+                    <h3 className={style.articletitle}>
+                        DAY 6 - Palestine
+                    </h3>
+                    <p className={style.newtext}>
+                        After breakfast, visit HEBRON (PROPHET IBRAHIM, BIBI SAARA, PROPHET ISHAQ, BIBI RIFQA). SALAH in MASJID-E-AQSA. After completing these ziyarat then move to dead sea. The Dead Sea also known by other names, is a salt lake bordered by Jordan to the east and the West Bank and Israel to the west. Stay at hotel (Breakfast, Lunch, Dinner)
+                    </p>
+                    <br></br>
+                    <br></br>
+                    <h3 className={style.articletitle}>
+                        DAY 7 - Palestine-Amman
+                    </h3>
+                    <p className={style.newtext}>
+                        After breakfast, check out from the hotel. Overnight stay in Amman Hotel.(Breakfast, Lunch and Dinner)
+                    </p>
+                    <br></br>
+                    <br></br>
+                    <h3 className={style.articletitle}>
+                        DAY 8 - DEPARTURE
+                    </h3>
+                    <p className={style.newtext}>
+                        After breakfast, pick up from the hotel for Airport for departure (Breakfast).
+                    </p>
                 </div>
             </div>
         </>
