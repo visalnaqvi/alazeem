@@ -67,7 +67,7 @@ const BaitulMuqadas = () => {
 
 
                         </ul>
-                        <ul className={umrahCardStyle.ul}>
+                        <ul className={`${umrahCardStyle.ul} ${styl.hideMobile}`}>
 
 
                             <li>

@@ -852,6 +852,16 @@
     .hajjPkgBox button{
         margin-top: -100px;
     }
+    .baitulMuqadasWrap .timelineCardTop{
+        font-size: 0.7rem;
+    }
+    .baitulMuqadasWrap .timelineCardBottom{
+        font-size: 0.9rem;
+    }
+    .hideMobile{
+        display: none;
+    }
+    
 }
 
 
