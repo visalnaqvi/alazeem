@@ -152,7 +152,7 @@ const BaitulMuqadas = () => {
                         DAY 2 - Amman
                     </h2>
                     <p className={style.newtext}>
-                        Youre sure to wake up with a roaring appetite after your second day in Amman, so indulge in an authentic Jordanian breakfast. After breakfast Visit to ASHAB-E-KAIF    , PROPHET YOOSHA BIN NOON, ABU UBAIDA BIN AL JARRAH, KING ABDULLAH MOSQUE, DIRAR BIN AL AZWAR, ABDUL REHMAN BIN AUF. After completeing Spiritual Journey then  transfer to Hotel for Dinner and night stay.
+                        You&apos;re sure to wake up with a roaring appetite after your second day in Amman, so indulge in an authentic Jordanian breakfast. After breakfast Visit to ASHAB-E-KAIF    , PROPHET YOOSHA BIN NOON, ABU UBAIDA BIN AL JARRAH, KING ABDULLAH MOSQUE, DIRAR BIN AL AZWAR, ABDUL REHMAN BIN AUF. After completeing Spiritual Journey then  transfer to Hotel for Dinner and night stay.
                     </p>
                     <br></br>
                     <br></br>
@@ -160,7 +160,7 @@ const BaitulMuqadas = () => {
                         DAY 3 - Amman
                     </h3>
                     <p className={style.newtext}>
-                        Zaireen suggested to wake up early and enjoy breakfast, and then ready to  move to KERAK TO VISIT MOOTHATH MAZAR, JAFAR AL TAYYAR, ZAID BIN HARISA, ABDULLAH IBNE RAWWAH, PROPHET SHOIAB, and then visit to PETRA,  Petra is a famous archaeological site in Jordan's southwestern desert dating to around 300 B.C. . stay in Hotel in Amman (Breakfast, Lunch, Dinner)
+                        Zaireen suggested to wake up early and enjoy breakfast, and then ready to  move to KERAK TO VISIT MOOTHATH MAZAR, JAFAR AL TAYYAR, ZAID BIN HARISA, ABDULLAH IBNE RAWWAH, PROPHET SHOIAB, and then visit to PETRA,  Petra is a famous archaeological site in Jordan&apos;s southwestern desert dating to around 300 B.C. . stay in Hotel in Amman (Breakfast, Lunch, Dinner)
                     </p>
                     <br></br>
                     <br></br>
