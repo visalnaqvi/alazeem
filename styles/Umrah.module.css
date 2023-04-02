@@ -88,6 +88,12 @@
     background-size: contain;
 }
 
+.baitulMuqadas{
+    background-image: url(../public/BaitulMuqadas.jpeg);
+    height: 70vh;
+    background-size: contain;
+}
+
 .pkgBox{
     display: flex;
     flex-wrap: wrap;
@@ -107,6 +113,82 @@
    font-size: 30px;
 }
 
+.baitulMuqadasFlex , .baitulMuqadasFlexOut{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.baitulMuqadasFlex{
+    width: 50%;
+}
+
+.baitulMuqadasWrap .timelineCardTop{
+    padding: 10px 10px;   
+    background-image: linear-gradient(to right, #00C981, #009461);
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.baitulMuqadasWrap .timelineCard{
+    width: 50%;
+    margin: 5px;
+}
+
+.baitulMuqadasWrap .timelineCardBottom{
+    background-color: #eee;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.baitulMuqadasWrap .hajCardWrap{
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    background-image: url(../public/MasjidAlAqsa.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    padding-bottom: 20px;
+}
+
+.baitulMuqadasWrap .contact{
+    top: 0;
+    right: 0;
+    bottom: unset;
+    left: unset;
+}
+
+.baitulMuqadasWrap .contactBox{
+    border-radius: 0;
+    border-bottom-left-radius: 25px;
+}
+
+.baitulMuqadasPrice{
+    background-color: #ffe863;
+    color: #000;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-align: right;
+    margin-left: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-weight: 800;
+}
+
+.ulCont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.ulCont ul{
+    margin-right: 20px;
+}
 .timelineCardBottom{
    text-align: center;
    font-size: 30px;
@@ -191,8 +273,8 @@
 .hajInnerWrapper{
     margin-top: 30px;
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 /* .innerWrapLeft{
@@ -253,14 +335,16 @@
     position: absolute;
     bottom: 0;
     left: 0;
+  
+}
+.contactBox{
     background-color: #00C981;
     padding: 10px 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 10px;
 }
-
 .ctag{
-    font-size: 25px;
+    font-size: 0.8rem;
     font-weight: 600;
     font-style: italic;
 }
@@ -321,6 +405,10 @@
     font-weight: 700;
     padding-right: 0 30px;
     width: 40%;
+}
+
+.baitulMuqadasTable .tableHeading{
+    width: 25%;
 }
 
 .tableHead{
@@ -497,7 +585,19 @@
     padding: 10px;
 }
 
+@media only screen and (max-width:980px){
+    .baitulMuqadas{
+        height: 50vh;
+    }
 
+    .baitulMuqadasWrap .hajCardWrap{
+        background-size: cover;
+    }
+
+    .ulCont{
+        width: 70%;
+    }
+}
 
 @media only screen and (max-width:942px){
     .hajjPkgContainer{
@@ -508,13 +608,40 @@
         width: 96%;
         margin-top: 15px;
     }
-
     
+    .baitulMuqadasFlexOut{
+        flex-direction: column;
+    }
+
+    .baitulMuqadasFlex{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:870px){
+    .baitulMuqadasFlexOut{
+        margin-bottom: 120px;
+    }
+    .ulCont{
+        width: 100%;
+    }
+    .baitulMuqadasWrap .contact{
+        top: unset;
+        bottom: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .baitulMuqadasWrap .contactBox{
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        margin-top: 10px;
+    }
 }
 
 
 @media only screen and (max-width:650px){
-   
+    
     .iraqInfo{
         width: 100%;
     }
@@ -566,6 +693,23 @@
         line-height: 28px;
     }
 
+    .ulCont ul li{
+        line-height: 10px;
+        font-size: 1rem;
+        margin: 10px;
+    }
+.baitulMuqadasWrap .hajCardWrap{
+    background-image: url(../public/MasjidAlAqsaMobile2.png);
+    background-size: contain;
+}
+    .ulCont ul{
+        margin: 0;
+    }
+    .ulCont{
+        flex-direction: column;
+       align-items: flex-start;
+       margin: 0;
+    }
 
     .mobileViewIraq .nul li{
         border-bottom: 1px solid #dbdbdb;
@@ -631,6 +775,13 @@
         height: 40vh;
     }
 
+    .baitulMuqadas{
+        background-size: cover;
+        background-position: left;
+        height: 40vh;
+        background-image: url(../public/BaitulMuqadas.jpeg);
+    }
+
     .details{
         justify-content: flex-end;
         margin-top: -20px;
@@ -676,14 +827,45 @@
     .hajjPkgBox button{
         margin-top: -100px;
     }
+    .baitulMuqadasWrap .contactBox .ctag{
+        font-size: 1rem;
+    }
+    .baitulMuqadasWrap .contactBox .chead{
+        font-size: 1.5rem;
+    }
 }
 
-@media only screen and (max-width:412px) {
+
+@media only screen and (max-width:460px) {
+    .small{
+        font-size: 0.9rem;
+    }
+
+    .baitulMuqadasWrap .contactBox .ctag{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width:420px) {
     .hajjPkgBox h3{
         font-size: 1rem;
     }
     .hajjPkgBox .tag{
         font-size: 0.8rem;
     }
+
+    .baitulMuqadasWrap .contactBox .chead{
+        font-size: 1.2rem;
+    }
+
+    .small{
+        font-size: 0.7rem;
+    }
+
+    .baitulMuqadasPrice{
+        font-size: 1.3rem;
+    }
+
+   
 }
 
