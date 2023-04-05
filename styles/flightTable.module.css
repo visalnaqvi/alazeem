@@ -21,8 +21,15 @@
 .wrapper{
     width: 85%;
     padding: 30px 0;
-    background-color:"#eeeeee",
+    background-color:"#eeeeee";
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
 }
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+  }
 .tableWrap{
     display: flex;
     justify-content: center;

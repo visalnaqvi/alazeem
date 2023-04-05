@@ -146,11 +146,11 @@ db.collection("flightFares").orderBy("timeStamp","desc")
         <link rel="icon" href="/logo512.png" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
       </Head>
-
       <div className={styl.wrapOfSideBar}>
       <div className={styl.mainContent}>
     <div>
-        
+    <h1 style={{fontSize:"1.8rem",fontWeight:"800",textAlign:"center",margin:"40px 10px 10px 10px"}}>Fixed Departure Fare</h1>
+
         {
        pckages && 
             <PackageTableCollector packages = {pckages}></PackageTableCollector>
