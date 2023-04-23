@@ -82,6 +82,16 @@
     border-radius: 10px;
 }
 
+.displayBoxHoliday{
+    background-image: url(../public/HolidayPackages.jpeg);
+    background-size: contain;
+    height:80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 15px;
+    border-radius: 10px;
+}
+
 .iraqImage{
     background-image: url(../public/iraq.jpeg);
     height: 70vh;
@@ -638,6 +648,99 @@
     padding: 0 20px;
 }
 
+.HolidayCardWrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+
+
+.HolidayCard{
+    width: 100%;
+    margin: 10px 10px 0 0;
+    width: 33%;
+    box-shadow: 5px 5px 20px 5px  #00000020;
+}
+
+.HolidayCardImg{
+    height: 150px;
+    background-size: cover;
+}
+
+.HolidayCardImgOne{
+    background-image: url(../public/MughalGardens.jpg);
+}
+
+.HolidayCardImgTwo{
+    background-image: url(../public/Khilanmarg.jpg);
+}
+
+.HolidayCardImgThree{
+    background-image: url(../public/Pahalgam.jpg);
+}
+
+.HolidayCardImgFour{
+    background-image: url(../public/Sonamarg.jpg);
+}
+
+.HolidayCardImgFive{
+    background-image: url(../public/Doodhpathri.jpg);
+}
+
+.HolidayCardImgSix{
+    background-image: url(../public/MUNNAR.jpg);
+}
+
+.HolidayCardImgSeven{
+    background-image: url(../public/THEKKADY.jpg);
+}
+
+.HolidayCardImgEight{
+    background-image: url(../public/ALAPPEY\ \ HB.webp);
+}
+
+.HolidayCardImgNine{
+    background-image: url(../public/Hadimba\ temple.jpg);
+}
+
+.HolidayCardImgTen{
+    background-image: url(../public/Solang\ valley.jpg);
+}
+
+.HolidayCardImg11{
+    background-image: url(../public/Jogini\ Water\ falls.jpg);
+}
+
+.HolidayCardImg12{
+    background-image: url(../public/Manu\ Temple.jpg);
+}
+
+.HolidayCardImg13{
+    background-image: url(../public/Manali\ Gompa.jpg);
+}
+
+.HolidayCardImg14{
+    background-image: url(../public/Bhrigu\ Lake.jpg);
+}
+
+.HolidayCardHeading{
+    font-size: 1.2rem ;
+    margin: 8px 0;
+    font-weight: 800;
+}
+
+
+.HolidayCardText{
+    font-size: 0.9rem;
+    
+}
+
+.HolidayCardBottom{
+    padding: 10px;
+    padding-top: 0;
+}
+
 @media only screen and (max-width:980px){
     .baitulMuqadas{
         height: 50vh;
@@ -705,6 +808,14 @@
         border-radius: 0;
         border-top-left-radius: 20px;
         margin-top: 10px;
+    }
+
+    .HolidayCardWrapper{
+        flex-direction: column;
+    }
+
+    .HolidayCard{
+        width: 100%;
     }
 }
 
@@ -835,6 +946,11 @@
         margin: 0;
         border-radius: 0;
         background-image: url(../public/images/umrah/1.jpg);
+    }
+
+    .displayBoxHoliday{
+        height: 30vh;
+   
     }
 
     .iraqImage{

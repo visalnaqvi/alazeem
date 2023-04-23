@@ -166,6 +166,17 @@
     /* text-align: center; */
     
   }
+
+  .Divnavli{
+    background-color:  #3f87ed;
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .Divnavli a{
+    color: #fff;
+    font-weight: 800;
+  }
   
   @media only screen and (max-width:1144px){
     .searchwrapper{
@@ -264,15 +275,16 @@
       .icondiv{
         justify-content: center;
       }
+
+      .contact{
+        display: none;
+      }
+
+      .nav{
+        justify-content: space-between;
+      }
   }
 
-  @media only screen and (max-width:506px){
-    .contact{
-      display: none;
-    }
-  
-    
-}
 @media only screen and (max-width:400px){
   
   .down .navlia{
