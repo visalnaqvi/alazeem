@@ -724,6 +724,10 @@
     background-image: url(../public/BhriguLake.jpg);
 }
 
+.HolidayCardImg15{
+    background-image: url(../public/RohtangPass.jpg);
+}
+
 .HolidayCardHeading{
     font-size: 1.2rem ;
     margin: 8px 0;
