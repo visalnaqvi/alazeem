@@ -110,24 +110,7 @@ const HolidayPackages = () => {
           <p className={styl.HolidayCardText}>Nice place for local sight seen places , Photo point, Jungle honey bee nest, Mattupetty Dam and boating, Elephant arrival spot, Echo point, Tea museum, Anaimudi view, Rajamala "South India highest peak- 8841ft, 2695 mts</p>
           </div>
         </div>
-        <div className={styl.HolidayCard}>
-          <div className={`${styl.HolidayCardImg} ${styl.HolidayCardImgSeven}`}></div>
-          <div className={styl.HolidayCardBottom}>
-          <p className={styl.HolidayCardHeading}>THEKKADY</p>
-          <p className={styl.HolidayCardText}>Thekkady. Sightseeing destinations in Thekkady includes periyar wild life sanctuary where you can see wild elephant, boar, deer, the great Indian tiger and more, mullaperiyar dam and spice plantations tour where one can shop exotic spices.</p>
-          </div>
-        </div>
-        <div className={styl.HolidayCard}>
-          <div className={`${styl.HolidayCardImg} ${styl.HolidayCardImgEight}`}></div>
-          <div className={styl.HolidayCardBottom}>
-          <p className={styl.HolidayCardHeading}>ALAPPEY  HB</p>
-          <p className={styl.HolidayCardText}>Alleppey/ Kumarakam Rice Bowl of Kerala. Set out on an enchanting overnight backwater cruise in traditional Kerala Houseboat after Traditional Kerala lunch. While cruising in these floating luxury vessel , let your eyes enjoy the scenes in a Kerala country side.</p>
-          </div>
-        </div>
-        </div>
-
-
-        
+       </div>
         
         <div style={{zIndex:"10", display:"flex",position:"fixed",bottom:"13px",right:"13px"}}>
 
