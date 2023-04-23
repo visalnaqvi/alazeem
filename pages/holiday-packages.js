@@ -99,6 +99,18 @@ const HolidayPackages = () => {
         </div>
 
 
+        <br></br>
+        <br></br>
+        <h1 className={style.articletitle}>EXPLORE KERALA</h1>
+        <div className={styl.HolidayCardWrapper}>
+        <div className={styl.HolidayCard}>
+          <div className={`${styl.HolidayCardImg} ${styl.HolidayCardImgSix}`}></div>
+          <div className={styl.HolidayCardBottom}>
+          <p className={styl.HolidayCardHeading}>MUNNAR</p>
+          <p className={styl.HolidayCardText}>Nice place for local sight seen places , Photo point, Jungle honey bee nest, Mattupetty Dam and boating, Elephant arrival spot, Echo point, Tea museum, Anaimudi view, Rajamala South India highest peak- 8841ft, 2695 mts</p>
+          </div>
+        </div>
+       </div>
         
         <div style={{zIndex:"10", display:"flex",position:"fixed",bottom:"13px",right:"13px"}}>
 
