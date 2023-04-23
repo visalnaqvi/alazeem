@@ -172,6 +172,7 @@
     padding: 12px;
     border-radius: 8px;
     font-size: 0.9rem;
+    display: none;
   }
 
   .Divnavli a{
@@ -283,6 +284,10 @@
 
       .nav{
         justify-content: space-between;
+      }
+
+      .Divnavli{
+        display: block;
       }
   }
 
