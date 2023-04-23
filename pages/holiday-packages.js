@@ -121,7 +121,7 @@ const HolidayPackages = () => {
           <div className={`${styl.HolidayCardImg} ${styl.HolidayCardImgEight}`}></div>
           <div className={styl.HolidayCardBottom}>
           <p className={styl.HolidayCardHeading}>ALAPPEY  HB</p>
-          <p className={styl.HolidayCardText}>Alleppey/ Kumarakam (Rice Bowl of Kerala). Set out on an enchanting overnight backwater cruise in traditional Kerala Houseboat after Traditional Kerala lunch. While cruising in these floating luxury vessel , let your eyes enjoy the scenes in a Kerala country side.</p>
+          <p className={styl.HolidayCardText}>Alleppey/ Kumarakam Rice Bowl of Kerala. Set out on an enchanting overnight backwater cruise in traditional Kerala Houseboat after Traditional Kerala lunch. While cruising in these floating luxury vessel , let your eyes enjoy the scenes in a Kerala country side.</p>
           </div>
         </div>
         </div>
