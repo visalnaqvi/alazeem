@@ -127,68 +127,7 @@ const HolidayPackages = () => {
         </div>
 
 
-        <br></br>
-        <br></br>
-        <h1 className={style.articletitle}>EXPLORE MANALAI (HIMACHAL)</h1>
-        <p className={styl.HolidayCardHeading}>Manali is a town in Himachal Pradesh named after Santani Law giver Manu. Favorite tourist attraction places are :</p>
-        <div className={styl.HolidayCardWrapper}>
-        <div className={styl.HolidayCard}>
-          <div className={`${styl.HolidayCardImg} ${styl.HolidayCardImgNine}`}></div>
-          <div className={styl.HolidayCardBottom}>
-          <p className={styl.HolidayCardHeading}>Hadimba Temple</p>
-          <p className={styl.HolidayCardText}>temple is dedicated to Hidimba Devi , wife of Bheema. Its surrounded by thick cedar groves.</p>
-          </div>
-        </div>
-        <div className={styl.HolidayCard}>
-          <div className={`${styl.HolidayCardImg} ${styl.HolidayCardImgTen}`}></div>
-          <div className={styl.HolidayCardBottom}>
-          <p className={styl.HolidayCardHeading}>Solang Valley</p>
-          <p className={styl.HolidayCardText}>Located at 8400 feet above sea level heaven for adventure and sports lovers.</p>
-          </div>
-        </div>
-        <div className={styl.HolidayCard}>
-          <div className={`${styl.HolidayCardImg} ${styl.HolidayCardImg11}`}></div>
-          <div className={styl.HolidayCardBottom}>
-          <p className={styl.HolidayCardHeading}>Jogini Water falls</p>
-          <p className={styl.HolidayCardText}>Important place of pilgrimage and can visit old shrines around the pool at the bottom.</p>
-          </div>
-        </div>
-        </div>
-
-        <div className={styl.HolidayCardWrapper}>
-        <div className={styl.HolidayCard}>
-          <div className={`${styl.HolidayCardImg} ${styl.HolidayCardImg12}`}></div>
-          <div className={styl.HolidayCardBottom}>
-          <p className={styl.HolidayCardHeading}>Manu Temple</p>
-          <p className={styl.HolidayCardText}>Very beautiful Pagoda style architecture of shrine.</p>
-          </div>
-        </div>
-        <div className={styl.HolidayCard}>
-          <div className={`${styl.HolidayCardImg} ${styl.HolidayCardImg13}`}></div>
-          <div className={styl.HolidayCardBottom}>
-          <p className={styl.HolidayCardHeading}>Manali Gompa</p>
-          <p className={styl.HolidayCardText}>One of the best landmarks built by Tibetan refugees in 1960s.</p>
-          </div>
-        </div>
-        <div className={styl.HolidayCard}>
-          <div className={`${styl.HolidayCardImg} ${styl.HolidayCardImg14}`}></div>
-          <div className={styl.HolidayCardBottom}>
-          <p className={styl.HolidayCardHeading}>Bhrigu Lake</p>
-          <p className={styl.HolidayCardText}>Nice place for trek that allow to enjoy mesmerizing views of Kullu and Lahaul Valley.</p>
-          </div>
-        </div>
-        </div>
-
-        <div className={styl.HolidayCardWrapper}>
-        <div className={styl.HolidayCard}>
-          <div className={`${styl.HolidayCardImg} ${styl.HolidayCardImg15}`}></div>
-          <div className={styl.HolidayCardBottom}>
-          <p className={styl.HolidayCardHeading}>Rohtang Pass</p>
-          <p className={styl.HolidayCardText}>Located at 4000 meter above sea level that leave every one breathless . hub for nature lovers, artists and photographers. It is a heaven for adventure activities like mountain biking, and skiing.</p>
-          </div>
-        </div>
         
-        </div>
         
         <div style={{zIndex:"10", display:"flex",position:"fixed",bottom:"13px",right:"13px"}}>
 
