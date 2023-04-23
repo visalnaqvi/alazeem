@@ -51,7 +51,34 @@ const HolidayPackages = () => {
         
         <br></br>
         <br></br>
-       
+        <h1 className={style.articletitle}>EXPLORE SRINAGAR</h1>
+        <p className={styl.HolidayCardHeading}>HEAVEN FOR TOURISTS</p>
+        <div className={styl.HolidayCardWrapper}>
+        <div className={styl.HolidayCard}>
+          <div className={`${styl.HolidayCardImg} ${styl.HolidayCardImgOne}`}></div>
+          <div className={styl.HolidayCardBottom}>
+          <p className={styl.HolidayCardHeading}>LOCAL SIGHT SEEING</p>
+          <p className={styl.HolidayCardText}>Explore the Mughal gardens of Nishat and Shalimar & chashmashahi and  enjoy the natural beauty and the mesmerizing view of the valley amidst the mountains.</p>
+          </div>
+        </div>
+        <div className={styl.HolidayCard}>
+          <div className={`${styl.HolidayCardImg} ${styl.HolidayCardImgTwo}`}></div>
+          <div className={styl.HolidayCardBottom}>
+          <p className={styl.HolidayCardHeading}>Gulmarg</p>
+          <p className={styl.HolidayCardText}>Enjoy the attractive sceneries of Khilanmarg via Gondola ride. The Gulmarg Gondola is the highest and longest cable car rope-way of the world , other adventure activities like rock climbing, skiing and trekking</p>
+          </div>
+        </div>
+        <div className={styl.HolidayCard}>
+          <div className={`${styl.HolidayCardImg} ${styl.HolidayCardImgThree}`}></div>
+          <div className={styl.HolidayCardBottom}>
+          <p className={styl.HolidayCardHeading}>Pahalgam</p>
+          <p className={styl.HolidayCardText}>In Pahalgam places like Aru, Betaab valley and Chandanwari which inhibits natural beauty in itself, Horse riding trip to Baisaran meadows via pony ride.  </p>
+          </div>
+        </div>
+        </div>
+
+
+        
         <div style={{zIndex:"10", display:"flex",position:"fixed",bottom:"13px",right:"13px"}}>
 
 <a target="blank" href="tel:+919205184001"><button
