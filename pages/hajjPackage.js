@@ -293,7 +293,7 @@ bus</p>
                   <p className={styl.infoText}>PKG COST (GST not Included)</p>
             </div>
             <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>4/5 SHARING</p>
+                  <p className={styl.infoHead}>4/5 Bed SHARING</p>
                   <p className={styl.infoText}>₹ 6,95,000 Per Person</p>
             </div>
             <div className={styl.infoWrapCard}>
@@ -304,8 +304,10 @@ bus</p>
                   <p className={styl.infoHead}>2 BED SHARING</p>
                   <p className={styl.infoText}>₹ 8,50,000 Per Person</p>
             </div>
+            <p className={styl.hajjnewpkgSubHeadingWarn}>(G.S.T. 5% And 5% TCS Extra and any Other Tax by Saudi Govt. Is applicable.)</p>
               </div>
         </div>
+        
         <div className={styl.contact}>
          
             <p className={style.ctag}>CALL US NOW FOR MORE INFORMATION</p>
@@ -586,10 +588,10 @@ bus</p>
               <div className={styl.pricing}>
               <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>ROOM CAPACITY</p>
-                  <p className={styl.infoText}>PKG COST</p>
+                  <p className={styl.infoText}>PKG COST (GST not Included)</p>
             </div>
             <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>4/5 SHARING</p>
+                  <p className={styl.infoHead}>4/5 Bed SHARING</p>
                   <p className={styl.infoText}>₹ 6,50,000 Per Person</p>
             </div>
             <div className={styl.infoWrapCard}>
@@ -600,6 +602,7 @@ bus</p>
                   <p className={styl.infoHead}>2 BED SHARING</p>
                   <p className={styl.infoText}>₹ 7,65,000 Per Person</p>
             </div>
+            <p className={styl.hajjnewpkgSubHeadingWarn}>(G.S.T. 5% And 5% TCS Extra and any Other Tax by Saudi Govt. Is applicable.)</p>
               </div>
         </div>
         <div className={styl.contact}>

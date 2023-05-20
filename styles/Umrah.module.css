@@ -778,10 +778,10 @@
     text-align: center;
 }
 
-.hajjpkgtableinumrah .hajjnewpkgSubHeadingWarn{
+.hajjnewpkgSubHeadingWarn{
     font-size: 18px;
     font-weight: 700;
-    margin-top: 10px;
+    margin-top: 15px;
     font-style: italic;
 }
 
@@ -827,6 +827,7 @@
     border: none;
     border-radius: 5px;
     margin: 20px 0;
+    cursor: pointer;
 }
 
 .hajjpkgtableinumrah table {margin: 20px 0;
