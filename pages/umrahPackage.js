@@ -209,7 +209,7 @@ Haj packages 2023,
           <tr className={styl.oddTr}>
             <td>Total Cost</td>
             <td>7,64,500/-</td>
-            <td>8,50,000/-</td>
+            <td>8,52,500/-</td>
             <td>9,35,000/-</td>
           </tr>
         </table>
