@@ -944,6 +944,7 @@
 
     .hajjpkgtableinumrah .hajjnewpkgHeading{
         font-size: 30px;
+        font-weight: 600;
     }
 
     .hajjpkgtableinumrah .hajjnewpkgSubHeading{
@@ -962,6 +963,10 @@
     }
 
     .hajjpkgtableinumrah .hajjnewpkgInfo .hajjnewpktinfocard p{
+        font-size: 18px;
+    }
+
+    .hajjpkgtableinumrah .hajjnewpkgInfo .hajjnewpktinfocard span{
         font-size: 15px;
     }
 
