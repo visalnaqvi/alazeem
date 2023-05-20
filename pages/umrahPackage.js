@@ -152,9 +152,9 @@ Haj packages 2023,
 
           <tr className={styl.oddTr}>
             <td>Package Cost</td>
-            <td>Rs. 6,50,000/- Per Person</td>
-            <td>Rs. 7,30,000/- Per Person</td>
-            <td>Rs. 7,65,000/- Per Person</td>
+            <td>6,50,000/-</td>
+            <td>7,30,000/-</td>
+            <td>7,65,000/-</td>
           </tr>
         </table>
         </div>
@@ -184,34 +184,33 @@ Haj packages 2023,
             <td>4/5 Bed Sharing</td>
             <td>3 Bed Sharing</td>
             <td>2 Bed Sharing</td>
-            <td>Any additional service
-(Business Class)
+            <td>Additional Services
 </td>
 
           </tr>
 
           <tr className={styl.oddTr}>
             <td>Package Cost</td>
-            <td>Rs. 6,95,000/- Per Person</td>
-            <td>Rs. 7,75,000/- Per Person</td>
-            <td>Rs. 8,50,000/- Per Person</td>
+            <td>6,95,000/-</td>
+            <td>7,75,000/-</td>
+            <td>8,50,000/-</td>
             <td style={{textAlign:"center",verticalAlign:"middle"}} rowSpan={3}>43000/-
-(If Required By Guest)
+(Business Class If Required By Guest)
 </td>
           </tr>
 
           <tr className={styl.oddTr}>
-            <td>GST & TCS (5% +5%)</td>
-            <td>Rs. 69500</td>
-            <td>Rs. 77500</td>
-            <td>Rs. 85000</td>
+            <td>GST & TCS <br></br> (5% +5%)</td>
+            <td>69500</td>
+            <td>77500</td>
+            <td>85000</td>
           </tr>
 
           <tr className={styl.oddTr}>
             <td>Total Cost</td>
-            <td>Rs. 7,64,500/- Per Person</td>
-            <td>Rs. 8,50,000/- Per Person</td>
-            <td>Rs. 9,35,000/- Per Person</td>
+            <td>7,64,500/-</td>
+            <td>8,50,000/-</td>
+            <td>9,35,000/-</td>
           </tr>
         </table>
         </div>
@@ -280,20 +279,20 @@ Haj packages 2023,
           <tr className={styl.evenTr}>
             <td style={{ verticalAlign: "middle" }} rowSpan={3} className={`${styl.tableHeading} ${styl.pricingHajjInTable}`}>Pricing</td>
             <td className={styl.tableHeading}>4/5 Sharing</td>
-            <td>Rs. 6,50,000/- Per Person</td>
-            <td>Rs. 6,95,000/- Per Person</td>
+            <td>6,50,000/-</td>
+            <td>6,95,000/-</td>
           </tr>
 
           <tr className={styl.evenTr}>
             <td className={styl.tableHeading}>3 Beds in a room</td>
-            <td>Rs. 7,30,000/- Per Person</td>
-            <td>Rs. 7,75,000/- Per Person</td>
+            <td>7,30,000/-</td>
+            <td>7,75,000/-</td>
           </tr>
 
           <tr className={styl.evenTr}>
             <td className={styl.tableHeading}>2 Beds in a room</td>
-            <td>Rs. 7,65,000/- Per Person</td>
-            <td>Rs. 8,50,000/- Per Person</td>
+            <td>7,65,000/-</td>
+            <td>8,50,000/-</td>
           </tr>
 
           <tr className={styl.oddTr}>
@@ -334,20 +333,20 @@ Haj packages 2023,
 
           <tr className={styl.evenTr}>
             <td className={styl.tableHeading}>4/5 Sharing</td>
-            <td>Rs. 6,50,000/- Per Person</td>
-            <td>Rs. 6,95,000/- Per Person</td>
+            <td>6,50,000/-</td>
+            <td>6,95,000/-</td>
           </tr>
 
           <tr className={styl.evenTr}>
             <td className={styl.tableHeading}>3 Beds in a room</td>
-            <td>Rs. 7,30,000/- Per Person</td>
-            <td>Rs. 7,75,000/- Per Person</td>
+            <td>7,30,000/-</td>
+            <td>7,75,000/-</td>
           </tr>
 
           <tr className={styl.evenTr}>
             <td className={styl.tableHeading}>2 Beds in a room</td>
-            <td>Rs. 7,65,000/- Per Person</td>
-            <td>Rs. 8,50,000/- Per Person</td>
+            <td>7,65,000/-</td>
+            <td>8,50,000/-</td>
           </tr>
 
           <tr className={styl.oddTr}>

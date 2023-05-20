@@ -458,8 +458,6 @@
 .hajjpkgtableinumrah .table .tableHeadHajj td{
     background-color: #00C981;
     color: #fff;
-    font-size: 18px;
-    font-weight: 600;
 }
 
 .iraqInfo{
@@ -836,9 +834,11 @@
     border: 1px solid #dbdbdb;
     width: 100% ;
     border-right: none;
+    text-align: center;
+    vertical-align: middle;
   }
   .hajjpkgtableinumrah table td {
-    width: 33% ;
+    width: 25% ;
     border-right: 1px solid #dbdbdb;
     font-size: 18px;
     font-weight: 500;
