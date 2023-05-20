@@ -136,16 +136,7 @@ Haj packages 2023,
           </div>
         </div>
 
-        <div className={styl.newCardHolder}>
-          <div className={styl.newCard}>
-            <div className={styl.newCardTop}>
-
-            </div>
-            <div className={styl.newCardBottom}>
-              
-            </div>
-          </div>
-        </div>
+       
         <div className={styl.overflowX}>
         <table className={styl.table}>
           <tr className={styl.tableHeadHajj}>
@@ -172,7 +163,7 @@ Haj packages 2023,
 
       <div className={styl.hajjpkgtableinumrah}>
         <p className={styl.hajjnewpkgHeading}>HAJ 2023 Tentative Haj 2023 Pkg</p>
-        <p className={styl.hajjnewpkgSubHeading}>SHIFTING PACKAGE 17/18  Days</p>
+        <p className={styl.hajjnewpkgSubHeading}>17/18 Days Package</p>
         <div className={styl.greenUnderline}></div>
         <div className={styl.hajjnewpkgInfo}>
           <div className={styl.hajjnewpktinfocard}>
