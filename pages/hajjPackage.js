@@ -124,7 +124,7 @@ Haj packages 2023,
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>Surface transport (Jeddah/Makkah/Meena/Arafat/Muzdalfa/Madina/Jeddah) by AC
+                        <p>Surface transport (Jeddah / Makkah / Meena / Arafat / Muzdalfa / Madina / Jeddah) by AC
 bus</p>
                     </li>  
                     <li key={Math.random()}>

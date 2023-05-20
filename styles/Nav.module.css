@@ -179,6 +179,34 @@
     color: #fff;
     font-weight: 800;
   }
+
+  .mobileNavWrap{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    z-index: 1000;
+  }
+
+  .mobileNavLeft{
+    width: 70%;
+    background-color: #fff;
+    height: 100%;
+    padding: 25px;
+  }
+
+  .movileNavUl li{
+    padding: 30px 0 ;
+    font-size: x-large;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  .mobileUlRight{
+    background-color: #00000080;
+    width: 30%;
+  }
   
   @media only screen and (max-width:1144px){
     .searchwrapper{
@@ -237,16 +265,10 @@
     .nav{
       padding:20px;
     }
-    .down{
-      display:block;
-      padding:20px 0;
+    .ham{
+      display: block;
+      margin:0 20px
     }
-    .down ul{
-      display: flex;
-      justify-content: space-evenly;
-      font-size: small;
-    }
-
     .btn{
       width:130px
     }
