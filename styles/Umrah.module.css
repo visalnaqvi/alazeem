@@ -455,6 +455,13 @@
     background-image: linear-gradient(to right, #00C981, #009461);
 }
 
+.hajjpkgtableinumrah .table .tableHeadHajj td{
+    background-color: #00C981;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 .iraqInfo{
     width: 70%;
 }
@@ -745,8 +752,77 @@
     padding-top: 0;
 }
 .hajjpkgtableinumrah {
-    width: 90%;
+    width: 95%;
     margin: 30px auto;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    box-shadow: 5px 5px 20px #00000030;
+}
+
+.hajjpkgtableinumrah  .hajjnewpkgHeading{
+    font-size: 40px;
+}
+
+.hajjpkgtableinumrah .greenUnderline{
+    height: 8px;
+    width: 100%;
+    background-color: #009461;
+    margin-top: 10px;
+}
+
+.hajjpkgtableinumrah .hajjnewpkgSubHeading{
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.hajjpkgtableinumrah .hajjnewpkgSubHeadingWarn{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.hajjpkgtableinumrah .hajjnewpkgInfo{
+    margin: 10px 0;
+}
+
+.hajjpkgtableinumrah .hajjnewpkgInfo{
+    /* background-color: #ffe863; */
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.hajjpkgtableinumrah .hajjnewpkgInfo .hajjnewpktinfocard{
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 10px;
+    width: 48%;
+}
+
+.hajjpkgtableinumrah .hajjnewpkgInfo p{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 5px 0;
+}
+
+.hajjpkgtableinumrah .hajjnewpkgInfo span{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.newpkgbutton{
+    padding: 15px 40px;
+    font-size: 18px;
+    background-color: #00C981;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
 }
 
 .hajjpkgtableinumrah table {
@@ -847,6 +923,48 @@
     .HolidayCard{
         width: 100%;
     }
+
+    .hajjpkgtableinumrah .hajjnewpkgInfo{
+        flex-direction: column;
+
+    }
+
+    .hajjpkgtableinumrah .hajjnewpkgInfo .hajjnewpktinfocard{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .newpkgbutton{
+        width: 100%;
+    }
+
+    .overflowX{
+        overflow-x: scroll;
+    }
+
+    .hajjpkgtableinumrah .hajjnewpkgHeading{
+        font-size: 30px;
+    }
+
+    .hajjpkgtableinumrah .hajjnewpkgSubHeading{
+        font-size: 20px;
+    }
+
+    
+    .hajjpkgtableinumrah .hajjnewpkgInfo .hajjnewpktinfocard{
+        background-color: #fff;
+        padding: 0;
+    }
+
+    .hajjpkgtableinumrah .hajjnewpkgInfo .hajjnewpktinfocard:first-child{
+        border-bottom: 1px solid #dbdbdb;
+        padding-bottom: 10px;
+    }
+
+    .hajjpkgtableinumrah .hajjnewpkgInfo .hajjnewpktinfocard p{
+        font-size: 15px;
+    }
+
 }
 
 
@@ -1056,21 +1174,10 @@
         display: none;
     }
 
-    .hajjpkgtableinumrah{
-        overflow-x: scroll;
-        width: 100%;
-    }
+   
 
     .hajjpkgtableinumrah .table{
         width: 600px;
-    }
-
-    .hajjpkgtableinumrah{
-        display: none;
-    }
-
-    .dsiplayonMobile{
-        display: block;
     }
     
 }

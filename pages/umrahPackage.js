@@ -9,6 +9,7 @@ import Script from 'next/script'
 import "firebase/firestore"
 import 'react-vertical-timeline-component/style.min.css';
 import Link from 'next/link';
+import Article from "../comps/Article";
 const UmrahPackage = () => {
 
   const [pckages, setPack] = useState();
@@ -122,7 +123,115 @@ Haj packages 2023,
 
 
 
-      <div className={styl.hajjPkgContainer}>
+      <div className={styl.hajjpkgtableinumrah}>
+        <p className={styl.hajjnewpkgHeading}>HAJ 2023 Tentative Haj 2023 Pkg</p>
+        <p className={styl.hajjnewpkgSubHeading}>SHIFTING PACKAGE 35 – 40 Days</p>
+        <div className={styl.greenUnderline}></div>
+        <div className={styl.hajjnewpkgInfo}>
+          <div className={styl.hajjnewpktinfocard}>
+          <p><span>Departure :</span><br></br> INSHALLAH on 21st June 2023 (DEL – JED (Direct Flight)</p>
+          </div>
+          <div className={styl.hajjnewpktinfocard}>
+          <p><span>Arrival  :</span><br></br> 28 Jul 2023 (MED – JED – DEL / MED – RUH - DEL / JED DEL)</p>
+          </div>
+        </div>
+
+        <div className={styl.newCardHolder}>
+          <div className={styl.newCard}>
+            <div className={styl.newCardTop}>
+
+            </div>
+            <div className={styl.newCardBottom}>
+              
+            </div>
+          </div>
+        </div>
+        <div className={styl.overflowX}>
+        <table className={styl.table}>
+          <tr className={styl.tableHeadHajj}>
+
+            <td>Room Capacity</td>
+            <td>4/5 Sharing</td>
+            <td>3 Bed Sharing</td>
+            <td>2 Bed Sharing</td>
+
+          </tr>
+
+          <tr className={styl.oddTr}>
+            <td>Package Cost</td>
+            <td>Rs. 6,50,000/- Per Person</td>
+            <td>Rs. 7,30,000/- Per Person</td>
+            <td>Rs. 7,65,000/- Per Person</td>
+          </tr>
+        </table>
+        </div>
+        <p className={styl.hajjnewpkgSubHeadingWarn}>(G.S.T. 5% And 5% TCS Extra and any Other Tax by Saudi Govt. Is applicable.)</p>
+
+        <Link href="/hajjPackage#haj2"><a><button className={styl.newpkgbutton}>Click For More Details</button></a></Link>
+      </div>
+
+      <div className={styl.hajjpkgtableinumrah}>
+        <p className={styl.hajjnewpkgHeading}>HAJ 2023 Tentative Haj 2023 Pkg</p>
+        <p className={styl.hajjnewpkgSubHeading}>SHIFTING PACKAGE 17/18  Days</p>
+        <div className={styl.greenUnderline}></div>
+        <div className={styl.hajjnewpkgInfo}>
+          <div className={styl.hajjnewpktinfocard}>
+          <p><span>Departure :</span><br></br> INSHALLAH on 20th/ 21stJUNE 2023 (By Saudi Airlines or Any other airlines)</p>
+          </div>
+          <div className={styl.hajjnewpktinfocard}>
+          <p><span>Arrival  :</span><br></br> 9th / 10th July 2023 </p>
+          </div>
+        </div>
+
+        <div className={styl.overflowX}>
+        <table className={styl.table}>
+          <tr className={styl.tableHeadHajj}>
+
+            <td>Room Capacity</td>
+            <td>4/5 Sharing</td>
+            <td>3 Bed Sharing</td>
+            <td>2 Bed Sharing</td>
+            <td>Any additional service
+(Business Class)
+</td>
+
+          </tr>
+
+          <tr className={styl.oddTr}>
+            <td>Package Cost</td>
+            <td>Rs. 6,95,000/- Per Person</td>
+            <td>Rs. 7,75,000/- Per Person</td>
+            <td>Rs. 8,50,000/- Per Person</td>
+            <td style={{textAlign:"center",verticalAlign:"middle"}} rowSpan={3}>43000/-
+(If Required By Guest)
+</td>
+          </tr>
+
+          <tr className={styl.oddTr}>
+            <td>GST & TCS (5% +5%)</td>
+            <td>Rs. 69500</td>
+            <td>Rs. 77500</td>
+            <td>Rs. 85000</td>
+          </tr>
+
+          <tr className={styl.oddTr}>
+            <td>Total Cost</td>
+            <td>Rs. 7,64,500/- Per Person</td>
+            <td>Rs. 8,50,000/- Per Person</td>
+            <td>Rs. 9,35,000/- Per Person</td>
+          </tr>
+        </table>
+        </div>
+        <p className={styl.hajjnewpkgSubHeadingWarn}>(G.S.T. 5% And 5% TCS Extra and any Other Tax by Saudi Govt. Is applicable.)</p>
+
+
+        <Link href="/hajjPackage#haj1"><a><button className={styl.newpkgbutton}>Click For More Details</button></a></Link>
+      </div>
+
+
+
+
+      {/* <div className={styl.hajjPkgContainer}>
         <div className={styl.hajjPkgBox}>
           <div className={styl.HajjBoxLeft}>
             <h3>HAJ 2023 - Tentative Haj 2023 Pkg</h3>
@@ -157,116 +266,116 @@ Haj packages 2023,
           </div>
 
         </div>
-      </div>
+      </div> */}
 
-<div className={styl.hajjpkgtableinumrah}>
-      <table className={styl.table}>
-        <tr className={styl.tableHead}>
+      {/* <div className={styl.hajjpkgtableinumrah}>
+        <table className={styl.table}>
+          <tr className={styl.tableHead}>
 
-          <td colSpan={2} className={styl.tableHeading}>Feature</td>
-          <td>Tentative Haj 2023 Shifting Package</td>
-          <td>Short Term Economy Class</td>
+            <td colSpan={2} className={styl.tableHeading}>Feature</td>
+            <td>Tentative Haj 2023 Shifting Package</td>
+            <td>Short Term Economy Class</td>
 
-        </tr>
+          </tr>
 
-        <tr className={styl.oddTr}>
-          <td  colSpan={2} className={styl.tableHeading}>Number of Days</td>
-          <td>35/40 Days</td>
-          <td>17/18 days</td>
-        </tr>
+          <tr className={styl.oddTr}>
+            <td colSpan={2} className={styl.tableHeading}>Number of Days</td>
+            <td>35/40 Days</td>
+            <td>17/18 days</td>
+          </tr>
 
-        <tr className={styl.evenTr}>
-          <td style={{verticalAlign: "middle"}} rowSpan={3} className={`${styl.tableHeading} ${styl.pricingHajjInTable}`}>Pricing</td>
-          <td className={styl.tableHeading}>4/5 Sharing</td>
-          <td>Rs. 6,50,000/- Per Person</td>
-          <td>Rs. 6,95,000/- Per Person</td>
-        </tr>
+          <tr className={styl.evenTr}>
+            <td style={{ verticalAlign: "middle" }} rowSpan={3} className={`${styl.tableHeading} ${styl.pricingHajjInTable}`}>Pricing</td>
+            <td className={styl.tableHeading}>4/5 Sharing</td>
+            <td>Rs. 6,50,000/- Per Person</td>
+            <td>Rs. 6,95,000/- Per Person</td>
+          </tr>
 
-        <tr className={styl.evenTr}>
-          <td className={styl.tableHeading}>3 Beds in a room</td>
-          <td>Rs. 7,30,000/- Per Person</td>
-          <td>Rs. 7,75,000/- Per Person</td>
-        </tr>
+          <tr className={styl.evenTr}>
+            <td className={styl.tableHeading}>3 Beds in a room</td>
+            <td>Rs. 7,30,000/- Per Person</td>
+            <td>Rs. 7,75,000/- Per Person</td>
+          </tr>
 
-        <tr className={styl.evenTr}>
-          <td className={styl.tableHeading}>2 Beds in a room</td>
-          <td>Rs. 7,65,000/- Per Person</td>
-          <td>Rs. 8,50,000/- Per Person</td>
-        </tr>
+          <tr className={styl.evenTr}>
+            <td className={styl.tableHeading}>2 Beds in a room</td>
+            <td>Rs. 7,65,000/- Per Person</td>
+            <td>Rs. 8,50,000/- Per Person</td>
+          </tr>
 
-        <tr className={styl.oddTr}>
-          <td  colSpan={2} className={styl.tableHeading}>Departure from Delhi</td>
-          <td>21st June 2023 DEL to JED (Direct Flight)</td>
-          <td> 20th/21st JUNE DEL to JED (Direct Flight)</td>
-        </tr>
+          <tr className={styl.oddTr}>
+            <td colSpan={2} className={styl.tableHeading}>Departure from Delhi</td>
+            <td>21st June 2023 DEL to JED (Direct Flight)</td>
+            <td> 20th/21st JUNE DEL to JED (Direct Flight)</td>
+          </tr>
 
-        <tr className={styl.evenTr}>
-          <td colSpan={2} className={styl.tableHeading}>Package Includes</td>
-          <td><Link href="/hajjPackage#haj2"><a style={{fontWeight:"600",color:"blue",textDecoration:"underline"}}>Click More Details</a></Link></td>
-          <td><Link href="/hajjPackage#haj1"><a style={{fontWeight:"600",color:"blue",textDecoration:"underline"}}>Click More Details</a></Link></td>
-        </tr>
+          <tr className={styl.evenTr}>
+            <td colSpan={2} className={styl.tableHeading}>Package Includes</td>
+            <td><Link href="/hajjPackage#haj2"><a style={{ fontWeight: "600", color: "blue", textDecoration: "underline" }}>Click More Details</a></Link></td>
+            <td><Link href="/hajjPackage#haj1"><a style={{ fontWeight: "600", color: "blue", textDecoration: "underline" }}>Click More Details</a></Link></td>
+          </tr>
 
-        <tr className={styl.oddTr}>
-          <td colSpan={2} className={styl.tableHeading}>Package Does not Includes</td>
-          <td><Link href="/hajjPackage#haj2"><a style={{fontWeight:"600",color:"blue",textDecoration:"underline"}}>Click More Details</a></Link></td>
-          <td><Link href="/hajjPackage#haj1"><a style={{fontWeight:"600",color:"blue",textDecoration:"underline"}}>Click More Details</a></Link></td>
-        </tr>
-      </table>
-      </div>
+          <tr className={styl.oddTr}>
+            <td colSpan={2} className={styl.tableHeading}>Package Does not Includes</td>
+            <td><Link href="/hajjPackage#haj2"><a style={{ fontWeight: "600", color: "blue", textDecoration: "underline" }}>Click More Details</a></Link></td>
+            <td><Link href="/hajjPackage#haj1"><a style={{ fontWeight: "600", color: "blue", textDecoration: "underline" }}>Click More Details</a></Link></td>
+          </tr>
+        </table>
+      </div> */}
 
-      <div className={`${styl.hajjpkgtableinumrah} ${styl.dsiplayonMobile}`}>
-      <table className={styl.table}>
-        <tr className={styl.tableHead}>
+      {/* <div className={`${styl.hajjpkgtableinumrah} ${styl.dsiplayonMobile}`}>
+        <table className={styl.table}>
+          <tr className={styl.tableHead}>
 
-          <td className={styl.tableHeading}>Feature</td>
-          <td>Tentative Haj 2023 Shifting Package</td>
-          <td>Short Term Economy Class</td>
+            <td className={styl.tableHeading}>Feature</td>
+            <td>Tentative Haj 2023 Shifting Package</td>
+            <td>Short Term Economy Class</td>
 
-        </tr>
+          </tr>
 
-        <tr className={styl.oddTr}>
-          <td className={styl.tableHeading}>Number of Days</td>
-          <td>35/40 Days</td>
-          <td>17/18 days</td>
-        </tr>
+          <tr className={styl.oddTr}>
+            <td className={styl.tableHeading}>Number of Days</td>
+            <td>35/40 Days</td>
+            <td>17/18 days</td>
+          </tr>
 
-        <tr className={styl.evenTr}>
-          <td className={styl.tableHeading}>4/5 Sharing</td>
-          <td>Rs. 6,50,000/- Per Person</td>
-          <td>Rs. 6,95,000/- Per Person</td>
-        </tr>
+          <tr className={styl.evenTr}>
+            <td className={styl.tableHeading}>4/5 Sharing</td>
+            <td>Rs. 6,50,000/- Per Person</td>
+            <td>Rs. 6,95,000/- Per Person</td>
+          </tr>
 
-        <tr className={styl.evenTr}>
-          <td className={styl.tableHeading}>3 Beds in a room</td>
-          <td>Rs. 7,30,000/- Per Person</td>
-          <td>Rs. 7,75,000/- Per Person</td>
-        </tr>
+          <tr className={styl.evenTr}>
+            <td className={styl.tableHeading}>3 Beds in a room</td>
+            <td>Rs. 7,30,000/- Per Person</td>
+            <td>Rs. 7,75,000/- Per Person</td>
+          </tr>
 
-        <tr className={styl.evenTr}>
-          <td className={styl.tableHeading}>2 Beds in a room</td>
-          <td>Rs. 7,65,000/- Per Person</td>
-          <td>Rs. 8,50,000/- Per Person</td>
-        </tr>
+          <tr className={styl.evenTr}>
+            <td className={styl.tableHeading}>2 Beds in a room</td>
+            <td>Rs. 7,65,000/- Per Person</td>
+            <td>Rs. 8,50,000/- Per Person</td>
+          </tr>
 
-        <tr className={styl.oddTr}>
-          <td className={styl.tableHeading}>Departure from Delhi</td>
-          <td>21st June 2023 DEL to JED (Direct Flight)</td>
-          <td> 20th/21st JUNE DEL to JED (Direct Flight)</td>
-        </tr>
+          <tr className={styl.oddTr}>
+            <td className={styl.tableHeading}>Departure from Delhi</td>
+            <td>21st June 2023 DEL to JED (Direct Flight)</td>
+            <td> 20th/21st JUNE DEL to JED (Direct Flight)</td>
+          </tr>
 
-        <tr className={styl.evenTr}>
-          <td className={styl.tableHeading}>Package Includes</td>
-          <td><Link href="/hajjPackage#haj2"><a style={{fontWeight:"600",color:"blue",textDecoration:"underline"}}>Click More Details</a></Link></td>
-          <td><Link href="/hajjPackage#haj1"><a style={{fontWeight:"600",color:"blue",textDecoration:"underline"}}>Click More Details</a></Link></td>
-        </tr>
+          <tr className={styl.evenTr}>
+            <td className={styl.tableHeading}>Package Includes</td>
+            <td><Link href="/hajjPackage#haj2"><a style={{ fontWeight: "600", color: "blue", textDecoration: "underline" }}>Click More Details</a></Link></td>
+            <td><Link href="/hajjPackage#haj1"><a style={{ fontWeight: "600", color: "blue", textDecoration: "underline" }}>Click More Details</a></Link></td>
+          </tr>
 
-        <tr className={styl.oddTr}>
-          <td className={styl.tableHeading}>Package Does not Includes</td>
-          <td><Link href="/hajjPackage#haj2"><a style={{fontWeight:"600",color:"blue",textDecoration:"underline"}}>Click More Details</a></Link></td>
-          <td><Link href="/hajjPackage#haj1"><a style={{fontWeight:"600",color:"blue",textDecoration:"underline"}}>Click More Details</a></Link></td>
-        </tr>
-      </table>
-      </div>
+          <tr className={styl.oddTr}>
+            <td className={styl.tableHeading}>Package Does not Includes</td>
+            <td><Link href="/hajjPackage#haj2"><a style={{ fontWeight: "600", color: "blue", textDecoration: "underline" }}>Click More Details</a></Link></td>
+            <td><Link href="/hajjPackage#haj1"><a style={{ fontWeight: "600", color: "blue", textDecoration: "underline" }}>Click More Details</a></Link></td>
+          </tr>
+        </table>
+      </div> */}
 
 
 
