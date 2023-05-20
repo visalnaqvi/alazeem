@@ -90,23 +90,23 @@ Haj packages 2023,
       <div className={styl.hajCard}>
         <div className={styl.left}>
         <h1>HAJ 2023 - Tentative Haj 2023 Pkg</h1>
-        <p className={styl.tag}>SHORT PERIOD PACKAGE <strong>16 – 20 Days</strong></p>
+        <p className={styl.tag}>SHORT PERIOD PACKAGE <strong>17/18 Days</strong></p>
 
         <div className={styl.infoWrap}>
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>Departure</p>
                   <div className={styl.underline}></div>
-                  <p className={styl.infoText}>INSHALLAH on 21st June 2023 DEL – JED (Direct Flight) </p>
+                  <p className={styl.infoText}>INSHALLAH on 20th / 21st JUNE DEL to JED (Direct Flight) </p>
             </div>
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>Arrival</p>
                   <div className={styl.underline}></div>
-                  <p className={styl.infoText}>06 Jul 2023 (MED JED DEL OR MED RUH DEL / JED DEL)</p>
+                  <p className={styl.infoText}>10 Jul 2023 (JED to DEL)</p>
             </div>
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>Stay</p>
                   <div className={styl.underline}></div>
-                  <p className={styl.infoText}>21 JUN TO 02 JUL JABAL AL NOUR DISTANCE 5-6 KM</p>
+                  <p className={styl.infoText}>21 JUN TO 10 JUL JABAL AL NOUR DISTANCE 5-6 KM</p>
             </div>
         </div>
 
@@ -118,49 +118,38 @@ Haj packages 2023,
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>HAJ KIT</p>
+                        <p>Round trip Air fare (DEL/JED/MED-JED/DEL).</p>
                     </li>  
                     <li key={Math.random()}>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>AIR TICKET ECONOMY CLASS</p>
+                        <p>Surface transport (Jeddah/Makkah/Meena/Arafat/Muzdalfa/Madina/Jeddah) by AC
+bus</p>
                     </li>  
                     <li key={Math.random()}>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>BREAK FAST, LUNCH, DINNER</p>
+                        <p>Local Ziarat of Makkah &Madina.* Haj Visa</p>
                     </li>  
                     <li key={Math.random()}>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>LOCAL TRANSPORT JED AIRPORT TO MAKKA, MADINA, AIRPORT AND LOCAL ZIYARAT MAKKA MADINA</p>
+                        <p>Food (Breakfast, Lunch, Dinner, Morning & Evening Tea).</p>
                     </li>   
                     <li key={Math.random()}>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>VISA WITH INSURANCE</p>
+                        <p>A packed cane of 5 litre Zam-Zam .</p>
                     </li>  
                     <li key={Math.random()}>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>LAUNDRY </p>
-                    </li>   
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>ACCOMODATION SHARING BASIS 4 TO 5 PERSON ACCORDING TO HOTEL ARRANGEMENT</p>
-                    </li>       
-                    <li key={Math.random()}>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>HAJ ARCAN UNDER THE GUIDANCE OF ULEMA</p>
+                        <p>Laundry facilities (after Haj in Makkah and Madina) </p>
                     </li>            
                 </ul>
 
@@ -236,10 +225,10 @@ Haj packages 2023,
       >
         <div className={styl.timelineCard}>
           <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>25 June</p>
+            <p style={{fontSize:"20px",margin:"0"}}>26 June to 30 June</p>
           </div>
           <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Mina Camp</p>
+            <p style={{fontSize:"16px",margin:"0"}}>Meena, Arafat & Muzdalfa</p>
           </div>
         </div>
       </VerticalTimelineElement>
@@ -253,10 +242,10 @@ Haj packages 2023,
       >
         <div className={styl.timelineCard}>
           <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>27 June</p>
+            <p style={{fontSize:"20px",margin:"0"}}>5 July to 0 July</p>
           </div>
           <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Arafat camp Night At Muzdalifah Maidan 
+            <p style={{fontSize:"16px",margin:"0"}}>Madina Munauwara
     </p>
           </div>
         </div>
@@ -271,10 +260,10 @@ Haj packages 2023,
       >
         <div className={styl.timelineCard}>
           <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>28 - 29 JUNE</p>
+            <p style={{fontSize:"20px",margin:"0"}}>09th / 10th July</p>
           </div>
           <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Mina Camp</p>
+            <p style={{fontSize:"16px",margin:"0"}}>Departure from Madina to Jeddah</p>
           </div>
         </div>
       </VerticalTimelineElement>
@@ -288,65 +277,32 @@ Haj packages 2023,
       >
         <div className={styl.timelineCard}>
           <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>30 JUNE - 1 JUL</p>
+            <p style={{fontSize:"20px",margin:"0"}}>10th July Monday</p>
           </div>
           <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Jabal Al Nour 5-6 KM</p>
+            <p style={{fontSize:"16px",margin:"0"}}>Departure from Jeddah to Delhi</p>
           </div>
         </div>
       </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className={styl.verticalTimelineElement}
-        style={{overflow:"hidden",height:"70px",margin:"0",marginBottom:"30px"}}
-        position="right"
-        contentArrowStyle={{borderRightColor:"#00C981"}}
-        contentStyle={ {paddingLeft:"0px",borderRadius:"4px",background:"#f8f8f8",padding:"0px",lineHeight:"0px"} }
-        iconStyle={{ background: '#00C981', color: '#fff',height:"10px",width:"10px",marginLeft:"15px" }}
-      >
-        <div className={styl.timelineCard}>
-          <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>2 JULY</p>
-          </div>
-          <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Transfer to Madina Hotel Near Haram 200 Mtr. Distance</p>
-          </div>
-        </div>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className={styl.verticalTimelineElement}
-        position="right"
-        style={{overflow:"hidden",height:"100px",margin:"0",marginBottom:"30px"}}
-        contentArrowStyle={{borderRightColor:"#00C981"}}
-        contentStyle={ {paddingLeft:"0px",borderRadius:"4px",background:"#f8f8f8",padding:"0px",lineHeight:"0px"} }
-        iconStyle={{ background: '#00C981', color: '#fff',height:"10px",width:"10px",marginLeft:"15px" }}
-      >
-        <div className={styl.timelineCard}>
-          <div className={styl.timelineCardTop}>
-            <p style={{fontSize:"20px",margin:"0"}}>6th JULY</p>
-          </div>
-          <div className={styl.timelineCardBottom}>
-            <p style={{fontSize:"16px",margin:"0"}}>Departure Madina to Delhi</p>
-          </div>
-        </div>
-      </VerticalTimelineElement>
+      
               </VerticalTimeline>
 
               <div className={styl.pricing}>
               <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>ROOM CAPACITY</p>
-                  <p className={styl.infoText}>PKG COST</p>
+                  <p className={styl.infoText}>PKG COST (GST not Included)</p>
             </div>
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>4/5 SHARING</p>
-                  <p className={styl.infoText}>₹ 6,50,000 Per Person</p>
+                  <p className={styl.infoText}>₹ 6,95,000 Per Person</p>
             </div>
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>3 BED SHARING</p>
-                  <p className={styl.infoText}>₹ 7,30,000 Per Person</p>
+                  <p className={styl.infoText}>₹ 7,75,000 Per Person</p>
             </div>
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>2 BED SHARING</p>
-                  <p className={styl.infoText}>₹ 7,65,000 Per Person</p>
+                  <p className={styl.infoText}>₹ 8,50,000 Per Person</p>
             </div>
               </div>
         </div>

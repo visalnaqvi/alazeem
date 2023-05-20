@@ -744,7 +744,33 @@
     padding: 10px;
     padding-top: 0;
 }
+.hajjpkgtableinumrah {
+    width: 90%;
+    margin: 30px auto;
+}
 
+.hajjpkgtableinumrah table {
+    table-layout: fixed ;
+    border: 1px solid #dbdbdb;
+    width: 100% ;
+    border-right: none;
+  }
+  .hajjpkgtableinumrah table td {
+    width: 33% ;
+    border-right: 1px solid #dbdbdb;
+  }
+
+  .pricingHajjInTable{
+    text-align: center;
+    vertical-align : middle;
+    align-items: center;
+    align-self: center;
+    border-right: 1px solid #dbdbdb;
+  }
+
+  .dsiplayonMobile{
+    display: none;
+  }
 @media only screen and (max-width:980px){
     .baitulMuqadas{
         height: 50vh;
@@ -831,6 +857,10 @@
     }
     .table{
         display: none;
+    }
+
+    .hajjpkgtableinumrah .table{
+        display: block;
     }
     .mobileViewIraq{
         display: block;
@@ -1024,6 +1054,23 @@
     }
     .hideMobile{
         display: none;
+    }
+
+    .hajjpkgtableinumrah{
+        overflow-x: scroll;
+        width: 100%;
+    }
+
+    .hajjpkgtableinumrah .table{
+        width: 600px;
+    }
+
+    .hajjpkgtableinumrah{
+        display: none;
+    }
+
+    .dsiplayonMobile{
+        display: block;
     }
     
 }
