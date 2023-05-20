@@ -107,7 +107,9 @@ Haj packages 2023,
         });
     `}
       </Script>
+      <div className={styl.newpkgwrap}>
       <div className={styl.displayBox}>
+      </div>
       </div>
 
 
@@ -119,12 +121,12 @@ Haj packages 2023,
 
 
 
-
+<div className={styl.newpkgwrap}>
 
 
 
       <div className={styl.hajjpkgtableinumrah}>
-        <p className={styl.hajjnewpkgHeading}>HAJ 2023 Tentative Haj 2023 Pkg</p>
+        <p className={styl.hajjnewpkgHeading}>HAJ 2023 Tentative Pkg</p>
         <p className={styl.hajjnewpkgSubHeading}>SHIFTING PACKAGE 35 – 40 Days</p>
         <div className={styl.greenUnderline}></div>
         <div className={styl.hajjnewpkgInfo}>
@@ -142,7 +144,7 @@ Haj packages 2023,
           <tr className={styl.tableHeadHajj}>
 
             <td>Room Capacity</td>
-            <td>4/5 Sharing</td>
+            <td>4/5 Bed Sharing</td>
             <td>3 Bed Sharing</td>
             <td>2 Bed Sharing</td>
 
@@ -162,7 +164,7 @@ Haj packages 2023,
       </div>
 
       <div className={styl.hajjpkgtableinumrah}>
-        <p className={styl.hajjnewpkgHeading}>HAJ 2023 Tentative Haj 2023 Pkg</p>
+        <p className={styl.hajjnewpkgHeading}>HAJ 2023 Tentative Pkg</p>
         <p className={styl.hajjnewpkgSubHeading}>17/18 Days Package</p>
         <div className={styl.greenUnderline}></div>
         <div className={styl.hajjnewpkgInfo}>
@@ -179,7 +181,7 @@ Haj packages 2023,
           <tr className={styl.tableHeadHajj}>
 
             <td>Room Capacity</td>
-            <td>4/5 Sharing</td>
+            <td>4/5 Bed Sharing</td>
             <td>3 Bed Sharing</td>
             <td>2 Bed Sharing</td>
             <td>Any additional service
@@ -220,7 +222,7 @@ Haj packages 2023,
       </div>
 
 
-
+      </div>
 
       {/* <div className={styl.hajjPkgContainer}>
         <div className={styl.hajjPkgBox}>

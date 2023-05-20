@@ -752,7 +752,8 @@
     padding-top: 0;
 }
 .hajjpkgtableinumrah {
-    width: 95%;
+    background-color: #fff;
+    width: 70%;
     margin: 30px auto;
     border: 1px solid #dbdbdb;
     padding: 20px;
@@ -761,6 +762,7 @@
 
 .hajjpkgtableinumrah  .hajjnewpkgHeading{
     font-size: 40px;
+    text-align: center;
 }
 
 .hajjpkgtableinumrah .greenUnderline{
@@ -775,6 +777,7 @@
     font-weight: 700;
     margin-top: 10px;
     font-style: italic;
+    text-align: center;
 }
 
 .hajjpkgtableinumrah .hajjnewpkgSubHeadingWarn{
@@ -796,14 +799,14 @@
 }
 
 .hajjpkgtableinumrah .hajjnewpkgInfo .hajjnewpktinfocard{
-    background-color: #f8f8f8;
+    background-color: #00C98120;
     padding: 10px;
     border-radius: 10px;
-    width: 48%;
+    width: 49%;
 }
 
 .hajjpkgtableinumrah .hajjnewpkgInfo p{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     margin: 5px 0;
 }
@@ -813,6 +816,9 @@
     text-decoration: underline;
 }
 
+.newpkgwrap{
+    background-color: #f8f8f8;
+}
 
 .newpkgbutton{
     padding: 15px 40px;
@@ -825,7 +831,7 @@
     margin: 20px 0;
 }
 
-.hajjpkgtableinumrah table {
+.hajjpkgtableinumrah table {margin: 20px 0;
     table-layout: fixed ;
     border: 1px solid #dbdbdb;
     width: 100% ;
@@ -834,6 +840,8 @@
   .hajjpkgtableinumrah table td {
     width: 33% ;
     border-right: 1px solid #dbdbdb;
+    font-size: 18px;
+    font-weight: 500;
   }
 
   .pricingHajjInTable{
@@ -1163,6 +1171,11 @@
     .hajjPkgContainer .tag{
         text-decoration: none;
     }
+
+    .hajjpkgtableinumrah{
+        width: 98%;
+    }
+
 }
 
 @media only screen and (max-width:552px) {
