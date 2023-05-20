@@ -201,9 +201,9 @@ Haj packages 2023,
 
           <tr className={styl.oddTr}>
             <td>GST & TCS <br></br> (5% +5%)</td>
-            <td>69500</td>
-            <td>77500</td>
-            <td>85000</td>
+            <td>69500/-</td>
+            <td>77500/-</td>
+            <td>85000/-</td>
           </tr>
 
           <tr className={styl.oddTr}>
