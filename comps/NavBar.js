@@ -116,9 +116,9 @@ const Nav = () => {
 </nav> */}
 
    {isMenuOpen && ( <div className={style.mobileNavWrap}>
-      <div className={style.mobileNavLeft}>
+      <div onClick={toggleMenu} className={style.mobileNavLeft}>
       <div style={{display:"flex",alignItems:"center"}}>
-        <div onClick={toggleMenu} className={style.ham}>
+        <div className={style.ham}>
           <Image height={40} width={40} src={close} alt="" />
         </div>
         <Image width={160} height={60} className={style.logo} src={logo} alt="" />
