@@ -3,6 +3,9 @@ import styl from "../styles/Umrah.module.css";
 import Head from "next/dist/shared/lib/head";
 import { useEffect, useState } from "react";
 import UmrahPackageCollector from "../comps/UmrahPackageCollector";
+import whatsApp from "../public/whatsapp-svgrepo-com.svg"
+import phone from "../public/phone-svgrepo-com.svg"
+import Image from "next/image";
 import firebase from 'firebase/app';
 import fs from "../styles/Footer.module.css"
 import Script from 'next/script'
@@ -560,7 +563,28 @@ Haj packages 2023,
         </p>
         <br></br>
       </div>
+      <div style={{zIndex:"10", display:"flex",position:"fixed",bottom:"13px",right:"13px"}}>
 
+<a target="blank" href="tel:+919205184001"><button
+style={{backgroundColor:"#2192FF",
+padding:"15px",
+border:"none",
+display:"flex",
+justifyContent:"center",
+zIndex:"10",
+alignItems:"center",
+borderRadius:"100%"}}><Image width={40} height={40} src={phone} alt="dkc"></Image></button></a>
+<a target="blank" href="https://wa.me/9811042458"><button 
+style={{backgroundColor:"#25D366",
+        marginLeft:"10px",
+        padding:"15px",
+        zIndex:"10",
+        border:"none",
+        display:"flex",
+        justifyContent:"center",
+        alignItems:"center",
+        borderRadius:"100%"}}><Image width={40} height={40} src={whatsApp} alt="dkc"></Image></button></a>
+</div>
     </>
   );
 };
