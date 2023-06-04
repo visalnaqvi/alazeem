@@ -856,6 +856,87 @@
   .dsiplayonMobile{
     display: none;
   }
+
+  .newziyaratpkg{
+    margin: 20px auto;
+    width: 70%;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 50px #00000050;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .newziyaratpkgwrapper{
+    padding: 20px;
+    padding-bottom: 0;
+    background-image: url('../public/newiraqziyaratshade.png');
+    background-size: 90%;
+    padding-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: top right;
+
+  }
+
+  .newziyaratpkgheading{
+    font-size: 35px;
+    font-weight: 800;
+    color: #1d1d1d;
+  }
+
+  .newziyaratpkgsubheading{
+    font-weight: 800;
+    margin: 10px auto;
+  }
+
+  .newirajpkgfooter{
+    background-color: #009461;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+  }
+
+  .newirajpkgprice{
+    font-size: 30px;
+    font-weight: 800;
+    background-color: #ffe863;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+  }
+
+  .newiraqcontact{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px #00000050;
+    font-weight: 800;
+    color: #009461;
+    font-size: 20px;
+  }
+
+  .newiraqpkgicon{
+    margin-right: 10px;
+    padding-top: 5px;
+  }
+
+  .newiraqpkguls{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 20px 0;
+  }
+
+  .newirajpkglefttul{
+    width: 48%;
+  }
+
+  .newirajpkgpricespan{
+    margin-right: 10px;
+  }
 @media only screen and (max-width:980px){
     .baitulMuqadas{
         height: 50vh;
@@ -868,6 +949,23 @@
     .ulCont{
         width: 70%;
     }
+
+    .newirajpkgpricespan{
+        font-size: 20px;
+    }
+    .newirajpkgprice{
+        display: block;
+    }
+
+    .newiraqcontact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+
+   
+    
 }
 
 @media only screen and (max-width:942px){
@@ -876,7 +974,14 @@
         width: 100%;
     }
     
-   
+    .newirajpkgfooter{
+        display: block;
+        text-align: center;
+    }
+
+    .newirajpkgprice{
+        margin-bottom: 10px;
+    }
     
     .sideBar{
         display: none;
@@ -903,9 +1008,25 @@
     .baitulMuqadasFlex{
         width: 100%;
     }
+
+ 
+
+    .newiraqpkguls{
+        display: block;
+        width: 100%;
+    }
+
+    .newirajpkglefttul{
+        width: 100%;
+    }
+
+ 
 }
 
 @media only screen and (max-width:870px){
+    .newziyaratpkgwrapper{
+        background-size:160% ;
+    }
     .baitulMuqadasFlexOut{
         margin-bottom: 120px;
     }
@@ -984,6 +1105,16 @@
 
 @media only screen and (max-width:650px){
     
+    .newziyaratpkg{
+        width: 98%;
+    }
+
+    .newziyaratpkgwrapper{
+        background-size:200% ;
+        padding-bottom: 10px;
+        background-position: bottom right;
+    }
+
     .iraqInfo{
         width: 100%;
     }

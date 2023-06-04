@@ -1,5 +1,7 @@
 import style from "../styles/Article.module.css";
 import styl from "../styles/Umrah.module.css";
+import tick from "../public/icons/check.png";
+import umrahStyles from "../styles/umrahCard.module.css";
 import Head from "next/dist/shared/lib/head";
 import { useEffect, useState } from "react";
 import UmrahPackageCollector from "../comps/UmrahPackageCollector";
@@ -12,6 +14,7 @@ import Script from 'next/script'
 import "firebase/firestore"
 import 'react-vertical-timeline-component/style.min.css';
 import Link from 'next/link';
+import {BsFillTelephoneFill} from 'react-icons/bs'
 import Article from "../comps/Article";
 const UmrahPackage = () => {
 
@@ -223,6 +226,86 @@ Haj packages 2023,
         <Link href="/hajjPackage#haj1"><a><button className={styl.newpkgbutton}>Click For More Details</button></a></Link>
       </div>
 
+      <div className={styl.newziyaratpkg}>
+        <div className={styl.newziyaratpkgwrapper}>
+          <p className={styl.newziyaratpkgheading}>
+          Iraq Ziyarat (10 Nights 11 Days)
+          </p>
+          <div className={styl.newiraqpkguls}>
+            <div className={styl.newirajpkglefttul}>
+          <p className={styl.newziyaratpkgsubheading}>Schedule</p>
+          <ul className={umrahStyles.ul}>
+                
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>Baghdad / Kazmain Shareef 5 Nights</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>Karbala E Maullah 3 Nights</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>Najaf E Ashraf 2 Nights</p>
+                    </li>       
+                    
+                </ul>
+          </div><div>
+                <p className={styl.newziyaratpkgsubheading}>Schedule</p>
+          <ul className={umrahStyles.ul}>
+                
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>Air Ticket & Visa</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>Hotels Near Roza</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>AC Transportation </p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>All Indian Meals</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>Ziyarat</p>
+                    </li>
+          
+                    
+                </ul>
+                </div>
+                </div>
+                </div>
+                <div className={styl.newirajpkgfooter}>
+                        <div className={styl.newirajpkgprice}><p className={styl.newirajpkgpricespan} >Pkg Cost</p><p> Rs. 90,000/-</p></div> 
+                        <div className={styl.newiraqcontact}>
+                          <div className={styl.newiraqpkgicon}>
+                        <BsFillTelephoneFill></BsFillTelephoneFill>
+                        </div>
+                        <p className={styl.newirajpkgbtntext}>Call Us Now 9205184001</p>
+                        </div>   
+                    </div> 
+      </div>
 
       </div>
 
