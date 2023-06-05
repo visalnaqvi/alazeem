@@ -21,6 +21,11 @@
     text-align: start;
 }
 
+.iraq{
+    background-image: url(../public/newiraqziyaratshade.png);
+    background-size: cover;
+}
+
 .heading{
     font-size: 1.6rem;
     font-weight: 700;
@@ -181,6 +186,9 @@
     }
     .top{
         background-image: url(../public/images/umrah/bgmb.png);
+    }
+    .iraq{
+        background-image: url(../public/newiraqziyaratshade.png);
     }
     
     .wrapper{

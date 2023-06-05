@@ -858,12 +858,9 @@
   }
 
   .newziyaratpkg{
-    margin: 20px auto;
-    width: 70%;
-    background-color: #ffffff;
-    box-shadow: 10px 10px 50px #00000050;
-    border-radius: 10px;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .newziyaratpkgwrapper{
@@ -926,7 +923,7 @@
   .newiraqpkguls{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 70%;
     margin: 20px 0;
   }
 
@@ -1105,10 +1102,11 @@
 
 @media only screen and (max-width:650px){
     
-    .newziyaratpkg{
-        width: 98%;
-    }
+    
 
+    .hideonmobile{
+        display: none;
+    }
     .newziyaratpkgwrapper{
         background-size:200% ;
         padding-bottom: 10px;
