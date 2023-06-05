@@ -181,6 +181,7 @@
 }
 
 @media only screen and (max-width:650px){
+   
     .date{
         margin-top:5px;
     }
@@ -188,9 +189,9 @@
         background-image: url(../public/images/umrah/bgmb.png);
     }
     .iraq{
-        background-image: url(../public/newiraqziyaratshade.png);
+        background-image: url(../public/newiraqziyaratshademb.png);
+        background-position: right;
     }
-    
     .wrapper{
         text-align: start;
         width: 95%;
