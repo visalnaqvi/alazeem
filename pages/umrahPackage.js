@@ -320,7 +320,7 @@ Haj packages 2023,
               <p>Departure on: JUNE</p>
             </div>
             <ul className={umrahStyles.ul}>
-              <div className={styl.newiraqpkguls}>
+              {/* <div className={styl.newiraqpkguls}>
                 <div className={styl.newirajpkglefttul}>
                   <p className={styl.newziyaratpkgsubheading}>Schedule</p>
                   <ul className={umrahStyles.ul}>
@@ -383,14 +383,49 @@ Haj packages 2023,
 
                   </ul>
                 </div>
-              </div>
-
+              </div> */}
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>Baghdad / Kazmain 5 Nights, Najaf 2 Nights, Karbala 3 Nights</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>Air Ticket & Visa</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>Hotels Near Roza</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>AC Transportation</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>All Indian Meals</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>Ziyarat</p>
+                    </li>
             </ul>
           </div>
 
           <div className={umrahStyles.bottom}>
             <p className={umrahStyles.semiBold}>At just ₹ 90,000/-</p>
-          <Link href="/iraqZiyarat"><a><button onClick={() => { }} className={umrahStyles.btn}>More DETAILS</button></a></Link>
+          <Link href="/iraqZiyarat"><a><button onClick={() => { }} className={umrahStyles.btn}>More Details</button></a></Link>
           </div>
         </div>
         </div>

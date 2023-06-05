@@ -871,7 +871,6 @@
     padding-bottom: 20px;
     background-repeat: no-repeat;
     background-position: top right;
-
   }
 
   .newziyaratpkgheading{
@@ -1101,7 +1100,9 @@
 
 
 @media only screen and (max-width:650px){
-    
+    .newziyaratpkgwrapper{
+        background-image: url('/public/newiraqziyaratshademb.png');
+    }
     
 
     .hideonmobile{
