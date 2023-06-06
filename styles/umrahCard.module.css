@@ -191,6 +191,7 @@
     .iraq{
         background-image: url(../public/newiraqziyaratshademb.png);
         background-position: right;
+        background-size: cover;
     }
     .wrapper{
         text-align: start;

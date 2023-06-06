@@ -317,7 +317,7 @@ Haj packages 2023,
           <div className={`${umrahStyles.top} ${umrahStyles.iraq}`}>
             <h1 className={umrahStyles.heading}>Iraq Ziyarat (10 Nights 11 Days)</h1>
             <div className={umrahStyles.date}>
-              <p>Departure on: JUNE</p>
+              <p>Departure on: 16 July 2023</p>
             </div>
             <ul className={umrahStyles.ul}>
               {/* <div className={styl.newiraqpkguls}>
@@ -388,7 +388,13 @@ Haj packages 2023,
                         <div className={umrahStyles.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>Baghdad / Kazmain 5 Nights, Najaf 2 Nights, Karbala 3 Nights</p>
+                        <p>Baghdad / Kazmain 5 Nights</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>Najaf 2 Nights, Karbala 3 Nights</p>
                     </li>
                     <li>
                         <div className={umrahStyles.img}>
@@ -414,12 +420,7 @@ Haj packages 2023,
                         </div>
                         <p>All Indian Meals</p>
                     </li>
-                    <li>
-                        <div className={umrahStyles.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>Ziyarat</p>
-                    </li>
+        
             </ul>
           </div>
 
