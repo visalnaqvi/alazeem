@@ -462,6 +462,11 @@ Haj packages 2023,
         <div id="umrah">
           <h1 className={styl.urhamHead}>Umrah Packages</h1>
           {pckages && <UmrahPackageCollector packages={pckages}></UmrahPackageCollector>}
+          <div style={{width:"50%"}}>
+          <div style={{height:"100%", borderRadius: "10px", backgroundColor: "#00665A", padding:"0px" }} className={`${fs.footerup} flex-class`}>
+         
+        </div>
+          </div>
         </div>
 
         <h1 className={styl.urhamHead}>Iraq Ziyarat Packages</h1>
@@ -586,7 +591,15 @@ Haj packages 2023,
           </div>
         </div>
         </div>
+
+       
+
         </div>
+   
+
+
+
+
         <br></br>
         <br></br>
         <div style={{ borderRadius: "10px", backgroundColor: "#00665A" }} className={`${fs.footerup} flex-class`}>
@@ -606,9 +619,28 @@ Haj packages 2023,
             </div>
           </div>
         </div>
+        
         <br></br>
         <br></br>
         <div className={styl.body}>
+           <div style={{width:"100%",paddingBottom:"20px"}} className={""}>
+            <p className={fs.title}>Umrah Visa</p>
+            <p className={fs.text}>90 Days Umrah Visa or subject to change in days as per the Saudi Arabia Govt guidelines. Requirement of E visa Given Below</p>
+            <p className={fs.text} style={{ marginTop: "20px", letterSpacing: "1px", fontSize: "1rem", display:"flex" }}><div><Image height={20} width={20} src={tick} alt="tick icon"></Image></div><strong style={{marginLeft:"10px", marginBottom:"10px"}}>Passport minimum 6 Months validity</strong></p>
+            <p className={fs.text} style={{ marginTop: "0px", letterSpacing: "1px", fontSize: "1rem", display:"flex" }}><div><Image height={20} width={20} src={tick} alt="tick icon"></Image></div><strong style={{marginLeft:"10px", marginBottom:"10px"}}>2 Passport size photo white background without Specks</strong></p>
+            <p className={fs.text} style={{ marginTop: "0px", letterSpacing: "1px", fontSize: "1rem", display:"flex" }}><div><Image height={20} width={20} src={tick} alt="tick icon"></Image></div><strong style={{marginLeft:"10px", marginBottom:"10px"}}>Vaccination Certificate (both Doses)</strong></p>
+            <p className={fs.text} style={{ marginTop: "0px", letterSpacing: "1px", fontSize: "1rem", display:"flex" }}><div><Image height={20} width={20} src={tick} alt="tick icon"></Image></div><strong style={{marginLeft:"10px", marginBottom:"10px"}}>Aadhar card</strong></p>
+          </div>
+          {/* <h1 className={style.articletitle}>Umrah Visa</h1>
+          <p className={style.newtext}>    90 Days Umrah Visa or subject to change in days as per the Saudi Arabia Govt guidelines. Requirement of E visa Given Below </p>
+          <p className={style.newtext}>
+              <ul>
+                <li>Passport minimum 6 Months validity</li>
+                <li>2 Passport size photo white background without Specks</li>
+                <li>Vaccination Certificate (both Doses)</li>
+                <li>Aadhar card</li>
+              </ul>
+          </p> */}
           <h1 className={style.articletitle}>WHAT IS UMRAH?</h1>
 
           <p className={style.newtext}>

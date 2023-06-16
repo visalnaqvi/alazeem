@@ -71,3 +71,32 @@ button.slick-next:before{
 }
 
 
+
+
+.cardnn {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.cardnn-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cardnn-description {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.requirements-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.requirements-list li {
+  margin-bottom: 5px;
+  list-style: disc;
+}
