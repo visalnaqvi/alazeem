@@ -817,7 +817,7 @@ Haj packages 2023,
               alignItems: "center",
               borderRadius: "100%"
             }}><Image width={40} height={40} src={phone} alt="dkc"></Image></button></a>
-          <a target="blank" href="https://wa.me/9205184001"><button
+          <a target="blank" href="https://wa.me/+919205184001"><button
             style={{
               backgroundColor: "#25D366",
               marginLeft: "10px",
