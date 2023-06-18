@@ -6,6 +6,7 @@ import Head from "next/dist/shared/lib/head";
 import { useEffect, useState } from "react";
 import UmrahPackageCollector from "../comps/UmrahPackageCollector";
 import whatsApp from "../public/whatsapp-svgrepo-com.svg"
+import bady from "../public/images/umrah/bady2.jpeg"
 import phone from "../public/phone-svgrepo-com.svg"
 import Image from "next/image";
 import firebase from 'firebase/app';
@@ -602,7 +603,7 @@ Haj packages 2023,
 
         <br></br>
         <br></br>
-        <div style={{ borderRadius: "10px", backgroundColor: "#00665A" }} className={`${fs.footerup} flex-class`}>
+        <div style={{ borderRadius: "10px" }} className={`${fs.footerup} flex-class`}>
           <div className={fs.left}>
             <p className={fs.title}>Contact Us for more information</p>
             <p className={fs.text}>Planning for Umrah? Book your umrah package with us as we provide the highest-quality Umrah packages from India at amazingly reasonable prices, ensuring that all of your travel needs are met to your satisfaction.</p>
@@ -671,7 +672,8 @@ Haj packages 2023,
             fulfilling some religious duties and rituals, each anchoring the
             pilgrim in the right moment towards complete atonement.
           </p>
-          <div className={styl.bodyImagemb2}></div>
+          {/* <div className={styl.bodyImagemb2}></div> */}
+          <Image src={bady} ></Image>
           <br></br>
           <br></br>
           <br></br>

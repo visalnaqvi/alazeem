@@ -24,10 +24,11 @@
     display: none;
 }
 .bodyImagemb2{
-    background-image: url(../public/images/umrah/bady2.jpg);
+    background-image: url(../public/images/umrah/bady2.jpeg);
     width: 100%;
     background-position: bottom;
     margin-top: 40px;
+    height: 500px;
 }
 .body{
     width: 90%;

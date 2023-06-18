@@ -10,10 +10,12 @@
   }
   
   .articletitle {
-    font-size: 45px;
+    font-size: 30px;
+    border-left: 3px solid #003b7f;
     word-break: break-word;
     margin-bottom: 20px;
     width:100%;
+    padding-left: 10px;
     font-weight:400;
     line-height: 50px;
   }

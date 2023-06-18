@@ -1,6 +1,8 @@
 .footerup{
-    padding: 40px 40px;
-    background-color: #73cca8;
+    padding: 0;
+    /* background-color: #73cca8; */
+    background-color: #1f88ff;
+    background-image: linear-gradient(to right,#1f88ff,30%,#003b7f);
     color: #fff;
     width:98%;
     margin:auto;
@@ -30,7 +32,8 @@
     width: 250px;
     height: 50px;
     border:2px solid #fff;
-    color: #73cca8;
+    /* color: #73cca8; */
+    color: #1f88ff;
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 2px;
@@ -52,7 +55,8 @@
     margin-top: 5px;
     text-align: center;
     padding:30px 10px;
-    background-color: #59af8c;
+    /* background-color: #59af8c; */
+    background-color: #003b7f;
     color: #ffffff;
     font-weight: 700;
     letter-spacing: 2px;
@@ -65,7 +69,7 @@
     justify-content:center;
     align-items:center;
     margin-top:10px;
-    color:#00665A;
+    /* color:#00665A; */
 
   }
   @media only screen and (max-width:800px){
