@@ -72,6 +72,13 @@
     /* color:#00665A; */
 
   }
+
+.ftbold{
+  margin-top:10px;
+  letter-spacing:1px;
+  font-size:1.2rem;
+}
+
   @media only screen and (max-width:800px){
     .footerup{
       flex-direction:column;
@@ -94,4 +101,15 @@
     .title{
       font-size: 35px;
     }
-} 
+  }
+
+  @media only screen and (max-width:350pc){
+    .ftbold{
+      word-wrap:break-all;
+    }
+
+    .left{
+      word-break:break-all;
+      width: 100vw;
+    }
+  }
