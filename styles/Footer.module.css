@@ -104,12 +104,9 @@
   }
 
   @media only screen and (max-width:350pc){
-    .ftbold{
-      word-wrap:break-all;
-    }
-
+   
     .left{
-      word-break:break-all;
+      word-wrap:break-word;
       width: 100vw;
     }
   }

@@ -70,3 +70,26 @@
     }
 
 }
+
+@media only screen and (max-width:350px){
+    
+    .wrapper{
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    .heading{
+        font-size: 1rem;
+    }
+
+    .tableHead{
+        font-size: 5px;
+        padding: 0;
+    }
+
+    .tableHead tr .cell{
+        font-size: 13px;
+        padding: 3px;
+    }
+
+}
