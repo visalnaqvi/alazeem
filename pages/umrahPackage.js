@@ -479,7 +479,7 @@ Haj packages 2023,
           <div className={`${umrahStyles.top} ${umrahStyles.iraq}`}>
             <h1 className={umrahStyles.heading}>Iraq Ziyarat (10 Nights 11 Days)</h1>
             <div className={umrahStyles.date}>
-              <p>Departure on: 12 July 2023</p>
+              <p>Departure on: 16 September 2023</p>
             </div>
             <ul className={umrahStyles.ul}>
               {/* <div className={styl.newiraqpkguls}>
@@ -546,6 +546,12 @@ Haj packages 2023,
                   </ul>
                 </div>
               </div> */}
+              <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>Flight from Delhi</p>
+                    </li>
                     <li>
                         <div className={umrahStyles.img}>
                         <Image src={tick} alt="tick icon"></Image>
