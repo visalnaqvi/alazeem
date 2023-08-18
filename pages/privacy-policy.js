@@ -1,3 +1,4 @@
+'use client'
 import styles from "../styles/PrivacyPolicy.module.css"
 const PrivacyPolicy = ()=>{
 
@@ -70,8 +71,8 @@ const PrivacyPolicy = ()=>{
             </section>
 
             <footer>
-                <p>Contact us at [contact email/phone number/address] if you have any questions or concerns about our Privacy Policy.</p>
-                <p>By using our services, you consent to the terms outlined in this Privacy Policy. Thank you for trusting [Your Company Name] with your travel plans and information.</p>
+                <p>Contact us at 9205184001 if you have any questions or concerns about our Privacy Policy.</p>
+                <p>By using our services, you consent to the terms outlined in this Privacy Policy. Thank you for trusting AL-AZEEM TOUR AND TRAVELS with your travel plans and information.</p>
             </footer>
         </div>
     )
