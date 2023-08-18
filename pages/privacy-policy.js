@@ -60,7 +60,7 @@ const PrivacyPolicy = ()=>{
             </section>
 
             <section className={styles.infoSection}>
-                <h2>7. Children's Privacy</h2>
+                <h2>7. Children&apos;s Privacy</h2>
                 <p>Our services are not intended for individuals under the age of 18. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
             </section>
 
