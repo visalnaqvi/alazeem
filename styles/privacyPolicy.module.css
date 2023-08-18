@@ -1,0 +1,29 @@
+.privacyPolicy {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.privacyPolicy header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.infoSection {
+    margin-bottom: 40px;
+}
+
+.privacyPolicy h1, .privacyPolicy h2 {
+    color: #333;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.privacyPolicy ul {
+    margin-left: 20px;
+}
+
+.privacyPolicy footer {
+    text-align: center;
+    color: #666;
+}
