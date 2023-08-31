@@ -5,6 +5,7 @@ import tick from "../public/icons/check.png"
 import whatsApp from "../public/whatsapp-svgrepo-com.svg"
 import phone from "../public/phone-svgrepo-com.svg"
 import sty from "../styles/Home.module.css";
+import umrahStyles from "../styles/umrahCard.module.css";
 import Head from "next/dist/shared/lib/head";
 import popImg from "../public/images/close_small_figma.svg"
 import { useEffect, useState } from "react";
@@ -77,15 +78,144 @@ const IraqZiyaratPackage = () => {
         });
     `}
 </Script>
+
       <div className={`${styl.displayBox} ${styl.iraqImage}`}>
       </div>
-    <div style={{top:topPos}} className={`${sty.popup} `}>
-    <div className={`${sty.popupimg} ${sty.popimgiraq}`}>
+      
+<h1 className={styl.urhamHead}>Iraq Ziyarat Packages</h1>
+      <div className={styl.newziyaratpkg}>
+      <div className={umrahStyles.wrapMain}>
+        {/* <div className={style.cross}></div> */}
+        <div className={umrahStyles.wrapper}>
+
+          <div className={`${umrahStyles.top} ${umrahStyles.iraqNew}`}>
+            <h1 className={umrahStyles.heading}>Iraq Ziyarat (10 Days 11 Nights)</h1>
+            <div className={umrahStyles.date}>
+              <p>Departure on: 10 November 2023</p>
             </div>
-            <div onClick={()=>{settopPos("-110vh")}} className={`${sty.close} close`}>
-              <Image width={100} height={100} src={popImg} alt=""></Image>
-            </div>
-      </div>
+            <ul className={umrahStyles.ul}>
+              {/* <div className={styl.newiraqpkguls}>
+                <div className={styl.newirajpkglefttul}>
+                  <p className={styl.newziyaratpkgsubheading}>Schedule</p>
+                  <ul className={umrahStyles.ul}>
+
+                    <li>
+                      <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                      </div>
+                      <p>Baghdad / Kazmain Shareef 5 Nights</p>
+                    </li>
+                    <li>
+                      <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                      </div>
+                      <p>Karbala E Maullah 3 Nights</p>
+                    </li>
+                    <li>
+                      <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                      </div>
+                      <p>Najaf E Ashraf 2 Nights</p>
+                    </li>
+
+                  </ul>
+                </div><div className={styl.hideonmobile}>
+                  <p className={styl.newziyaratpkgsubheading}>Services</p>
+                  <ul className={umrahStyles.ul}>
+
+                    <li>
+                      <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                      </div>
+                      <p>Air Ticket & Visa</p>
+                    </li>
+                    <li>
+                      <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                      </div>
+                      <p>Hotels Near Roza</p>
+                    </li>
+                    <li>
+                      <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                      </div>
+                      <p>AC Transportation </p>
+                    </li>
+                    <li>
+                      <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                      </div>
+                      <p>All Indian Meals</p>
+                    </li>
+                    <li>
+                      <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                      </div>
+                      <p>Ziyarat</p>
+                    </li>
+
+
+                  </ul>
+                </div>
+              </div> */}
+            
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>KARBALA - 5 Nights</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>NAJAF / BAGHDAD - 2 Nights</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>Flight from Delhi</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>Air Ticket & Visa</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>Hotels Near Roza</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>AC Transportation</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>All Indian Meals</p>
+                    </li>
+        
+            </ul>
+          </div>
+
+          <div className={umrahStyles.bottom}>
+            <p className={umrahStyles.semiBold}>At just ₹ 95,000/-</p>
+         <a href="#table"><button className={umrahStyles.btn}>More Details</button></a>
+          </div>
+        </div>
+        </div>
+
+       
+
+        </div>
+   
 
      
    
@@ -97,6 +227,7 @@ const IraqZiyaratPackage = () => {
             Our meticulously crafted tour offers a seamless experience, providing comprehensive services including transportation, visa assistance, top-tier accommodations, and authentic dining. With Al Azeem Tours and Travel, your pilgrimage is not just a trip; it&apos;s an opportunity to connect with the essence of faith and heritage. Join us on this remarkable journey as we ensure every detail is meticulously managed, allowing you to focus solely on the spiritual significance of your visit.
 </p>
 <br></br><br></br>
+
 <div className={`${styl.infoWrap} ${styl.iraqInfo}`}>
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>Departure</p>
@@ -104,7 +235,7 @@ const IraqZiyaratPackage = () => {
                   <p className={`${styl.infoText} ${styl.pad}`}>10 NOV 2023</p>
             </div>
             <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>10 Days Package / 11 Nighta</p>
+                  <p className={styl.infoHead}>10 Days Package / 11 Nights</p>
                   <div className={styl.underline}></div>
                   <p className={styl.infoText}>KARBALA - 5 Nights</p>
                   <p className={styl.infoText}>NAJAF - 3 Nights</p>

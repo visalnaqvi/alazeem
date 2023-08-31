@@ -26,6 +26,11 @@
     background-size: cover;
 }
 
+.iraqNew{
+    background-image: url(../public/iraqZiyaratbg.png);
+    background-size: contain;
+}
+
 .heading{
     font-size: 1.6rem;
     font-weight: 700;
@@ -193,6 +198,12 @@
         background-position: right;
         background-size: cover;
     }
+
+    .iraqNew{
+        background-image: url(../public/iraqZiyaratbgmb.png);
+        background-size: contain;
+    }
+    
     .wrapper{
         text-align: start;
         width: 95%;
