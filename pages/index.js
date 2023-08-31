@@ -6,7 +6,7 @@ import style from "../styles/Article.module.css";
 import PackageBody from "../comps/Packages/PackageBody";
 import BoilerBody from "../comps/BoilerBody";
 import Image from "next/dist/client/image";
-import { useEffect } from "react";
+import { useEffect , useState } from "react";
 import Link from "next/dist/client/link";
 import popImg from "../public/images/close_small_figma.svg"
 import Script from 'next/script'
@@ -56,18 +56,13 @@ export default function Home() {
   ];
 
 
-  useEffect(() => {
-    const popup = document.querySelector(".popup");
-    const close = document.querySelector(".close");
-    setTimeout(()=>{
-      popup.style.top = 0
-    },3000)
-
-    close.addEventListener("click",()=>{
-      popup.style.top = "-110vh"
-    })
-
-  },[]);
+  const [topPos , settopPos] = useState("-110vh")
+ 
+    useEffect(()=>{
+        setTimeout(()=>{
+            settopPos("0vh")
+        },3000)
+    },[])
   return (
     <div className={styles.container}>
       <Head>
@@ -120,13 +115,14 @@ export default function Home() {
         page_path: window.location.pathname,
         });
     `}
-</Script>      <div className={`${styles.popup} popup`}>
-      <Link href="/flights"><div className={styles.popupimg}>
-            </div></Link>
-            <div className={`${styles.close} close`}>
+</Script>       <div style={{top:topPos}} className={`${styles.popup} `}>
+    <div className={styles.popupimg}>
+            </div>
+            <div onClick={()=>{settopPos("-110vh")}} className={`${styles.close} close`}>
               <Image width={100} height={100} src={popImg} alt=""></Image>
             </div>
       </div>
+
       <Slider></Slider>
       <Article
         heading={headingMain}

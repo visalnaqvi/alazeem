@@ -4,8 +4,9 @@ import Image from "next/image";
 import tick from "../public/icons/check.png"
 import whatsApp from "../public/whatsapp-svgrepo-com.svg"
 import phone from "../public/phone-svgrepo-com.svg"
-
+import sty from "../styles/Home.module.css";
 import Head from "next/dist/shared/lib/head";
+import popImg from "../public/images/close_small_figma.svg"
 import { useEffect, useState } from "react";
 import UmrahPackageCollector from "../comps/UmrahPackageCollector";
 import firebase from 'firebase/app';
@@ -15,9 +16,13 @@ import "firebase/firestore"
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 const IraqZiyaratPackage = () => {
-  
+    const [topPos , settopPos] = useState("-110vh")
  
- 
+    useEffect(()=>{
+        setTimeout(()=>{
+            settopPos("0vh")
+        },3000)
+    },[])
   return (
     <>
       <Head>
@@ -74,35 +79,41 @@ const IraqZiyaratPackage = () => {
 </Script>
       <div className={`${styl.displayBox} ${styl.iraqImage}`}>
       </div>
-
+    <div style={{top:topPos}} className={`${sty.popup} `}>
+    <div className={`${sty.popupimg} ${sty.popimgiraq}`}>
+            </div>
+            <div onClick={()=>{settopPos("-110vh")}} className={`${sty.close} close`}>
+              <Image width={100} height={100} src={popImg} alt=""></Image>
+            </div>
+      </div>
 
      
    
         <div className={styl.hajCardWrap}>
         <h1>Iraq Ziyarat</h1>
           <br></br>
-          <p className={style.newtext}>Ziyarat basically means to visit the Shrine of the HOLY places like IRAQ .This visit has several etiquette & manners that need to be observed in order for the ziyarat to be successful. The Iraq Ziyarat broadly known for Holi Ziyarat for SHAIKH ABDUL QADIR JILANI (R.A.) Baghdad, HAZRAT ALI (R.A.) NAJAF E ASHRAF, Maidan E KARBALA AND ROZA-E-IMAM HUSSAIN (R.A.) of KARBALA and many more Ziarats given in list below. 
+          <p className={style.newtext}>Welcome to Al Azeem Tours and Travel, your gateway to a transformative journey of spiritual enrichment and exploration. Embark on a soul-stirring Ziyarat to Iraq, a sacred pilgrimage encompassing the revered cities of Karbala, Najaf, and Baghdad. Immerse yourself in the profound history and spirituality of these hallowed destinations, where every step echoes with the stories of devotion and sacrifice. 
             <br></br><br></br>
-	Al Azeem Tour & Travels from Delhi (India) basically renowned and authorized (IATA) travel Agent organising Ziarat Groups for Holi Shrines of Iraq Basically all Ziayarat are in Baghdad, Najaf E Ashraf and Karbalai Maullah mostly these destinations are located around 250 Km from Baghdad. We are also organising Economical Umrah Groups, Groups for Baitul Muqadas
+            Our meticulously crafted tour offers a seamless experience, providing comprehensive services including transportation, visa assistance, top-tier accommodations, and authentic dining. With Al Azeem Tours and Travel, your pilgrimage is not just a trip; it's an opportunity to connect with the essence of faith and heritage. Join us on this remarkable journey as we ensure every detail is meticulously managed, allowing you to focus solely on the spiritual significance of your visit.
 </p>
 <br></br><br></br>
 <div className={`${styl.infoWrap} ${styl.iraqInfo}`}>
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>Departure</p>
                   <div className={styl.underline}></div>
-                  <p className={`${styl.infoText} ${styl.pad}`}>12 July 2023</p>
+                  <p className={`${styl.infoText} ${styl.pad}`}>10 NOV 2023</p>
             </div>
             <div className={styl.infoWrapCard}>
-                  <p className={styl.infoHead}>11 Days Package</p>
+                  <p className={styl.infoHead}>10 Days Package / 11 Nighta</p>
                   <div className={styl.underline}></div>
-                  <p className={styl.infoText}>BAGHDAD - 5 Nights</p>
-                  <p className={styl.infoText}>NAJAF E ASHRAF - 2 Nights</p>
-                  <p className={styl.infoText}>KARBALAI MAULLAH - 3 Nights</p>
+                  <p className={styl.infoText}>KARBALA - 5 Nights</p>
+                  <p className={styl.infoText}>NAJAF - 3 Nights</p>
+                  <p className={styl.infoText}>BAGHDAD - 2 Nights</p>
             </div>
             <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>Package Cost </p>
                   <div className={styl.underline}></div>
-                  <p className={`${styl.infoText} ${styl.pad}`}>Rs. 90,000/-</p>
+                  <p className={`${styl.infoText} ${styl.pad}`}>Rs. 95,000/-</p>
             </div>
         </div>
           <div className={styl.innerWrapLeft}>
@@ -116,189 +127,42 @@ const IraqZiyaratPackage = () => {
               </tr>
              
                 <tr className={styl.oddTr}>
-                  <td className={styl.tableHeading}>BAGHDAD</td>
+                  <td className={styl.tableHeading}>BAGHDAD &ndash; AL ALAWE RAILWAY YARD 5 KM</td>
                   <td>
                   <ul className={styl.nul}>
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>SHAIKH ABDUL QADIR JILANI (R.A.)</p>
+                        <p>1. SHAIKH BEHLOL DANA (R.A.)</p>
                     </li>  
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SHAIKH ABDUL JABBAR JILANI (R.A.)</p>
-                    </li>  
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SHAIKH MOHAMMAD SALEH (R.A.)</p>
-                    </li>  
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>MADARSA OF ABDUL QADIR JILANI (R.A.)</p>
-                    </li>  
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SHAIKH SULEMAN ABU KHUMRAH ALRIFA (R.A.)</p>
-                    </li>   
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SHAIKH SHAHABUDIN UMAR SUHARWARDI (R.A.)</p>
-                    </li>  
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SHAIKH SYED IBRAHIM BAKAR BIN BAKAR (R.A.)</p>
-                    </li>   
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SHAIKH IMAM GAZZALI (R.A.)</p>
-                    </li>       
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>MAZAR SHARIF (WHO DAKU JIS NAY GHOUS PAK KE BACHPAN MAIN US SE ASHRFI LOOTI THI)</p>
-                    </li>            
+                              
                 </ul>                    
                   </td>
                 </tr>
 
                 <tr className={styl.evenTr}>
-                  <td className={styl.tableHeading}>BAGHDAD – ADHAMIYAH -5 KM</td>
+                  <td className={styl.tableHeading}>BAGHDAD &ndash; KAZMAIN &ndash; 10 KM</td>
                   <td>
                   <ul className={styl.nul}>
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>SHAIKH IMAM ABU AZAM HANIFA (R.A.)</p>
+                        <p>2. SAYYED IMAM MOOSA KAZIM (R.A.) (7TH IMAM)</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>SHAIKH HASAN NOORI (R.A.)</p>
+                        <p>3. SAYYED IMAM MOHAMMAD TAQI (9TH IMAM)</p>
                     </li>  
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SHAIKH BISHAR BIN HAAFI (R.A.)</p>
-                    </li>  
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SHAIKH ABU BAKAR SHIBLI (R.A.)</p>
-                    </li>   
                                
                 </ul>                   
                   </td>
                 </tr>
 
                 <tr className={styl.oddTr}>
-                  <td className={styl.tableHeading}>BAGHDAD – AL ALAWE RAILWAY YARD 5 KM</td>
-                  <td>
-                  <ul className={styl.nul}>
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SHAIKH BEHLOL DANA (R.A.)</p>
-                    </li>  
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SHAIKH SIRRI SAQTI (R.A.)</p>
-                    </li>  
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SHAIKH JUNAID AL BAGHDADI (R.A.)</p>
-                    </li>  
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>PROPHET YUSHA BIN NOON(A.S.) COMPANION OF MUSA (A.S.)</p>
-                    </li>  
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SHAIKH IBRAHIM KHAWWAS (R.A.)</p>
-                    </li>   
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SHAIKH JUNOON MISRI (R.A.)</p>
-                    </li>  
-                             
-                </ul>                    
-                  </td>
-                </tr>
-
-                <tr className={styl.evenTr}>
-                  <td className={styl.tableHeading}>BAGHDAD – 60TH ROAD – 5 KM</td>
-                  <td>
-                  <ul className={styl.nul}>
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SHAIKH MAROOF AL KHARKI (R.A.)</p>
-                    </li>  
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>KUWA SHAIKH MAROOF KHARKI</p>
-                    </li>  
-                               
-                </ul>                   
-                  </td>
-                </tr>
-
-                <tr className={styl.evenTr}>
-                  <td className={styl.tableHeading}>BAGHDAD – KAZMAIN – 10 KM</td>
-                  <td>
-                  <ul className={styl.nul}>
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SAYYED IMAM MOOSA KAZIM (R.A.) (7TH IMAM)</p>
-                    </li>  
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SAYYED IMAM MOHAMMAD TAQI (9TH IMAM)</p>
-                    </li>  
-                     
-                               
-                </ul>                   
-                  </td>
-                </tr>
-
-                <tr className={styl.evenTr}>
                   <td className={styl.tableHeading}>BAGHDAD 60 KM FROM ASTANA</td>
                   <td>
                   <ul className={styl.nul}>
@@ -306,35 +170,35 @@ const IraqZiyaratPackage = () => {
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>HAZRAT SALMAN FARSI (R.A.) SALMAN PARK</p>
+                        <p>4. HAZRAT SALMAN FARSI (R.A.) SALMAN PARK</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>HUZAIFA BIN YAMAN (R.A.)</p>
+                        <p>5. HUZAIFA BIN YAMAN (R.A.)</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>TAHIR BIN MOHAMMAD AL BAQIR (R.A.)</p>
+                        <p>6. TAHIR BIN MOHAMMAD AL BAQIR (R.A.)</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>ABDUALLAH BIN JABIR AL ANSARI (R.A.)</p>
-                    </li>
+                        <p>7. ABDUALLAH BIN JABIR AL ANSARI (R.A.)</p>
+                    </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>DARYA -E- DAJLA</p>
-                    </li> 
-                     
-                               
-                </ul>                   
+                        <p>8. DARYA -E- DAJLA</p>
+                    </li>   
+                   
+                             
+                </ul>                    
                   </td>
                 </tr>
 
@@ -346,9 +210,9 @@ const IraqZiyaratPackage = () => {
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>IMAM AHMED BIN HAMBAL (R.A.)</p>
+                        <p>9. IMAM AHMED BIN HAMBAL (R.A.)</p>
                     </li>  
-                                       
+        
                                
                 </ul>                   
                   </td>
@@ -362,26 +226,27 @@ const IraqZiyaratPackage = () => {
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>HAZRAT ALI (R.A.)</p>
+                        <p>10. HAZRAT ALI (R.A.)</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>PROPHET SALEH (R.A.)</p>
+                        <p>11. PROPHET SALEH (R.A.)</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>PROPHET HOOD (R.A.)</p>
+                        <p>12. PROPHET HOOD (R.A.)</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>WADI-US- SALAAM (World Largest graveyard 14sq KM) ( MANY PROPHETS AND ISLAMIC SCHOLARS RESTING PLACE)</p>
-                    </li>             
+                        <p>13. WADI-US- SALAAM (World Largest graveyard 14sq KM) ( MANY PROPHETS AND ISLAMIC SCHOLARS RESTING PLACE)</p>
+                    </li>  
+                               
                 </ul>                   
                   </td>
                 </tr>
@@ -394,62 +259,64 @@ const IraqZiyaratPackage = () => {
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>SAYED IBRAHIM BIN MUSLIM BIN AQEEL BIN ABU TALIB (R.A.)</p>
+                        <p>14. SAYED IBRAHIM BIN MUSLIM BIN AQEEL BIN ABU TALIB (R.A.)</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>SAYED MOHAMMAD BIN MUSLIM BIN AQEEL (R.A.)</p>
+                        <p>15. SAYED MOHAMMAD BIN MUSLIM BIN AQEEL (R.A.)</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>MOHAMMAD BIN AQEEL</p>
+                        <p>16. MOHAMMAD BIN AQEEL</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>PROPHET AYUB (A.S.) AND HIS WIFE RAHIMA</p>
+                        <p>17. PROPHET AYUB (A.S.) AND HIS WIFE RAHIMA</p>
                     </li>
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>SHIFA KA KUWA</p>
-                    </li>     
+                        <p>18. SHIFA KA KUWA</p>
+                    </li> 
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>RADDE SHAMS</p>
-                    </li>  
+                        <p>19. RADDE SHAMS</p>
+                    </li> 
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>JANAB-E- AUN AND JANAB-E- MOHAMMAD</p>
-                    </li>
+                        <p>20. JANAB-E- AUN AND JANAB-E- MOHAMMAD</p>
+                    </li> 
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>JANAB-E-HOOR (R.A.)</p>
-                    </li>  
+                        <p>21. JANAB-E-HOOR (R.A.)</p>
+                    </li> 
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>BIRTH PLACE OF PROPHET IBRAHIM (A.S.)</p>
-                    </li>
+                        <p>22. BIRTH PLACE OF PROPHET IBRAHIM (A.S.)</p>
+                    </li> 
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>WOH MUQAM JAHAN PAR NABI IBRAHIM (A.S.) KO AAG MAIN JALANE KE LIYA LAKDIYA JAMA KI GAYI THI</p>
-                    </li>             
+                        <p>23. WOH MUQAM JAHAN PAR NABI IBRAHIM (A.S.) KO AAG MAIN JALANE KE LIYA LAKDIYA JAMA KI GAYI THI</p>
+                    </li> 
+                     
+                               
                 </ul>                   
                   </td>
                 </tr>
@@ -462,74 +329,76 @@ const IraqZiyaratPackage = () => {
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>MASJID-E-KUFA</p>
+                        <p>24. MASJID-E-KUFA</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>MIMBER (JIS MIMBER PAR HAZRAT ALI (R.A.) KAY UPAR HAMLA HUA THA)</p>
+                        <p>25. MIMBER (JIS MIMBER PAR HAZRAT ALI (R.A.) KAY UPAR HAMLA HUA THA)</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>HAZRAT IMAM BIN MUSLIM BIN AQEEL (R.A.)</p>
+                        <p>26. HAZRAT IMAM BIN MUSLIM BIN AQEEL (R.A.)</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>JANAB E HANI BIN URWA (R.A.)</p>
-                    </li>
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>QABAR MUKHTAR SAQAFI</p>
-                    </li>     
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>TOOFAN-E-NOOH JAHAN SAY SHRU HUA (KUWA)</p>
+                        <p>27. JANAB E HANI BIN URWA (R.A.)</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>MUSALLAH-E-NABI ADAM (A.S.)</p>
-                    </li>
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>MUSALLAH HAZRAT JIBRAIEL (A.S.)</p>
+                        <p>28. QABAR MUKHTAR SAQAFI</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>HOUSE OF HAZRAT ALI (R.A.)</p>
-                    </li>
+                        <p>29. TOOFAN-E-NOOH JAHAN SAY SHRU HUA (KUWA)</p>
+                    </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>WELL OF HAZRAT ALI(R.A.)</p>
-                    </li>   
+                        <p>30. MUSALLAH-E-NABI ADAM (A.S.)</p>
+                    </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>JANAB-E-MISAMME TAMMAR(R.A.)</p>
-                    </li>
+                        <p>31. MUSALLAH HAZRAT JIBRAIEL (A.S.)</p>
+                    </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>SAYYEDA KHATIJA (R.A.) (DAUGHTER OF HAZRAT ALI)</p>
-                    </li>           
+                        <p>32. HOUSE OF HAZRAT ALI (R.A.)</p>
+                    </li>  
+                    <li>
+                        <div className={styl.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>33. WELL OF HAZRAT ALI(R.A.)</p>
+                    </li>  
+                    <li>
+                        <div className={styl.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>34. JANAB-E-MISAMME TAMMAR(R.A.)</p>
+                    </li>  
+                    <li>
+                        <div className={styl.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>35. SAYYEDA KHATIJA (R.A.) (DAUGHTER OF HAZRAT ALI)</p>
+                    </li>  
+                                       
+                               
                 </ul>                   
                   </td>
                 </tr>
@@ -542,63 +411,62 @@ const IraqZiyaratPackage = () => {
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>MAIDAN-E-KARBALA</p>
+                        <p>36. MAIDAN-E-KARBALA</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>NEHAR-E-FARAT</p>
+                        <p>37. NEHAR-E-FARAT</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>ROZA-E-IMAM HUSSAIN (R.A.)</p>
+                        <p>38. ROZA-E-IMAM HUSSAIN (R.A.)</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>ROZA-E-ABBAS ALAMBARDAR(R.A.)</p>
-                    </li>
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>HAZRAT HUSSAIN(R.A.) (SHAHADAT KI JAGAH)</p>
-                    </li>     
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>ALI AKBAR(R.A.)</p>
-                    </li>  
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>ALI ASGHAR (R.A.)</p>
-                    </li>
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>MUKAM-E-BAZU-E-ABBAS ALAMBARDAR</p>
-                    </li>  
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SHUHADA-E- KARBALA KI MAZAR</p>
-                    </li>
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>ZAINAB (R.A.) TEKRI</p>
+                        <p>39. ROZA-E-ABBAS ALAMBARDAR(R.A.)</p>
                     </li>   
-                             
+                    <li>
+                        <div className={styl.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>40. HAZRAT HUSSAIN(R.A.) (SHAHADAT KI JAGAH)</p>
+                    </li>   
+                    <li>
+                        <div className={styl.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>41. ALI AKBAR(R.A.)</p>
+                    </li>   
+                    <li>
+                        <div className={styl.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>42. ALI ASGHAR (R.A.)</p>
+                    </li>   
+                    <li>
+                        <div className={styl.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>43. MUKAM-E-BAZU-E-ABBAS ALAMBARDAR</p>
+                    </li>   
+                    <li>
+                        <div className={styl.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>44. SHUHADA-E- KARBALA KI MAZAR</p>
+                    </li>   
+                    <li>
+                        <div className={styl.img}>
+                        <Image src={tick} alt="tick icon"></Image>
+                        </div>
+                        <p>45. ZAINAB (R.A.) TEKRI</p>
+                    </li>             
                 </ul>                   
                   </td>
                 </tr>
@@ -611,47 +479,19 @@ const IraqZiyaratPackage = () => {
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>IMAM ALI NAQI (R.A.) (10th IMAM)</p>
+                        <p>46. IMAM ALI NAQI (R.A.) (10th IMAM)</p>
                     </li>  
                     <li>
                         <div className={styl.img}>
                         <Image src={tick} alt="tick icon"></Image>
                         </div>
-                        <p>IMAM HASAN ASKARI (R.A.) (11th IMAM)</p>
-                    </li>  
-                      
-                             
+                        <p>47. IMAM HASAN ASKARI (R.A.) (11th IMAM)</p>
+                    </li>              
                 </ul>                   
                   </td>
                 </tr>
 
-                <tr className={styl.evenTr}>
-                  <td className={styl.tableHeading}>BAGHDAD – THIS ZIYARAT IS EXTRA PAYABLE NOT INCLUDED IN THIS PACKAGE 530 KM FROM BAGHDAD</td>
-                  <td>
-                  <ul className={styl.nul}>
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>ANAS BIN MALIK (R.A.)(COMPANION OF THE PROPHET)</p>
-                    </li>  
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>KHWAJA HASAN BASRI (R.A.)</p>
-                    </li> 
-                    <li>
-                        <div className={styl.img}>
-                        <Image src={tick} alt="tick icon"></Image>
-                        </div>
-                        <p>SAYYED SHAIKH AHMAD KABIR RIFAI (R.A.)</p>
-                    </li>  
-                      
-                             
-                </ul>                   
-                  </td>
-                </tr>
+                
             </table>
         
 

@@ -110,7 +110,6 @@
 
 .popup{
     position: fixed;
-    top: -110vh;
     left: 0;
     right: 0;
     background-color: #ffffff10;
@@ -132,6 +131,10 @@
   background-size: contain;
   background-image: url(../public/images/iraq_pop_up.jpg);
   cursor: pointer;
+}
+
+.popimgiraq{
+  background-image: url(../public/popUpIraq.jpeg);
 }
 
 .close{
@@ -159,6 +162,10 @@
 
   .popupimg{
     background-image: url(../public/images/iraq_pop_up.jpg);
+  }
+
+  .popimgiraq{
+    background-image: url(../public/popUpIraq.jpeg);
   }
 
 }
