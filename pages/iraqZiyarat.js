@@ -21,7 +21,7 @@ const IraqZiyaratPackage = () => {
     useEffect(()=>{
         setTimeout(()=>{
             settopPos("0vh")
-        },3000)
+        },2500)
     },[])
   return (
     <>
@@ -203,7 +203,7 @@ const IraqZiyaratPackage = () => {
                 </tr>
 
                 <tr className={styl.evenTr}>
-                  <td className={styl.tableHeading}>BAGHDAD – AL MIDAN 5KM FROM ASTANA</td>
+                  <td className={styl.tableHeading}>BAGHDAD &ndash; AL MIDAN 5KM FROM ASTANA</td>
                   <td>
                   <ul className={styl.nul}>
                     <li>
@@ -219,7 +219,7 @@ const IraqZiyaratPackage = () => {
                 </tr>
 
                 <tr className={styl.evenTr}>
-                  <td className={styl.tableHeading}>NAJAF CITY – 220 KM FROM BAGDAD</td>
+                  <td className={styl.tableHeading}>NAJAF CITY &ndash; 220 KM FROM BAGDAD</td>
                   <td>
                   <ul className={styl.nul}>
                     <li>
@@ -624,7 +624,7 @@ const IraqZiyaratPackage = () => {
       
           <div className={styl.innerWrapLeft}>
           <div className={styl.cardHeading}>
-          <h2>BAGHDAD – ADHAMIYAH -5 KM</h2>
+          <h2>BAGHDAD &ndash; ADHAMIYAH -5 KM</h2>
           </div>
           <div className={styl.underline}></div>
           <ul className={styl.nul}>
@@ -676,7 +676,7 @@ const IraqZiyaratPackage = () => {
       
           <div className={styl.innerWrapLeft}>
           <div className={styl.cardHeading}>
-          <h2>BAGHDAD – AL ALAWE RAILWAY YARD 5 KM</h2>
+          <h2>BAGHDAD &ndash; AL ALAWE RAILWAY YARD 5 KM</h2>
           </div>
           <div className={styl.underline}></div>
           <ul className={styl.nul}>
@@ -740,7 +740,7 @@ const IraqZiyaratPackage = () => {
       
           <div className={styl.innerWrapLeft}>
           <div className={styl.cardHeading}>
-          <h2>BAGHDAD – 60TH ROAD – 5 KM</h2>
+          <h2>BAGHDAD &ndash; 60TH ROAD &ndash; 5 KM</h2>
           </div>
           <div className={styl.underline}></div>
           <ul className={styl.nul}>
@@ -780,7 +780,7 @@ const IraqZiyaratPackage = () => {
       
           <div className={styl.innerWrapLeft}>
           <div className={styl.cardHeading}>
-          <h2>BAGHDAD – KAZMAIN – 10 KM</h2>
+          <h2>BAGHDAD &ndash; KAZMAIN &ndash; 10 KM</h2>
           </div>
           <div className={styl.underline}></div>
           <ul className={styl.nul}>
@@ -878,7 +878,7 @@ const IraqZiyaratPackage = () => {
       
           <div className={styl.innerWrapLeft}>
           <div className={styl.cardHeading}>
-          <h2>BAGHDAD – AL MIDAN 5KM FROM ASTANA</h2>
+          <h2>BAGHDAD &ndash; AL MIDAN 5KM FROM ASTANA</h2>
           </div>
           <div className={styl.underline}></div>
           <ul className={styl.nul}>
@@ -912,7 +912,7 @@ const IraqZiyaratPackage = () => {
       
           <div className={styl.innerWrapLeft}>
           <div className={styl.cardHeading}>
-          <h2>NAJAF CITY – 220 KM FROM BAGDAD</h2>
+          <h2>NAJAF CITY &ndash; 220 KM FROM BAGDAD</h2>
           </div>
           <div className={styl.underline}></div>
           <ul className={styl.nul}>
@@ -1273,7 +1273,7 @@ const IraqZiyaratPackage = () => {
       
           <div className={styl.innerWrapLeft}>
           <div className={styl.cardHeading}>
-          <h2>BAGHDAD – THIS ZIYARAT IS EXTRA PAYABLE NOT INCLUDED IN THIS PACKAGE 530 KM FROM BAGHDAD</h2>
+          <h2>BAGHDAD &ndash; THIS ZIYARAT IS EXTRA PAYABLE NOT INCLUDED IN THIS PACKAGE 530 KM FROM BAGHDAD</h2>
           </div>
           <div className={styl.underline}></div>
           <ul className={styl.nul}>
