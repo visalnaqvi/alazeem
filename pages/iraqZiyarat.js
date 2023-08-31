@@ -82,7 +82,7 @@ const IraqZiyaratPackage = () => {
       <div className={`${styl.displayBox} ${styl.iraqImage}`}>
       </div>
       
-<h1 className={styl.urhamHead}>Iraq Ziyarat Packages</h1>
+{/* <h1 className={styl.urhamHead}>Iraq Ziyarat Packages</h1> */}
       <div className={styl.newziyaratpkg}>
       <div className={umrahStyles.wrapMain}>
         {/* <div className={style.cross}></div> */}
@@ -228,8 +228,8 @@ const IraqZiyaratPackage = () => {
 </p>
 <br></br><br></br>
 
-<div className={`${styl.infoWrap} ${styl.iraqInfo}`}>
-            <div className={styl.infoWrapCard}>
+<div id="table" className={`${styl.infoWrap} ${styl.iraqInfo}`}>
+            {/* <div className={styl.infoWrapCard}>
                   <p className={styl.infoHead}>Departure</p>
                   <div className={styl.underline}></div>
                   <p className={`${styl.infoText} ${styl.pad}`}>10 NOV 2023</p>
@@ -245,7 +245,7 @@ const IraqZiyaratPackage = () => {
                   <p className={styl.infoHead}>Package Cost </p>
                   <div className={styl.underline}></div>
                   <p className={`${styl.infoText} ${styl.pad}`}>Rs. 95,000/-</p>
-            </div>
+            </div> */}
         </div>
           <div className={styl.innerWrapLeft}>
           
@@ -634,7 +634,7 @@ const IraqZiyaratPackage = () => {
         </div>
 
 
-        <div className={styl.mobileViewIraq}>
+        <div id="table" className={styl.mobileViewIraq}>
 
         <p className={style.articletitlecenter}>Included Services</p>
         <div className={`${styl.infoWrap}`}>
