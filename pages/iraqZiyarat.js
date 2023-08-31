@@ -94,7 +94,7 @@ const IraqZiyaratPackage = () => {
           <br></br>
           <p className={style.newtext}>Welcome to Al Azeem Tours and Travel, your gateway to a transformative journey of spiritual enrichment and exploration. Embark on a soul-stirring Ziyarat to Iraq, a sacred pilgrimage encompassing the revered cities of Karbala, Najaf, and Baghdad. Immerse yourself in the profound history and spirituality of these hallowed destinations, where every step echoes with the stories of devotion and sacrifice. 
             <br></br><br></br>
-            Our meticulously crafted tour offers a seamless experience, providing comprehensive services including transportation, visa assistance, top-tier accommodations, and authentic dining. With Al Azeem Tours and Travel, your pilgrimage is not just a trip; it's an opportunity to connect with the essence of faith and heritage. Join us on this remarkable journey as we ensure every detail is meticulously managed, allowing you to focus solely on the spiritual significance of your visit.
+            Our meticulously crafted tour offers a seamless experience, providing comprehensive services including transportation, visa assistance, top-tier accommodations, and authentic dining. With Al Azeem Tours and Travel, your pilgrimage is not just a trip; it&apos;s an opportunity to connect with the essence of faith and heritage. Join us on this remarkable journey as we ensure every detail is meticulously managed, allowing you to focus solely on the spiritual significance of your visit.
 </p>
 <br></br><br></br>
 <div className={`${styl.infoWrap} ${styl.iraqInfo}`}>
