@@ -201,7 +201,7 @@
 
     .iraqNew{
         background-image: url(../public/iraqZiyaratbgmb.png);
-        background-size: contain;
+        background-size: cover !important;
     }
     
     .wrapper{
