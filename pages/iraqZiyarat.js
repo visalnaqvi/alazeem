@@ -256,7 +256,7 @@ const IraqZiyaratPackage = () => {
             <strong>Foundation:</strong>Baghdad was officially founded in the 8th century. In 762 AD, the Abbasid Caliph Al-Mansur chose the location for his new capital and named it Madinat al-Salam which means the City of Peace. This marked the beginning of Baghdad&apos;s significance as a major cultural, political, and economic centre in the Islamic world.
             </p><br></br>
             <p>
-            <strong>Golden Age:</strong>The Abbasid Caliphate&apos;s rule saw a "Golden Age" in Baghdad during the 8th to 10th centuries. It became a hub for scholars, philosophers, mathematicians, and artists from diverse backgrounds. The House of Wisdom, an important centre of learning and translation, played a key role in preserving and translating ancient Greek, Persian, and Indian works into Arabic.
+            <strong>Golden Age:</strong>The Abbasid Caliphate&apos;s rule saw a &ldquo;Golden Age&ldquo; in Baghdad during the 8th to 10th centuries. It became a hub for scholars, philosophers, mathematicians, and artists from diverse backgrounds. The House of Wisdom, an important centre of learning and translation, played a key role in preserving and translating ancient Greek, Persian, and Indian works into Arabic.
             </p><br></br>
             <p>
             <strong>Modern Capital:</strong>Baghdad became the capital of the newly established Kingdom of Iraq in 1921. The city continued to experience growth and modernization throughout the 20th century, with significant developments and urban expansion.
