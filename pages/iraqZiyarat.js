@@ -89,7 +89,7 @@ const IraqZiyaratPackage = () => {
         <div className={umrahStyles.wrapper}>
 
           <div className={`${umrahStyles.top} ${umrahStyles.iraqNew}`}>
-            <h1 className={umrahStyles.heading}>Iraq Ziyarat (10 Days 11 Nights)</h1>
+            <h1 className={umrahStyles.heading}>Iraq Ziyarat (11 Days 10 Nights)</h1>
             <div className={umrahStyles.date}>
               <p>Departure on: 10 November 2023</p>
             </div>
@@ -169,7 +169,13 @@ const IraqZiyaratPackage = () => {
                         <div className={umrahStyles.img}>
                         <Image src={tick} width={100} height={100} alt="tick icon"></Image>
                         </div>
-                        <p>NAJAF / BAGHDAD - 2 Nights</p>
+                        <p>NAJAF - 3 Nights</p>
+                    </li>
+                    <li>
+                        <div className={umrahStyles.img}>
+                        <Image src={tick} width={100} height={100} alt="tick icon"></Image>
+                        </div>
+                        <p>BAGHDAD / KAZMAN- 2 Nights</p>
                     </li>
                     <li>
                         <div className={umrahStyles.img}>
